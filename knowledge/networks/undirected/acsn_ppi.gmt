@@ -1,0 +1,2952 @@
+_alpha_1-Actin	na	ACTA1																																								
+_alpha_2-Actin	na	ACTA2																																								
+_alpha_-Actin	na	ACTC1																																								
+_alpha_-Catenin*	na	CTNNA1	CTNNA2	CTNNA3																																						
+_beta_-Actin	na	ACTB																																								
+_beta_-actin*	na	ACTB																																								
+_beta_-Arrestin*	na	ARRB1	ARRB2																																							
+_beta_-Arrestin2*	na	ARRB1	ARRB2																																							
+_beta_-Catenin*	na	CTNNB1																																								
+_beta_-Catenin*	na	CTNNB1																																								
+_beta_-Catenin*_p120*1_Plakoglobin*_Plakophilin4*	na	CTNNB1	CTNND1	JUP	PKP4																																					
+_beta_-Catenin*_ZEB1_ZEB2*	na	CTNNB1	ZEB1	ZEB2																																						
+_beta_TRCP*	na	BTRC	FBXW11																																							
+_gamma_-Actin*	na	ACTG1																																								
+14-3-3*	na	YWHAB	YWHAG	YWHAH	YWHAE	YWHAQ	YWHAZ																																			
+14-3-3*	na	YWHAB	YWHAG	YWHAH	YWHAE	YWHAQ	YWHAZ																																			
+14-3-3*	na	YWHAQ	YWHAZ	YWHAE	YWHAB	SFN	YWHAG	YWHAH																																		
+4E-BP*	na	EIF4EBP1																																								
+5T4*	na	TPBG																																								
+a1b1*_a2b1*	na	ITGA1	ITGB1	ITGA2																																						
+a2b1*_a3b1*	na	ITGA2	ITGB1	ITGA3																																						
+a5b1*_aVb3*	na	ITGA5	ITGB1	ITGAV	ITGB3																																					
+a6b1*_a6b4*	na	ITGA6	ITGB1	ITGB4																																						
+ABH2*	na	ALKBH2																																								
+ABH3*	na	ALKBH3																																								
+ABL1	na	ABL1																																								
+ABR	na	ABR																																								
+ACAC*	na	ACACA	ACACB																																							
+ACACA	na	ACACA																																								
+ACACB	na	ACACB																																								
+ACAD9	na	ACAD9																																								
+ACHE	na	ACHE																																								
+ACLY	na	ACLY																																								
+ACO1	na	ACO1																																								
+ACO2	na	ACO2																																								
+ACR	na	ACR																																								
+ACSS1	na	ACSS1																																								
+ACSS2	na	ACSS2																																								
+ACTG1	na	ACTG1																																								
+Actin cytoskeletal*	na	ACTA1	ACTA2	ACTB	ACTC1	ACTG1																																				
+Actin*	na	ACTA1	ACTB	ACTG1																																						
+Actinin*	na	ACTN1	ACTN2	ACTN4																																						
+active~Caspases*	na	ABR																																								
+active~NRF*	na	NKRF																																								
+ACTN1	na	ACTN1																																								
+ACTN2	na	ACTN2																																								
+ACTN4	na	ACTN4																																								
+ACTN4	na	ACTN4																																								
+ACTR2	na	ACTR2																																								
+ACTR3	na	ACTR3																																								
+Adenylyl_cyclase*	na	ADCY1	ADCY2	ADCY3	ADCY4	ADCY5	ADCY6	ADCY7	ADCY8	ADCY9	ADCY10																															
+AES	na	AES																																								
+Afadin*	na	MLLT4																																								
+AFP	na	AFP																																								
+AIFM1	na	AIFM1																																								
+AK1	na	AK1																																								
+AK2	na	AK2																																								
+AKAP*	na	AKAP1	AKAP2	AKAP3	AKAP4	AKAP5	AKAP6	AKAP7	AKAP8	AKAP9	AKAP10	AKAP12	AKA13	AKAP14	AKAP17A																											
+AKT*	na	AKT1	AKT2	AKT3	AKT3	CDH2																																				
+AKT1	na	AKT1																																								
+AKT2	na	AKT2																																								
+ALAD	na	ALAD																																								
+ALAS*	na	ALAS1	ALAS2																																							
+ALAS1	na	ALAS1																																								
+ALAS1	na	ALAS1																																								
+ALAS1	na	ALAS1																																								
+ALAS2	na	ALAS2																																								
+ALDO*	na	ALDOA	ALDOB	ALDOC																																						
+ALDOA	na	ALDOA																																								
+ALDOA	na	ALDOA																																								
+ALDOA	na	ALDOA																																								
+ALDOB	na	ALDOB																																								
+ALDOC	na	ALDOC																																								
+AMER1*	na	FAM123B																																								
+AMER2	na	AMER2																																								
+ANP32A	na	ANP32A																																								
+ANT*	na	SLC25A4	SLC25A5	SLC25A6																																						
+AOS1*	na	SAE1																																								
+AP2_alpha*	na	AP2A1	AP2A2																																							
+AP2_beta*	na	AP2B1																																								
+AP2_mu_*	na	AP2M1																																								
+AP2_sigma_*	na	AP2S1																																								
+APAF1	na	APAF1																																								
+APAF1	na	APAF1																																								
+APAF1	na	APAF1																																								
+APBB1	na	APBB1																																								
+APC	na	APC																																								
+APC/C*	na	ANAPC1	ANAPC2	CDC27	ANAPC4	ANAPC5	CDC16	ANAPC7	CDC23	ANAPC10	ANAPC11	CDC26	ANAPC13																													
+APC_sub_TRUNC_endsub_*	na	APC																																								
+APC1*	na	ANAPC1																																								
+APC10*	na	ANAPC10																																								
+APC11*	na	ANAPC11																																								
+APC12*	na	CDC26																																								
+APC13*	na	ANAPC13																																								
+APC2*	na	ANAPC2	AXIN1	AXIN2																																						
+APC3*	na	CDC27																																								
+APC4*	na	ANAPC4																																								
+APC5*	na	ANAPC5																																								
+APC6*	na	CDC16																																								
+APC7*	na	ANAPC7																																								
+APC8*	na	CDC23																																								
+APE*	na	APEX1	APEX2																																							
+APIP	na	APIP																																								
+APO*	na	C9orf3																																								
+APO*	na	C9orf3																																								
+ARC	na	ARC																																								
+ARC	na	ARC																																								
+ARFIP2	na	ARFIP2																																								
+ARHGAP1	na	ARHGAP1																																								
+ARHGAP12	na	ARHGAP12																																								
+ARHGAP14*	na	SRGAP3																																								
+ARHGAP17	na	ARHGAP17																																								
+ARHGAP24	na	ARHGAP24																																								
+ARHGAP26	na	ARHGAP26																																								
+ARHGAP31	na	ARHGAP31																																								
+ARHGAP32	na	ARHGAP32																																								
+ARHGAP35	na	ARHGAP35																																								
+ARHGAP5	na	ARHGAP5																																								
+ARHGAP9	na	ARHGAP9																																								
+ARHGDIA	na	ARHGDIA																																								
+ARHGDIB	na	ARHGDIB																																								
+ARHGDIG	na	ARHGDIG																																								
+ARHGEF1	na	ARHGEF1																																								
+ARHGEF10L	na	ARHGEF10L																																								
+ARHGEF12	na	ARHGEF12																																								
+ARHGEF14*	na	MCF2L																																								
+ARHGEF2	na	ARHGEF2																																								
+ARHGEF27*	na	NGEF																																								
+ARHGEF3	na	ARHGEF3																																								
+ARHGEF31*	na	ECT2																																								
+ARHGEF4	na	ARHGEF4																																								
+Armadillo proteins*	na	PKP1	PKP2	PKP3	PKP4	JUP																																				
+ARP2_3*	na	ACTR2	ACTR3																																							
+Artemis*	na	DCLRE1C																																								
+ASH2L	na	ASH2L																																								
+ASK1*	na	MAP3K5																																								
+ATF2	na	ATF2																																								
+ATG13	na	ATG13																																								
+ATM	na	ATM																																								
+ATM	na	ATM																																								
+ATP5A1	na	ATP5A1																																								
+ATP5A1	na	ATP5A1																																								
+ATP5A1	na	ATP5A1																																								
+ATP5B	na	ATP5B																																								
+ATP5B	na	ATP5B																																								
+ATP5B	na	ATP5B																																								
+ATP5C1	na	ATP5C1																																								
+ATP5C1	na	ATP5C1																																								
+ATP5C1	na	ATP5C1																																								
+ATP5D	na	ATP5D																																								
+ATP5E	na	ATP5E																																								
+ATP5F1	na	ATP5F1																																								
+ATP5G*	na	ATP5G1	ATP5G2	ATP5G3																																						
+ATP5G1	na	ATP5G1																																								
+ATP5G1	na	ATP5G1																																								
+ATP5G1	na	ATP5G1																																								
+ATP5H	na	ATP5H																																								
+ATP5I	na	ATP5I																																								
+ATP5J	na	ATP5J																																								
+ATP5J	na	ATP5J																																								
+ATP5J2	na	ATP5J2																																								
+ATP5L	na	ATP5L																																								
+ATP5O	na	ATP5O																																								
+ATP5S	na	ATP5S																																								
+ATP6V0C_D*	na	ATP6V0C	ATP6V0D1	ATP6VOC	ATP6V0C	ATP6V0D2																																				
+ATPAF1	na	ATPAF1																																								
+ATPAF2	na	ATPAF2																																								
+ATPIF1	na	ATPIF1																																								
+ATR	na	ATR																																								
+ATRIP	na	ATRIP																																								
+ATROGIN-1*	na	FBXO32																																								
+AURCA	na	AURCA																																								
+AURCB	na	AURKB																																								
+AURKB	na	AURKB																																								
+aVb3*_aVb5*	na	ITGAV	ITGB3	ITGB5																																						
+AVEN	na	AVEN																																								
+AXIN*	na	AXIN1	AXIN2																																							
+AXIN1	na	AXIN1																																								
+AXIN1	na	AXIN1																																								
+AXIN1	na	AXIN1																																								
+AXIN2	na	AXIN2																																								
+AXIN2	na	AXIN2																																								
+AXIN2	na	AXIN2																																								
+B56_alpha_*	na	PPP2R5A																																								
+BACH1	na	BACH1																																								
+BAD	na	BAD																																								
+BAD	na	BAD																																								
+BAD	na	BAD																																								
+BAF*	na	BANF1																																								
+BAF155*	na	SMARCC1																																								
+BAF180*	na	PBRM1																																								
+BAF250*	na	ARID1A																																								
+BAF45A*	na	PHF10																																								
+BAF47*	na	SMARCB1																																								
+BAF53A*	na	ACTL6A																																								
+BAF57*	na	SMARCE1																																								
+BAF60A*	na	SMARCD1																																								
+BAG4	na	BAG4																																								
+BAIAP2	na	BAIAP2																																								
+BAK1	na	BAK1																																								
+BAK1	na	BAK1																																								
+BAK1	na	BAK1																																								
+BARD1	na	BARD1																																								
+BARD1	na	BARD1																																								
+BAT8*	na	EHMT2																																								
+BAX	na	BAX																																								
+BAX	na	BAX																																								
+BAX	na	BAX																																								
+BAX_sub_TRUNC_endsub_*	na	BAX																																								
+BAZ1B	na	BAZ1B																																								
+BBC3	na	BBC3																																								
+BBC3	na	BBC3																																								
+BBC3	na	BBC3																																								
+BCAR1	na	BCAR1																																								
+BCL2	na	BCL2																																								
+BCL2	na	BCL2																																								
+BCL2	na	BCL2																																								
+BCL2A1	na	BCL2A1																																								
+BCL2A1	na	BCL2A1																																								
+BCL2A1	na	BCL2A1																																								
+BCL2L11	na	BCL2L11																																								
+BCL2L11	na	BCL2L11																																								
+BCL2L11	na	BCL2L11																																								
+BCL2L12	na	BCL2L12																																								
+BCL2L2	na	BCL2L2																																								
+BCL2L2	na	BCL2L2																																								
+BCL2-XL*	na	BCL2L1																																								
+BCL2-XL*	na	BCL2L1																																								
+BCL2-XL*	na	BCL2L1																																								
+BCL6	na	BCL6																																								
+BCL6*	na	BCOR																																								
+BCL6*	na	BCOR																																								
+BCL9	na	BCL9																																								
+BCL9	na	BCL9																																								
+BCL9	na	BCL9																																								
+BCR	na	BCR																																								
+BECN1	na	BECN1																																								
+BECN1	na	BECN1																																								
+BECN1	na	BECN1																																								
+BGN	na	BGN																																								
+BID	na	BID																																								
+BID	na	BID																																								
+BID	na	BID																																								
+BID_sub_TRUNC_endsub_*	na	BID																																								
+BIK	na	BIK																																								
+BIK	na	BIK																																								
+BIK	na	BIK																																								
+BIM1_KLF4_SOX2*	na	BMI1	KLF4	SOX2																																						
+BimEL*	na	BCL2L11	BCL2L12																																							
+BIRC2	na	BIRC2																																								
+BIRC2	na	BIRC2																																								
+BIRC2	na	BIRC2																																								
+BIRC3	na	BIRC3																																								
+BIRC3	na	BIRC3																																								
+BIRC3	na	BIRC3																																								
+BIRC5	na	BIRC5																																								
+BIRC5	na	BIRC5																																								
+BIRC5	na	BIRC5																																								
+BIRC6	na	BIRC6																																								
+BIRC7	na	BIRC7																																								
+BLM	na	BLM																																								
+BLVRA	na	BLVRA																																								
+BMF	na	BMF																																								
+BMF	na	BMF																																								
+BMI1	na	BMI1																																								
+BMI1	na	BMI1																																								
+BMI1	na	BMI1																																								
+BMI1_BIRC5_KLF4_SOX2_SNAI1_ZEB2*	na	BMI1	BIRC5	KLF4	SOX2	SNAI1	ZEB2																																			
+BMX	na	BMX																																								
+BNIP2	na	BNIP2																																								
+BNIP3	na	BNIP3																																								
+BNIP3	na	BNIP3																																								
+BNIP3	na	BNIP3																																								
+BOC	na	BOC																																								
+Borealin*	na	CDCA8																																								
+BRAF	na	BRAF																																								
+BRCA1	na	BRCA1																																								
+BRCA1	na	BRCA1																																								
+BRCA1	na	BRCA1																																								
+BRCA2	na	BRCA2																																								
+BRCC3	na	BRCC3																																								
+BRD7	na	BRD7																																								
+BRD7	na	BRD7																																								
+BRD8	na	BRD8																																								
+BRG1*	na	SMARCA4																																								
+BRIT1*	na	MCPH1																																								
+BRK1	na	BRK1																																								
+BTRC	na	BTRC																																								
+BUB1	na	BUB1																																								
+BUB1	na	BUB1																																								
+BUB1	na	BUB1																																								
+BUB3	na	BUB3																																								
+BUBR1*	na	BUB1B																																								
+C1QBP	na	C1QBP																																								
+CA9	na	CA9																																								
+CA9	na	CA9																																								
+CA9	na	CA9																																								
+CAB39	na	CAB39																																								
+Cadherin*	na	CDH1	CDH2	CDH3	CDH4	CDH5																																				
+CAIN*	na	CABIN1																																								
+CAIN_sub_TRUNC_endsub_*	na	CABIN1																																								
+Calmodulin*	na	CALM1	CALM2	CALM3	CALM2	CALM1	CALM3	CALM3	CALM1	CALM2																																
+Calpain*	na	CAPN1	CAPN2	CAPN3	CAPN5	CAPN6	CAPN7	CAPN8	CAPN9	CAPN10	CAPN11	CAPN12	CAPN13	CAPN14	SOLH	CAPNS1	CAPNS2																									
+Calpastatin*	na	CAST																																								
+CAMK2*	na	CAMK2A	CAMK2B	CAMK2D	CAMK2G	CAMK2B	CAMK2D																																			
+CAMKK2	na	CAMKK2																																								
+CAND1	na	CAND1																																								
+CAPN1	na	CAPN1																																								
+CAPN2	na	CAPN2																																								
+CAR*	na	CXADR																																								
+CAR*	na	CXADR																																								
+CAR*	na	CXADR																																								
+carboxylesterase*	na	CES1	CES2	CES3	CES4A	CES5A																																				
+Caspase*	na	CASP1	CASP3																																							
+Caspase1*	na	CASP1																																								
+Caspase2*	na	CASP2																																								
+Caspase3*	na	CASP3																																								
+Caspase3*	na	CASP3																																								
+Caspase3*	na	CASP3																																								
+Caspase3_cl_uncl*	na	CASP3																																								
+Caspase3_sub_TRUNC_endsub_*	na	CASPASE3	CASP3	CASP3																																						
+Caspase6*	na	CASP6																																								
+Caspase7*	na	CASP7																																								
+Caspase7*	na	CASP7																																								
+Caspase7*	na	CASP7																																								
+Caspase7_cl_uncl*	na	CASP7																																								
+Caspase8*	na	CASP8																																								
+Caspase8*	na	CASP8																																								
+Caspase8*	na	CASP8																																								
+Caspase8_sub_TRUNC_endsub_*	na	CASP8																																								
+Caspase9*	na	CASP9																																								
+Caspase9*	na	CASP9																																								
+Caspase9*	na	CASP9																																								
+Caspase9__sub_TRUNC_endsub_*	na	CASP9																																								
+CASR	na	CASR																																								
+Catenin*	na	CTNNA1	CTNNB1	CTNND1																																						
+Caveolin1*	na	CAV1																																								
+CBL*	na	CBL	CBLB	CBLC																																						
+CBP*	na	CREBBP	CREB3	CREB5																																						
+CBX4	na	CBX4																																								
+CBX5	na	CBX5																																								
+CCN2*	na	CTGF																																								
+CCS	na	CCS																																								
+CD19	na	CD19																																								
+CD3	na	CD3D																																								
+CDC14A	na	CDC14A																																								
+CDC20	na	CDC20																																								
+CDC20	na	CDC20																																								
+CDC20	na	CDC20																																								
+CDC20B	na	CDC20B																																								
+CDC20B	na	CDC20B																																								
+CDC25A	na	CDC25A																																								
+CDC25A	na	CDC25A																																								
+CDC25A	na	CDC25A																																								
+CDC25B	na	CDC25B																																								
+CDC25C	na	CDC25C																																								
+CDC34	na	CDC34																																								
+CDC37	na	CDC37																																								
+CDC42	na	CDC42																																								
+CDC42_GAPs*	na	ARHGAP1	ARHGAP5	ARHGAP17	ARHGAP31	ARHGAP32	BCR	RALBP1	ABR	CHN2	DLC1																															
+CDC42_GEFs*	na	ECT2	MCF2	DEF6	FGD1	FGD4	DOCK6	DOCK9	DOCK11	SPATA13																																
+CDC42BPA	na	CDC42BPA																																								
+CDC42EP*	na	CDC42EP2	CDC42EP3																																							
+CDC42EP2	na	CDC42EP2																																								
+CDC42EP3	na	CDC42EP3																																								
+CDC42SE1	na	CDC42SE1																																								
+CDC45	na	CDC45																																								
+CDC53*	na	RNF7																																								
+CDC6	na	CDC6																																								
+CDC6	na	CDC6																																								
+CDC7	na	CDC7																																								
+CDCA4	na	CDCA4																																								
+CDCA7	na	CDCA7																																								
+CDK1	na	CDK1																																								
+CDK1	na	CDK1																																								
+CDK2	na	CDK2																																								
+CDK3	na	CDK3																																								
+CDK4	na	CDK4																																								
+CDK4	na	CDK4																																								
+CDK4	na	CDK4																																								
+CDK4_6*	na	CDK4	CDK6																																							
+CDK5	na	CDK5																																								
+CDK6	na	CDK6																																								
+CDK6	na	CDK6																																								
+CDK7	na	CDK7																																								
+CDK8	na	CDK8																																								
+CDKN2A	na	CDKN2A																																								
+CDKN3	na	CDKN3																																								
+CDO*	na	CDON																																								
+CDT1	na	CDT1																																								
+CDT1	na	CDT1																																								
+CDT2*	na	DTL																																								
+CDX1	na	CDX1																																								
+CDX2	na	CDX2																																								
+CETN2	na	CETN2																																								
+C-FES*	na	FES																																								
+CFL1	na	CFL1																																								
+CFLAR	na	CFLAR																																								
+CFLAR	na	CFLAR																																								
+CFLAR	na	CFLAR																																								
+CHD3_4*	na	CHD3	CHD4																																							
+CHEK1	na	CHEK1																																								
+CHEK1	na	CHEK1																																								
+CHEK1	na	CHEK1																																								
+CHEK2	na	CHEK2																																								
+CHEK2	na	CHEK2																																								
+CHN2	na	CHN2																																								
+CHTF18	na	CHTF18																																								
+CHUK	na	CHUK																																								
+cIAP*	na	CIAPIN1	BIRC2	BIRC3																																						
+Cingulin*	na	CGN																																								
+CIP/KIP*	na	CDKN1A	CDKN1B	CDKN1C																																						
+CIP/KIP*	na	CDKN1A	CDKN1B	CDKN1C																																						
+CIP1_KIP1*	na	CDKN1A	CDKN1B	CDKN1C																																						
+CISH	na	CISH																																								
+CITED2	na	CITED2																																								
+CITED2	na	CITED2																																								
+CITED2	na	CITED2																																								
+CK_beta_*	na	CCL19																																								
+CK1*	na	CSNK1A1	CSNK1D	CSNK1E	CSNK1G1	CSNK1G2	CSNK1G3																																			
+CK1_alpha_*	na	CSNK1A1																																								
+CK1_delta_*	na	CSNK1D																																								
+CK1_epsilon_*	na	CSNK1E																																								
+CK1_gamma_*	na	CSNK1G1	CSNK1G2	CSNK1G3																																						
+CK2*	na	CSNK2A1	CSNK2A2	CSNK2B																																						
+CK2_alpha_*	na	CSNK2A1	CSNK2A3																																							
+CK2_alpha_'*	na	CSNK2A2	CSNK2A3																																							
+CK2_beta_*	na	CSNK2B	CSKN2B	CSNK2B																																						
+CKS1B	na	CKS1B																																								
+Claudin1*	na	CLDN1																																								
+Claudin1*	na	CLDN1																																								
+Claudin1*	na	CLDN1																																								
+Claudin1_2_3_4*	na	CLDN1	CLDN2	CLDN3	CLDN4																																					
+Claudin1_5_8*	na	CLDN1	CLDN5	CLDN8																																						
+Claudin11*	na	CLDN11																																								
+Claudin14*	na	CLDN14																																								
+Claudin16*	na	CLDN16																																								
+Claudin18*	na	CLDN18																																								
+Claudin19*	na	CLDN19																																								
+Claudin2*	na	CLDN2																																								
+Claudin2*	na	CLDN2																																								
+Claudin2*	na	CLDN2																																								
+Claudin3*	na	CLDN3																																								
+Claudin3*	na	CLDN3																																								
+Claudin3*	na	CLDN3																																								
+Claudin4*	na	CLDN4																																								
+Claudin4*	na	CLDN4																																								
+Claudin4*	na	CLDN4																																								
+Claudin5*	na	CLDN5																																								
+Claudin7*	na	CLDN7																																								
+Claudin7*	na	CLDN7																																								
+Claudin7*	na	CLDN7																																								
+Claudin8*	na	CLDN8																																								
+cleaved_BID*	na	BID																																								
+cleaved_FUBP1*	na	FUBP1																																								
+cleaved_LAMA1_2*	na	LAMA1	LAMA2																																							
+cleaved_RB1*	na	RB1																																								
+cleaved~14-3-3*	na	YWHAQ																																								
+cleaved~ABL1*	na	ABL1																																								
+cleaved~AIFM1*	na	AIFM1																																								
+cleaved~AKT1*	na	AKT1																																								
+cleaved~ATM*	na	ATM																																								
+cleaved~BAD*	na	BAD																																								
+cleaved~BCL2*	na	BCL2																																								
+cleaved~BCL2_XL*	na	BCL2L1																																								
+cleaved~BECN1*	na	BECN1																																								
+cleaved~BIRC2*	na	BIRC2																																								
+cleaved~BIRC6	na	BIRC6																																								
+cleaved~Caspase2*	na	CASP2																																								
+cleaved~Caspase3*	na	CASP3																																								
+cleaved~Caspase6*	na	CASP6																																								
+cleaved~Caspase7*	na	CASP7																																								
+cleaved~Caspase8*	na	CASP8																																								
+cleaved~Caspase9*	na	CASP9																																								
+cleaved~DFFA*	na	DFFA																																								
+cleaved~DNA-PK*	na	PRKDC																																								
+cleaved~GCLC*	na	GCLC																																								
+cleaved~GLRX*	na	GLRX																																								
+cleaved~GSPT1*	na	GSPT1																																								
+cleaved~HAX1*	na	HAX1																																								
+cleaved~IKBKB*	na	IKBKB																																								
+cleaved~KCNIP3*	na	KCNIP3																																								
+cleaved~MCL1*	na	MCL1																																								
+cleaved~NDUFS1*	na	NDUFS1																																								
+cleaved~NDUFS3*	na	NDUFS3																																								
+cleaved~PIK3C3*	na	PIK3C3																																								
+cleaved~RIPK1*	na	RIPK1																																								
+cleaved~RIPK3*	na	RIPK3																																								
+cleaved~UQCRFS1*	na	UQCRFS1																																								
+CLSPN	na	CLSPN																																								
+CLSPN	na	CLSPN																																								
+CNA*	na	PPP3CA	PPP3CB	PPP3CC																																						
+CNAP1*	na	NCAPD2																																								
+CNB*	na	PPP3R1	PPP3PR2	PPP3R2																																						
+COL1A1	na	COL1A1																																								
+COL1A2	na	COL1A2																																								
+COL1A2	na	COL1A2																																								
+COL1A2	na	COL1A2																																								
+COL2A1	na	COL2A1																																								
+COL4A1	na	COL4A1																																								
+COL4A2	na	COL4A2																																								
+COL4A3	na	COL4A3																																								
+COL4A4	na	COL4A4																																								
+COL4A5	na	COL4A5																																								
+COL4A6	na	COL4A6																																								
+COL5A1	na	COL5A1																																								
+COL6A2	na	COL6A2																																								
+COL6A3	na	COL6A3																																								
+Collagen1*	na	COL1A1	COL1A2																																							
+Collagen4*	na	COL4A1	COL4A2	COL4A3	COL4A4	COL4A5	COL4A6																																			
+COMP	na	COMP																																								
+COX10	na	COX10																																								
+COX15	na	COX15																																								
+COX17	na	COX17																																								
+COX4I1	na	COX4I1																																								
+COX4I1	na	COX4I1																																								
+COX4I2	na	COX4I2																																								
+COX4I2	na	COX4I2																																								
+COX4I2	na	COX4I2																																								
+COX5A	na	COX5A																																								
+COX5A	na	COX5A																																								
+COX5A	na	COX5A																																								
+COX5B	na	COX5B																																								
+COX5B	na	COX5B																																								
+COX5B	na	COX5B																																								
+COX6A*	na	COX6A1	COX6A2																																							
+COX6A1	na	COX6A1																																								
+COX6A1	na	COX6A1																																								
+COX6A1	na	COX6A1																																								
+COX6B*	na	COX6B1	COX6B2																																							
+COX6C	na	COX6C																																								
+COX7A*	na	COX7A1	COX7A2	COX7A2L																																						
+COX7A2	na	COX7A2																																								
+COX7A2	na	COX7A2																																								
+COX7A2	na	COX7A2																																								
+COX7B*	na	COX7B	COX7B2																																							
+COX7C	na	COX7C																																								
+COX8*	na	COX8A	COX8C																																							
+CPOX	na	CPOX																																								
+CRADD	na	CRADD																																								
+CRB3	na	CRB3																																								
+CRB3	na	CRB3																																								
+CRB3	na	CRB3																																								
+CREB*	na	CREB1	CREB3	CREB5																																						
+CREB1	na	CREB1																																								
+CRIPTO-1*	na	TDGF1																																								
+CRIPTO-1*	na	TDGF1																																								
+CRIPTO-1*	na	TDGF1																																								
+CRK	na	CRK																																								
+CRM1*	na	XPO1																																								
+CS	na	CS																																								
+CSA*	na	ERCC8																																								
+CSB*	na	ERCC6																																								
+CSDA	na	CSDA																																								
+CSE1L	na	CSE1L																																								
+CSK	na	CSK																																								
+CSN1*	na	GPS1	GPS2																																							
+CSN2*	na	COPS2																																								
+CSN3*	na	COPS3																																								
+CSN4*	na	COPS4																																								
+CSN5*	na	COPS5																																								
+CSN6*	na	COPS6																																								
+CSN7*	na	COPS7A	COPS7B																																							
+CSN8*	na	COPS8																																								
+CSTF1	na	CSTF1																																								
+CSTF3	na	CSTF3																																								
+CTBP*	na	CTBP1	CTBP2																																							
+CTBP1	na	CTBP1																																								
+CTBP2	na	CTBP2																																								
+CTGF	na	CTGF																																								
+CTHRC1	na	CTHRC1																																								
+CTIP*	na	RBBP8																																								
+CTSB	na	CTSB																																								
+CTSB	na	CTSB																																								
+CTSB	na	CTSB																																								
+CTSK	na	CTSK																																								
+CTSL*	na	CTSL1	CTSL2	CTSL3P																																						
+CTSS	na	CTSS																																								
+CUL1	na	CUL1																																								
+CUL2	na	CUL2																																								
+CUL3	na	CUL3																																								
+CUL4*	na	CUL4A	CUL4B																																							
+CUL4A	na	CUL4A																																								
+CYBA	na	CYBA																																								
+CYBB	na	CYBB																																								
+CYC1	na	CYC1																																								
+CYC1	na	CYC1																																								
+CyclinA*	na	CCNA1	CCNA2																																							
+CyclinA1*	na	CCNA1																																								
+CyclinA1*	na	CCNA1																																								
+CyclinA1*	na	CCNA1																																								
+CyclinA2*	na	CCNA2																																								
+CyclinB*	na	CCNB1	CCNB2	CCNB3																																						
+CyclinB1*	na	CCNB1																																								
+CyclinB1*	na	CCNB1																																								
+CyclinB1*	na	CCNB1																																								
+CyclinB2*	na	CCNB2																																								
+CyclinC*	na	CCNC																																								
+CyclinD*	na	CCND1	CCND2	CCND3																																						
+CyclinD*	na	CCND1	CCND2	CCND3																																						
+CyclinD*	na	CCND1	CCND2	CCND3																																						
+CyclinD1*	na	CCND1																																								
+CyclinD1*	na	CCND1																																								
+CyclinD1*	na	CCND1																																								
+CyclinD2*	na	CCND2																																								
+CyclinD2*	na	CCND2																																								
+CyclinD2*	na	CCND2																																								
+CyclinD3*	na	CCND3																																								
+CyclinD3*	na	CCND3																																								
+CyclinD3*	na	CCND3																																								
+CyclinE*	na	CCNE1	CCNE2																																							
+CyclinE*	na	CCNE1	CCNE2																																							
+CyclinE*	na	CCNE1	CCNE2																																							
+CyclinE1*	na	CCNE1																																								
+CyclinE1*	na	CCNE1																																								
+CyclinE1*	na	CCNE1																																								
+CyclinG2*	na	CCNG2																																								
+CyclinG2*	na	CCNG2																																								
+CyclinG2*	na	CCNG2																																								
+CyclinH*	na	CCNH																																								
+CyclinY*	na	CCNY																																								
+CYFIP2	na	CYFIP2																																								
+CYLD	na	CYLD																																								
+Cytochome_C*	na	CYCS																																								
+Cytochrome_C*	na	CYCS																																								
+Cytochrome_C*	na	CYCS																																								
+DAAM1	na	DAAM1																																								
+DAB2	na	DAB1	DAB2																																							
+DAB2IP	na	DAB2IP																																								
+DACT1	na	DACT1																																								
+DAPK1	na	DAPK1																																								
+DAXX	na	DAXX																																								
+DBF4	na	DBF4																																								
+DBF4	na	DBF4																																								
+DCAF*	na	DCAF4	DCAF5	DCAF6	DCAF7	DCAF8	DCAF10	DCAF11	DCAF12	DCAF13	DCAF15	DCAF16	DCAF17																													
+DCN	na	DCN																																								
+DDB1	na	DDB1																																								
+DDB1*	na	DCAF4	DCAF5	DCAF6	DCAF7	DCAF8	DCAF10	DCAF11	DCAF12	DCAF13	DCAF15	DCAF16	DCAF17																													
+DDB2	na	DDB2																																								
+DDB2	na	DDB2																																								
+DDB2	na	DDB2																																								
+DDIT3	na	DDIT3																																								
+DDIT4	na	DDIT4																																								
+DDIT4	na	DDIT4																																								
+DDIT4	na	DDIT4																																								
+DDR2	na	DDR2																																								
+DDX11	na	DDX11																																								
+Death ecepto4*	na	TNFRSF10A																																								
+Death receptor4*	na	TNFRSF10A																																								
+DEF6	na	DEF6																																								
+DEK	na	DEK																																								
+DEPDC6	na	DEPTOR																																								
+DEPTOR	na	DEPTOR																																								
+Desmocolin*	na	DSC1	DSC2	DSC3																																						
+Desmocolin1 binding partners*	na	DSG1	DSG2	JUP	PKP1	PKP2	PKP3	PKP4	DSP																																	
+Desmocolin1*	na	DSC1																																								
+Desmocolin3*	na	DSC3																																								
+Desmocollin2*	na	DSC2																																								
+Desmocollin2*	na	DSC2																																								
+Desmocollin2*	na	DSC2																																								
+Desmoglein*	na	DSG1	DSG2	DSG3																																						
+Desmoglein1 binding partners*	na	DSC1	JUP	PKP1	PKP2	PKP3	PKP4	DSP																																		
+Desmoglein1*	na	DSG1																																								
+Desmoglein2*	na	DSG2																																								
+Desmoglein3*	na	DSG3																																								
+Desmoplakin binding partners*	na	DSC1	JUP	PKP1	PKP2	PKP3	PKP4	DSP	VIM	KRT18	KRT8	KRT1																														
+Desmoplakin*	na	DSP																																								
+Desmoplakin*	na	DSP																																								
+Desmoplakin*	na	DSP																																								
+Desmosomal cadherins*	na	DSG1	DSG2	DSG3	DSC1	DSC2	DSC3																																			
+DFFA	na	DFFA																																								
+DFFB	na	DFFB																																								
+DHFR	na	DHFR																																								
+DHODH	na	DHODH																																								
+DIA*	na	DIAPH1	DIAPH3																																							
+DIABLO	na	DIABLO																																								
+DIAPH1	na	DIAPH1																																								
+DIAPH2	na	DIAPH2																																								
+DIAPH3	na	DIAPH3																																								
+DIRAS3	na	DIRAS3																																								
+DKK1	na	DKK1																																								
+DKK1	na	DKK1																																								
+DKK1	na	DKK1																																								
+DKK3	na	DKK3																																								
+DKK3	na	DKK3																																								
+DKK3	na	DKK3																																								
+DLAT	na	DLAT																																								
+DLC1	na	DLC1																																								
+DLD	na	DLD																																								
+DLG*	na	DLG1	DLG2	DLG3	DLG4	DLG5																																				
+DLST	na	DLST																																								
+DMAP1	na	DMAP1																																								
+DNA2	na	DNA2																																								
+DNA2	na	DNA2																																								
+DNA-PK*	na	PRKDC																																								
+DNMT1	na	DNMT1																																								
+DNMT1	na	DNMT1																																								
+DOCK1	na	DOCK1																																								
+DOCK11	na	DOCK11																																								
+DOCK6	na	DOCK6																																								
+DOCK9	na	DOCK9																																								
+DP1*	na	TFDP1																																								
+DP2*	na	TFDP2																																								
+DPY30	na	DPY30																																								
+DR1	na	DR1																																								
+DRAL*	na	FHL2																																								
+DRAM1	na	DRAM1																																								
+DRAM1	na	DRAM1																																								
+DRAM1	na	DRAM1																																								
+DRF1	na	DBF4B																																								
+DSS1*	na	SHFM1																																								
+DSTN	na	DSTN																																								
+DUSP*	na	DUSP1	DUSP16	DUSP6	DUSP10																																					
+DUSP1	na	DUSP1																																								
+DUSP1	na	DUSP1																																								
+DUSP10	na	DUSP10																																								
+DUSP16	na	DUSP16																																								
+DUSP2	na	DUSP2																																								
+DUSP5	na	DUSP5																																								
+DUSP6	na	DUSP6																																								
+DVL*	na	DVL1	DVL2	DVL3																																						
+DVL*	na	DVL1																																								
+DVL1	na	DVL1																																								
+DVL1	na	DVL1																																								
+DVL2	na	DVL2																																								
+DYN1*	na	DYNC1H1																																								
+DYNC2H1	na	DYNC2H1																																								
+DYNLL1	na	DYNLL1																																								
+DYNLL2	na	DYNLL2																																								
+DYRK*	na	DYRK1A	DYRK1B	DYRK2	DYRK3	DYRK4																																				
+DYRK1A	na	DYRK1A																																								
+DYRK1B	na	DYRK1B																																								
+E1*	na	UBA1	UBA2	UBA5	UBA6	UBA7	UBA3																																			
+E2*	na	UBE2A	UBE2B	UBE2C	UBE2D1	UBE2D2	UBE2D3	UBE2E1	UBE2E2	UBE2G1	UBE2G2	UBE2H	UBE2I	UBE2J1	UBE2J2	UBE2K	UBE2L3	UBE2L4	UBE2L6	UBE2M	UBE2N	UBE2O	UBE2Q1	UBE2Q2	UBE2R2	UBE2S	UBE2Z															
+E2F1	na	E2F1																																								
+E2F1	na	E2F1																																								
+E2F1	na	E2F1																																								
+E2F1_alone	na	E2F1																																								
+E2F2	na	E2F2																																								
+E2F2_alone	na	E2F2																																								
+E2F3	na	E2F3																																								
+E2F3	na	E2F3																																								
+E2F3_alone	na	E2F3																																								
+E2F4	na	E2F4																																								
+E2F4_5*	na	E2F4	E2F5																																							
+E2F5	na	E2F5																																								
+E2F6	na	E2F6																																								
+E2F6	na	E2F6																																								
+E2F7	na	E2F7																																								
+E2F7	na	E2F7																																								
+E2F8	na	E2F8																																								
+E2F8	na	E2F8																																								
+E3*	na	UBE3A	UBE3B	UBE3C	UBE3D																																					
+EAF6*	na	MEAF6																																								
+EB1*	na	MAPRE1	MAPRE2	MAPRE3																																						
+E-Cadhein*	na	CDH1																																								
+E-Cadherin*	na	CDH1																																								
+E-Cadherin*	na	CDH1																																								
+ECE1	na	ECE1																																								
+ECM enes	na	ECM GENES																																								
+ECM genes	na	ECM GENES																																								
+ECSIT	na	ECSIT																																								
+EED	na	EED																																								
+EED	na	EED																																								
+EFNA1	na	EFNA1																																								
+EGF	na	EGF																																								
+EGFR	na	EGFR																																								
+EGLN1	na	EGLN1																																								
+EGLN1	na	EGLN1																																								
+EGLN1	na	EGLN1																																								
+EGLN2	na	EGLN2																																								
+EGLN2	na	EGLN2																																								
+EGLN3	na	EGLN3																																								
+EGLN3	na	EGLN3																																								
+EGR1	na	EGR1																																								
+EGR2	na	EGR2																																								
+EG-VEGF*	na	PROK1																																								
+EG-VEGF*	na	PROK1																																								
+EG-VEGF*	na	PROK1																																								
+EHMT1	na	EHMT1																																								
+EIF2AK2	na	EIF2AK2																																								
+EIF3*	na	EIF3A	EIF3B	EIF3C	EIF3D	EIF3E	EIF3F	EIF3G	EIF3H	EIF3I	EIF3J	EIF3K	EIF3L	EIF3M																												
+EIF4A*	na	EIF4A1	EIF4A2	EIF4A3																																						
+EIF4B	na	EIF4B																																								
+EIF4E	na	EIF4E																																								
+EIF4E*	na	EIF4E	EIF4E1B	EIF4E2	EIF4E3																																					
+EIF4G*	na	EIF4G1	EIF4G2	EIF4G3																																						
+ELK1	na	ELK1																																								
+EME1	na	EME1																																								
+EMI1*	na	FBXO5																																								
+EMILIN1	na	EMILIN1																																								
+ENDOG	na	ENDOG																																								
+ENO*	na	ENO1	ENO2	ENO3																																						
+ENO1	na	ENO1																																								
+ENO2	na	ENO2																																								
+ENO3	na	ENO3																																								
+ENOS*	na	NOS1	NOS2	NOS3																																						
+EPC1	na	EPC1																																								
+EPHA1	na	EPHA1																																								
+ER_alpha_*	na	ESR1	ESR2																																							
+ER_alpha_*	na	ESR1																																								
+ERCC1	na	ERCC1																																								
+ERE	na	EREG																																								
+ERK*	na	MAPK3	MAPK1	MAPK6	MAPK4																																					
+ERK1*	na	MAPK3																																								
+ERK1_2*	na	MAPK3	MAPK1																																							
+ERK2*	na	MAPK1																																								
+ERM*	na	EZR	RDX	MSN																																						
+ERN1	na	ERN1																																								
+ESR1	na	ESR1																																								
+ESRRA	na	ESRRA																																								
+ESRRA	na	ESRRA																																								
+ESRRA	na	ESRRA																																								
+ETS1	na	ETS1																																								
+ETS1	na	ETS1																																								
+ETS1	na	ETS1																																								
+ETS1_WASF3_WAVE3*	na	ETS1																																								
+EXO1	na	EXO1																																								
+EXOSC8	na	EXOSC8																																								
+EYA*	na	EYA1	EYA3																																							
+EYA1	na	EYA1																																								
+EYA3	na	EYA3																																								
+EZH2	na	EZH2																																								
+EZH2	na	EZH2																																								
+EZR	na	EZR																																								
+F13A1	na	F13A1																																								
+FAAP100*	na	C17orf70																																								
+FAAP20*	na	C1orf86																																								
+FAAP24*	na	C19orf40																																								
+FADD	na	FADD																																								
+FAF*	na	FAF1	FAF2																																							
+FAM175A	na	FAM175A																																								
+FANCA	na	FANCA																																								
+FANCB	na	FANCB																																								
+FANCC	na	FANCC																																								
+FANCD2	na	FANCD2																																								
+FANCE	na	FANCE																																								
+FANCF	na	FANCF																																								
+FANCG	na	FANCG																																								
+FANCI	na	FANCI																																								
+FANCJ*	na	BRIP1																																								
+FANCL	na	FACNCL																																								
+FANCM	na	FANCM																																								
+FANCN*	na	PALB2																																								
+FASL*	na	FASLG																																								
+FASL*	na	FASLG																																								
+FASN	na	FASN																																								
+FBLN1	na	FBLN1																																								
+FBLN2	na	FBLN2																																								
+FBN1	na	FBN1																																								
+FBP*	na	FBP1	FBP2																																							
+FBP1	na	FBP1																																								
+FBP2	na	FBP2																																								
+FBW5*	na	FBXW5																																								
+FBW7*	na	FBXW7																																								
+FBXO45	na	FBXO45																																								
+FBXO5	na	FBXO5																																								
+FECH	na	FECH																																								
+FECH	na	FECH																																								
+FECH	na	FECH																																								
+FEN1	na	FEN1																																								
+FER	na	FER																																								
+FGD1	na	FGD1																																								
+FGD4	na	FGD4																																								
+FGF1	na	FGF1																																								
+FGF1	na	FGF1																																								
+FGF1	na	FGF1																																								
+FGF2	na	FGF2																																								
+FGFR1	na	FGFR1																																								
+FGFR1	na	FGFR1																																								
+FGFR2	na	FGFR2																																								
+FH	na	FH																																								
+FHIT	na	FHIT																																								
+Fibonectin*	na	FN1																																								
+Fibronectin*	na	FN1																																								
+Fibronectin*	na	FN1																																								
+FIP200*	na	RB1CC1																																								
+FKBP8	na	FKBP8																																								
+FLAD1	na	FLAD1																																								
+FMN1	na	FMN1																																								
+FNTA	na	FNTA																																								
+FOS	na	FOS																																								
+FOS	na	FOS																																								
+FOXA*	na	FOXA1	FOXA2	FOXA3																																						
+FOXA2	na	FOXA2																																								
+FOXA2	na	FOXA2																																								
+FOXC2	na	FOXC2																																								
+FOXC2	na	FOXC2																																								
+FOXC2	na	FOXC2																																								
+FOXE1	na	FOXE1																																								
+FOXE1	na	FOXE1																																								
+FOXF1	na	FOXF1																																								
+FOXF1	na	FOXF1																																								
+FOXL1	na	FOXL1																																								
+FOXL1	na	FOXL1																																								
+FOXM1	na	FOXM1																																								
+FOXM1	na	FOXM1																																								
+FOXO*	na	FOXO1	FOXO3																																							
+FOXO1	na	FOXO1																																								
+FOXO1	na	FOXO1																																								
+FOXO1	na	FOXO1																																								
+FOXO3	na	FOXO3																																								
+FOXO3	na	FOXO3																																								
+FOXO3	na	FOXO3																																								
+FOXO4	na	FOXO4																																								
+FOXP3	na	FOXP3																																								
+FOXP3	na	FOXP3																																								
+FOXQ1	na	FOXQ1																																								
+FOXQ1	na	FOXQ1																																								
+FRAT1	na	FRAT1																																								
+FRK	na	FRK																																								
+FRS2	na	FRS2																																								
+FSHR	na	FSHR																																								
+FTH1	na	FTH1																																								
+FTH1	na	FTH1																																								
+FTH1	na	FTH1																																								
+FTL	na	FTL																																								
+FU*	na	STK36																																								
+FUBP1	na	FUBP1																																								
+FURIN	na	FURIN																																								
+FUS	na	FUS																																								
+FYN	na	FYN																																								
+FZD*	na	FZD1	FZD2	FZD3	FZD4	FZD5	FZD6	FZD7	FZD8	FZD9																																
+FZD1	na	FZD1																																								
+FZD1	na	FZD1																																								
+FZD3	na	FZD3																																								
+FZD3	na	FZD3																																								
+FZD4	na	FZD4																																								
+FZD4	na	FZD4																																								
+FZD4	na	FZD4																																								
+FZD6	na	FZD6																																								
+FZD7	na	FZD7																																								
+FZD7	na	FZD7																																								
+FZD8	na	FZD8																																								
+FZD8	na	FZD8																																								
+FZR1	na	FZR1																																								
+G_alpha_*	na	GNA11	GNA12	GNA13	GNA14	GNA15																																				
+G_alpha__sub_12_endsub_*	na	GNA12																																								
+G_alpha__sub_13q_endsub_*	na	GNA13																																								
+G_alpha__sub_i_endsub_*	na	GNAI1	GNAI2	GNAI3																																						
+G_alpha__sub_s_endsub_*	na	GNAS																																								
+G_alpha_o*	na	GNA11	GNA12	GNA13	GNA14	GNA15	GNAI1	GNAI2	GNAI3	GNAL	GNAO1	GNAQ																														
+G_beta_*	na	GNB1	GNB2	GNB3	GNB4	GNB	GNB5																																			
+G_beta__sub_i_endsub_*	na	GNB1	GNB2	GNB3	GNB4																																					
+g_beta_-Catenin*	na	CTNNB1																																								
+G_gamma_*	na	GNG2	GNG3	GNG4	GNG5	GNG7	GNG8	GNG10	GNG11	GNG12	GNG13	GNG	GNG3	GNGT1																												
+G_gamma__sub_i_endsub_*	na	GNG2	GNG3	GNG4	GNG5	GNG7	GNG8	GNG10	GNG11	GNG12	GNG13																															
+G0S2	na	G0S2																																								
+G0S2	na	G0S2																																								
+G0S2	na	G0S2																																								
+G6PD	na	G6PD																																								
+GAB1	na	GAB1																																								
+GAB2	na	GAB2																																								
+GABPA	na	GABPA																																								
+GADD45*	na	GADD45A	GADD45B																																							
+GADD45*	na	GADD45A	GADD45B	GADD45G																																						
+GADD45*	na	GADD45A	GADD45B	GADD45G																																						
+GADD45A	na	GADD45A																																								
+GAPDH	na	GAPDH																																								
+GAPDH	na	GAPDH																																								
+GAPDH	na	GAPDH																																								
+GAPDH*	na	GAPDH	GAPDHS																																							
+GAPDHS	na	GAPDHS																																								
+GAS1	na	GAS1	GAS2	GAS5	GAS6	GAS7	GAS8																																			
+GAS41*	na	YEATS4																																								
+GATA*	na	GATA1	GATA2	GATA3	GATA4	GATA5	GATA6																																			
+GATAD2A_B*	na	GATAD2A	GATADB																																							
+GCK	na	GCK																																								
+GCLC	na	GCLC																																								
+GCLC	na	GCLC																																								
+GCLC	na	GCLC																																								
+GCLM	na	GCLM																																								
+GCLM	na	GCLM																																								
+GCLM	na	GCLM																																								
+GEN1	na	GEN1																																								
+GINS1	na	GINS1																																								
+GINS2	na	GINS2																																								
+GINS3	na	GINS3																																								
+GINS4	na	GINS4																																								
+GJA1	na	GJA1																																								
+GJA1_3_4_8_GJB2*	na	GJA3	GJA1	GJA4	GJA8																																					
+GJA1_4_GJC1*	na	GJA1	GJA4	GJC1																																						
+GJA1_5_GJC1*	na	GJA5	GJA1	GJC1																																						
+GJA3	na	GJA3																																								
+GJA3_8*	na	GJA3	GJA8																																							
+GJA3_8_GJB1_GJB2*	na	GJB1	GJA3	GJA8	GJB2																																					
+GJA4	na	GJA4																																								
+GJA5	na	GJA5																																								
+GJA8	na	GJA8																																								
+GJB1	na	GJB1																																								
+GJB2	na	GJB2																																								
+GJB2	na	GJB2																																								
+GJB2	na	GJB2																																								
+GJB3	na	GJB3																																								
+GJB3	na	GJB3																																								
+GJB3	na	GJB3																																								
+GJB5	na	GJB5																																								
+GJC1	na	GJC1																																								
+GJD2	na	GJD2																																								
+GLI1	na	GLI1																																								
+GLI1	na	GLI1																																								
+GLI1	na	GLI1																																								
+GLI2	na	GLI2																																								
+GLI2	na	GLI2																																								
+GLI2-185*	na	GLI2																																								
+GLI2-78_sub_TRUNC_endsub_*	na	GLI2																																								
+GLI3	na	GLI3																																								
+GLI3	na	GLI3																																								
+GLI3-190*	na	GLI3																																								
+GLI3-83_sub_TRUNC_endsub_*	na	GLI3																																								
+GLRX	na	GLRX																																								
+GLS	na	GLS																																								
+GLS	na	GLS																																								
+GLS2	na	GLS2																																								
+GLS2	na	GLS2																																								
+GLS2	na	GLS2																																								
+GLUD*	na	GLUD1	GLUD2																																							
+GLUD1	na	GLUD1																																								
+GLUD2	na	GLUD2																																								
+GLUL	na	GLUL																																								
+GMNN	na	GMNN																																								
+GNA12	na	GNA12																																								
+GNAQ	na	GNAQ																																								
+GPC3	na	GPC1	GPC2	GPC3	GPC4	GPC5																																				
+GPC6	na	GPC6																																								
+GPC6	na	GPC6																																								
+GPCR*	na	GPR1	GPR3	GPR4	GPR6	GPR12	GPR15	GPR17	GPR18	GPR19	GPR20																															
+GPI	na	GPI																																								
+GPI	na	GPI																																								
+GPI	na	GPI																																								
+GPT	na	GPT																																								
+GPT*	na	GPT																																								
+GPT2	na	GPT2																																								
+GPX*	na	GPX1	GPX2																																							
+GPX1	na	GPX1																																								
+GPX2	na	GPX2																																								
+GRB2	na	GRB2																																								
+GRK*	na	GRK1	GRK4	GRK5	GRK6	GRK7	ADRBK1	ADRBK2																																		
+GSK3*	na	GSK3A	GSK3B																																							
+GSK3_alpha_*	na	GSK3A																																								
+GSK3_beta_	na	GSK3B																																								
+GSK3_beta_*	na	GSK3B																																								
+GSK3_beta_*	na	GSK3B																																								
+GSK3_beta_*	na	GSK3B																																								
+GSPT1	na	GSPT1																																								
+GSR	na	GSR																																								
+GSS	na	GSS																																								
+GZMA	na	GZMA																																								
+GZMB	na	GZMB																																								
+H19	na	H19																																								
+H2A*	na	HIST2H2AC																																								
+H2AFX	na	H2AFX																																								
+H2AFZ	na	H2AFZ																																								
+H2B*	na	HIST2H2BE																																								
+H6PD	na	H6PD																																								
+HAT*	na	HAT1																																								
+HAUSP*	na	USP7																																								
+HAX1	na	HAX1																																								
+HB-EGF*	na	HBEGF																																								
+HBXIP	na	LAMTOR5																																								
+HCCS	na	HCCS																																								
+HCF2*	na	HCFC2																																								
+HCLK2*	na	TELO2																																								
+HDAC*	na	HDAC1	HDAC2	HDAC3	HDAC4	HDAC5	HDAC6	HDAC7	HDAC8	HDAC10	HDAC11																															
+HDAC1	na	HDAC1																																								
+HDAC1_2*	na	HDAC1	HDAC2																																							
+HDAC2	na	HDAC2																																								
+HDAC3	na	HDAC3																																								
+HECTD1	na	HECTD1																																								
+HECTH9*	na	HUWE1																																								
+HEL308*	na	HELQ																																								
+HER2*	na	ERBB2																																								
+HERC1	na	HERC1																																								
+HES1	na	HES1																																								
+HES1	na	HES1																																								
+HES1	na	HES1																																								
+HGF	na	HGF																																								
+HHIP1	na	HHIP																																								
+HIF1A	na	HIF1A																																								
+HIF1A	na	HIF1A																																								
+HIF1A	na	HIF1A																																								
+HIF1AN	na	HIF1AN																																								
+HIF1B*	na	ARNT																																								
+HIF1B*	na	ARNT																																								
+HIP1	na	HIP1																																								
+HIP1*	na	HHIP																																								
+HIP1*	na	HIP1																																								
+HIPK1	na	HIPK1																																								
+HIPK2	na	HIPK2																																								
+HK1	na	HK1																																								
+HK2	na	HK2																																								
+HK2	na	HK2																																								
+HK2	na	HK2																																								
+HK3	na	HK3																																								
+HMBS	na	HMBS																																								
+HMOX1	na	HMOX1																																								
+HMOX1	na	HMOX1																																								
+HMOX1	na	HMOX1																																								
+HOMER3	na	HOMER3																																								
+HOXA3	na	HOXA3																																								
+HP1gamma*	na	CBX3																																								
+HRAS	na	HRAS																																								
+HRAS_GAPs*	na	RASA1																																								
+HRK	na	HRK																																								
+HRK	na	HRK																																								
+HRK	na	HRK																																								
+HSC70*	na	HSPA8																																								
+HSP70*	na	HSPA1A	HSPA1B	HSPA1B	HSPA1A	HSPA1L																																				
+HSP90*	na	HSP90AA1	HSP90AA2	HSPC2	HSP90AB1	HSP90AB1	HSP90B1																																			
+HSP90AA1	na	HSP90AA1																																								
+HSP90AA1	na	HSP90AA1																																								
+HSP90AA1	na	HSP90AA1																																								
+HSP90AA2	na	HSP90AA2																																								
+HSP90AB1	na	HSP90AB1																																								
+HSP90B1	na	HSP90B1																																								
+HSPB1	na	HSPB1																																								
+HTID1_40_kDA_isoform*	na	DNAJA3																																								
+HTID1_50_48_kDa_isoform*	na	DNAJA3																																								
+HTRA1	na	HTRA1																																								
+HTRA2	na	HTRA2																																								
+HTT	na	HTT																																								
+humanin*	na	MT-RNR2																																								
+HUS1	na	HUS1																																								
+ID1	na	ID1																																								
+ID1	na	ID1																																								
+ID1	na	ID1																																								
+IDAX*	na	CXXC4																																								
+IDH1	na	IDH1																																								
+IDH2	na	IDH2																																								
+IDH3A	na	IDH3A																																								
+IDH3A	na	IDH3A																																								
+IDH3A	na	IDH3A																																								
+IDH3B	na	IDH3B																																								
+IDH3C	na	IDH3G																																								
+IFT122	na	IFT122																																								
+IFT140	na	IFT140																																								
+IFT57	na	IFT57																																								
+IGF1	na	IGF1																																								
+IGF1R	na	IGF1R																																								
+IGFBP1	na	IGFBP1																																								
+IGFBP1	na	IGFBP1																																								
+IGFBP1	na	IGFBP1																																								
+IGFBP3	na	IGFBP3																																								
+IGFBP3	na	IGFBP3																																								
+IGFBP3	na	IGFBP3																																								
+IGFBP6	na	IGFBP6																																								
+IGFBP6	na	IGFBP6																																								
+IKBKB	na	IKBKB																																								
+IKBKG	na	IKBKG																																								
+IKK*	na	CHUK	IKBKB	IKBKE	IKBKG																																					
+IKK_beta_*	na	IKBKB																																								
+IL12	na	IL12A																																								
+IL15	na	IL15																																								
+IL16	na	IL16																																								
+IL1B	na	IL1B																																								
+IL1R1	na	IL1R1																																								
+IL1R2	na	IL1R2																																								
+IL1R2	na	IL1R2																																								
+IL1RN	na	IL1RN																																								
+IL2	na	IL2																																								
+IL2	na	IL2																																								
+IL2	na	IL2																																								
+IL21	na	IL21																																								
+IL23A	na	IL23A																																								
+IL33	na	IL33																																								
+IL6	na	IL6																																								
+IL8	na	IL8																																								
+IL9	na	IL9																																								
+ILK	na	ILK																																								
+IMP*	na	BRAP																																								
+IMPORTIN*	na	IPO4	IPO5	IPO7	IPO8	IPO9	IPO11	IPO13																																		
+INCENP	na	INCENP																																								
+ING3	na	ING3																																								
+ING4	na	ING4																																								
+INK4*	na	CDKN2A	CDKN2B	CDKN2C	CDKN2D																																					
+INK4*	na	CDKN2A	CDKN2B	CDKN2C	CDKN2D																																					
+INK4*	na	CDKN2A	CDKN2B	CDKN2C	CDKN2D																																					
+ionCa2+	na	Ca2+																																								
+ionCa2+	na	Ca2+																																								
+ionCa2+	na	Ca2+																																								
+ionCu2+	na	Cu2+																																								
+ionCu2+	na	Cu2+																																								
+ionFe2+	na	Fe2+																																								
+ionFe2+	na	Fe2+																																								
+ionH+	na	H+																																								
+ionH+	na	H+																																								
+ionH+	na	H+																																								
+ionH+	na	H+																																								
+ionH+	na	H+																																								
+ionMg2+	na	Mg2+																																								
+ionMg2+	na	Mg2+																																								
+ionMn2+	na	Mn2+																																								
+ionZn2+	na	Zn2+																																								
+IP3R*	na	ITPR1	ITPR2	ITPR3																																						
+IQGAP*	na	IQGAP1	IQGAP2	IQGAP3																																						
+IQGAP1	na	IQGAP1																																								
+IRAK1	na	IRAK1																																								
+IRS2	na	IRS2																																								
+IRS2	na	IRS2																																								
+IRS2	na	IRS2																																								
+ISYNA1	na	ISYNA1																																								
+ITCH	na	ITCH																																								
+ITGA1	na	ITGA1																																								
+ITGA1	na	ITGA1																																								
+ITGA1	na	ITGA1																																								
+ITGA10	na	ITGA10																																								
+ITGA10	na	ITGA10																																								
+ITGA10	na	ITGA10																																								
+ITGA11	na	ITGA11																																								
+ITGA11	na	ITGA11																																								
+ITGA11	na	ITGA11																																								
+ITGA2	na	ITGA2																																								
+ITGA2	na	ITGA2																																								
+ITGA2	na	ITGA2																																								
+ITGA2B	na	ITGA2B																																								
+ITGA2B	na	ITGA2B																																								
+ITGA2B	na	ITGA2B																																								
+ITGA3	na	ITGA3																																								
+ITGA3	na	ITGA3																																								
+ITGA3	na	ITGA3																																								
+ITGA4	na	ITGA4																																								
+ITGA4	na	ITGA4																																								
+ITGA4	na	ITGA4																																								
+ITGA5	na	ITGA5																																								
+ITGA5	na	ITGA5																																								
+ITGA5	na	ITGA5																																								
+ITGA6	na	ITGA6																																								
+ITGA6	na	ITGA6																																								
+ITGA6	na	ITGA6																																								
+ITGA7	na	ITGA7																																								
+ITGA7	na	ITGA7																																								
+ITGA7	na	ITGA7																																								
+ITGA8	na	ITGA8																																								
+ITGA8	na	ITGA8																																								
+ITGA8	na	ITGA8																																								
+ITGA9	na	ITGA9																																								
+ITGA9	na	ITGA9																																								
+ITGA9	na	ITGA9																																								
+ITGAD	na	ITGAD																																								
+ITGAD	na	ITGAD																																								
+ITGAD	na	ITGAD																																								
+ITGAE	na	ITGAE																																								
+ITGAE	na	ITGAE																																								
+ITGAE	na	ITGAE																																								
+ITGAL	na	ITGAL																																								
+ITGAL	na	ITGAL																																								
+ITGAL	na	ITGAL																																								
+ITGAM	na	ITGAM																																								
+ITGAM	na	ITGAM																																								
+ITGAM	na	ITGAM																																								
+ITGAV	na	ITGAV																																								
+ITGAV	na	ITGAV																																								
+ITGAV	na	ITGAV																																								
+ITGAX	na	ITGAX																																								
+ITGAX	na	ITGAX																																								
+ITGAX	na	ITGAX																																								
+ITGB1	na	ITGB1																																								
+ITGB1	na	ITGB1																																								
+ITGB1	na	ITGB1																																								
+ITGB2	na	ITGB2																																								
+ITGB2	na	ITGB2																																								
+ITGB2	na	ITGB2																																								
+ITGB3	na	ITGB3																																								
+ITGB3	na	ITGB3																																								
+ITGB3	na	ITGB3																																								
+ITGB4	na	ITGB4																																								
+ITGB4	na	ITGB4																																								
+ITGB4	na	ITGB4																																								
+ITGB5	na	ITGB5																																								
+ITGB5	na	ITGB5																																								
+ITGB5	na	ITGB5																																								
+ITGB6	na	ITGB6																																								
+ITGB6	na	ITGB6																																								
+ITGB6	na	ITGB6																																								
+ITGB7	na	ITGB7																																								
+ITGB7	na	ITGB7																																								
+ITGB7	na	ITGB7																																								
+ITGB8	na	ITGB8																																								
+ITGB8	na	ITGB8																																								
+ITGB8	na	ITGB8																																								
+Iversin*	na	INVS																																								
+JAG1	na	JAG1																																								
+JAG2	na	JAG2																																								
+JAG2	na	JAG2																																								
+JAM1*	na	F11R																																								
+JAM1*	na	F11R																																								
+JAM1*	na	F11R																																								
+JAM1_2_3*	na	F11R	JAM2	JAM3																																						
+JAM2	na	JAM2																																								
+JAM3	na	JAM3																																								
+JBN*	na	AHI1																																								
+JMY	na	JMY																																								
+JNK*	na	MAPK8	MAPK9	MAPK10																																						
+JNK1*	na	MAPK8																																								
+JNK2*	na	MAPK9																																								
+JNK3*	na	MAPK10																																								
+JPH2	na	JPH2																																								
+JUN	na	JUN																																								
+JUN	na	JUN																																								
+JUN	na	JUN																																								
+JUNB	na	JUNB																																								
+JUND	na	JUND																																								
+KCASH2*	na	KCTD21																																								
+KCASH3*	na	KCTD6																																								
+KCNIP3	na	KCNIP3																																								
+KEAP1	na	KEAP1																																								
+KIF3A	na	KIF3A																																								
+KIF3B	na	KIF3B																																								
+KIF7	na	KIF7																																								
+KIFAP3	na	KIFAP3																																								
+Kindlin2*	na	FERMT2																																								
+KIS*	na	UHMK1																																								
+KLF4	na	KLF4																																								
+KLF4	na	KLF4																																								
+KLF4	na	KLF4																																								
+KLF8	na	KLF8																																								
+KLHL*	na	KLHL1	KLHL2	KLHL3	KLHL4	KLHL5	KLHL6	KLHL7	KLHL8	KLHL9	KLHL10	KLHL11	KLHL12	KLHL13	KLHL14	KLHL15	KLHL17	KLHL18	KLHL20	KLHL21	KLHL22	KLHL23	KLHL24	KLHL25	KLHL26	KLHL28	KLHL29	KLHL30	KLHL31	KLHL32	KLHL33	KLHL34	KLHL35	KLHL36	KLHL38							
+KNTC2*	na	NDC80																																								
+KPC1*	na	RNF123																																								
+KPC2*	na	UBAC1																																								
+KPNA2	na	KPNA2																																								
+KPNB1	na	KPNB1																																								
+KRM*	na	KREMEN1	KREMEN2																																							
+KRT1	na	KRT1																																								
+KRT14	na	KRT14																																								
+KRT14	na	KRT14																																								
+KRT14	na	KRT14																																								
+KRT18	na	KRT18																																								
+KRT18	na	KRT18																																								
+KRT18	na	KRT18																																								
+KRT19	na	KRT19																																								
+KRT19	na	KRT19																																								
+KRT19	na	KRT19																																								
+KRT5	na	KRT5																																								
+KRT8	na	KRT8																																								
+KSR1	na	KSR1																																								
+KSR1-CTER*	na	KSR1																																								
+KSR1-NTER*	na	KSR1																																								
+Ku70*	na	XRCC6																																								
+Ku80*	na	XRCC5																																								
+L1CAM	na	L1CAM																																								
+LAMA1	na	LAMA1																																								
+LAMA2	na	LAMA2																																								
+LAMA3	na	LAMA3																																								
+LAMA4	na	LAMA4																																								
+LAMA5	na	LAMA5																																								
+LAMB1	na	LAMB1																																								
+LAMB2	na	LAMB2																																								
+LAMB3	na	LAMB3																																								
+LAMB4	na	LAMB4																																								
+LAMC1	na	LAMC1																																								
+LAMC2	na	LAMC2																																								
+LAMC3	na	LAMC3																																								
+Laminin1*	na	LAMA1	LAMB1	LAMC1																																						
+Laminin5*	na	LAMA3	LAMB3	LAMC2																																						
+Laminin8*	na	LAMA4	LAMB1	LAMC1																																						
+LAMTOR2	na	LAMTOR2																																								
+Latency-associated protein*	na	TGFB1	TGFB3	TGFB2																																						
+LCP2	na	LCP2																																								
+LDH*	na	LDHA	LDHB	LDHC																																						
+LDHA	na	LDHA																																								
+LDHA	na	LDHA																																								
+LDHA	na	LDHA																																								
+LDHB	na	LDHB																																								
+LDHC	na	LDHC																																								
+LEF_TCF*	na	PCBD2	HNF1A	HNF1B	TCF3	TCF4	CEBPB	TCFL5	TFAM	TCF7	TCF7L1	TCF7L2	ZEB1	GCFC2	LEF1	NFE2L1	TCF12	TEAD1	TEAD4	HNF4A	TCF15	CHUK	ZNF354A	TCF19	TCF20	TCF21	TCF23	TCF24	TCF25													
+LEF1	na	LEF1																																								
+LEF1	na	LEF1																																								
+LEF1	na	LEF1																																								
+LEF1_TCF3_4*	na	TCF4	LEF1	TCF3																																						
+LGALS1	na	LGALS1																																								
+LGR5	na	LGR5																																								
+LIG1	na	LIG1																																								
+LIG3	na	LIG3																																								
+LIG4	na	LIG4																																								
+LIMK1	na	LIMK1																																								
+LIMK1_2*	na	LIMK1	LIMK2																																							
+LIMK2	na	LIMK2																																								
+LIN10*	na	C16orf70																																								
+LIN10*	na	C16orf70																																								
+LIN10*	na	C16orf70																																								
+LIN2*	na	CASK																																								
+LIN2*	na	CASK																																								
+LIN2*	na	CASK																																								
+LIN7C	na	LIN7C																																								
+LIN7C	na	LIN7C																																								
+LIN7C	na	LIN7C																																								
+LMNA	na	LMNA																																								
+LMO2	na	LMO2																																								
+LONP1	na	LONP1																																								
+LONP1	na	LONP1																																								
+LONP1	na	LONP1																																								
+LRDD	na	PIDD																																								
+LRDD	na	PIDD																																								
+LRDD	na	PIDD																																								
+LRP5_6*	na	LRP5	LRP6																																							
+LRP6	na	LRP6																																								
+LRP6	na	LRP6																																								
+LRP6	na	LRP6																																								
+LRRK2	na	LRRK2																																								
+LTA	na	LTA																																								
+LTBP1	na	LTBP1																																								
+LYRIC*	na	MTDH																																								
+M7GTP*	na	EIF4E2																																								
+MAD1*	na	MAD1L1																																								
+MAD2*	na	MAD2L1	MAD2L2																																							
+MAD2*	na	MAD2L1	MAD2L2																																							
+MAD2*	na	MAD2L1	MAD2L2																																							
+MAFG	na	MAFG																																								
+MAFK	na	MAFK																																								
+MAP2K3	na	MAP2K3																																								
+MAP2K4	na	MAP2K4																																								
+MAP2K6	na	MAP2K6																																								
+MAP2K7	na	MAP2K7																																								
+MAP3K1	na	MAP3K1																																								
+MAP3K10	na	MAP3K10																																								
+MAP3K10_11*	na	MAP3K11	MAP3K10																																							
+MAP3K11	na	MAP3K11																																								
+MAP3K2_3*	na	MAP3K2	MAP3K3																																							
+MAP3K4	na	MAP3K4																																								
+MAP3K5	na	MAP3K5																																								
+MAPK11	na	MAPK11																																								
+MAPK12	na	MAPK12																																								
+MAPK13	na	MAPK13																																								
+MAPK14	na	MAPK14																																								
+MAPKAP1	na	MAPKAP1																																								
+MAPKAPK*	na	MAPKAPK2	MAPKAPK3	MAPKAPK5																																						
+MARK2	na	MARK2																																								
+MAX	na	MAX																																								
+MBD2_3*	na	MBD2	MBD3																																							
+MBD4	na	MBD4																																								
+MCAM	na	MCAM																																								
+MCF2	na	MCF2																																								
+MCL1	na	MCL1																																								
+MCL1	na	MCL1																																								
+MCL1	na	MCL1																																								
+MCM10	na	MCM10																																								
+MCM2	na	MCM2																																								
+MCM3	na	MCM3																																								
+MCM3	na	MCM3																																								
+MCM4	na	MCM4																																								
+MCM5	na	MCM5																																								
+MCM5	na	MCM5																																								
+MCM6	na	MCM6																																								
+MCM6	na	MCM6																																								
+MCM7	na	MCM7																																								
+MCM7	na	MCM7																																								
+MCM7	na	MCM7																																								
+MCM8	na	MCM8																																								
+MCM8*	na	C6orf61																																								
+MCM9*	na	C20orf154	MCM8																																							
+MCT*	na	SLC16A1	SLC16A3	SLC16A4																																						
+MDC1	na	MDC1																																								
+MDH1	na	MDH1																																								
+MDM2	na	MDM2																																								
+MDM2	na	MDM2																																								
+MDM2	na	MDM2																																								
+ME1	na	ME1																																								
+ME3	na	ME3																																								
+MED12	na	MED12																																								
+MED13	na	MED13																																								
+MEF2*	na	MEF2A	MEF2B	MEF2C	MEF2D																																					
+MEK*	na	MAP2K1	MAP2K2																																							
+MEK1*	na	MAP2K1																																								
+MEK1_2*	na	MAP2K1	MAP2K2																																							
+MEK2*	na	MAP2K2																																								
+MEL-18*	na	PCGF2																																								
+MELK	na	MELK																																								
+Menin*	na	MEN1																																								
+METAP2	na	METAP2																																								
+MFAP2	na	MFAP2																																								
+MFAP5	na	MFAP5																																								
+MGA	na	MGA																																								
+MGMT	na	MGMT																																								
+MI34*	na	MIR34A	MIR34B	MIR34C																																						
+MIF	na	MIF																																								
+MINK1	na	MINK1																																								
+MIR101*	na	MIR101-1	MIR101-2																																							
+MIR106B	na	MIR106B																																								
+MIR106B_25*	na	MIR106B																																								
+MIR106B_25*	na	MIR106B																																								
+MIR107	na	MIR107																																								
+MIR1-1	na	MIR1-1																																								
+MIR1-1	na	MIR1-1																																								
+MIR122	na	MIR122																																								
+MIR125B*	na	MIR125B1	MIR125B2																																							
+MIR125B1	na	MIR125B1																																								
+MIR125B2	na	MIR125B2																																								
+MIR133A*	na	MIR133A1	MIR133A2																																							
+MIR133B	na	MIR133B																																								
+MIR141	na	MIR141																																								
+MIR153*	na	MIR153-1	MIR153-2																																							
+MIR15A	na	MIR15A																																								
+MIR16-1	na	MIR16-1																																								
+MIR17	na	MIR17																																								
+MIR17-3P*	na	MIR17																																								
+MIR17-5P*	na	MIR17																																								
+miR-17-92 *	na	MIR17HG																																								
+MIR17-92*	na	MIR17HG																																								
+MIR17-92*	na	MIR17HG																																								
+MIR182	na	MIR182																																								
+MIR183	na	MIR183																																								
+MIR183	na	MIR183																																								
+MIR18A	na	MIR18A																																								
+MIR192	na	MIR192																																								
+MIR192	na	MIR192																																								
+MIR199A*	na	MIR199A1	MIR199A2																																							
+MIR19A	na	MIR19A																																								
+MIR19B1	na	MIR19B1																																								
+MIR200*	na	MIR200A	MIR200B	MIR200C	MIR141	MIR429																																				
+MIR200*	na	MIR200A	MIR200B	MIR200C	MIR141	MIR429																																				
+MIR200A	na	MIR200A																																								
+MIR200B	na	MIR200B																																								
+MIR200C	na	MIR200C																																								
+MIR203	na	MIR203																																								
+MIR203	na	MIR203																																								
+MIR204	na	MIR204																																								
+MIR204	na	MIR204																																								
+MIR205	na	MIR205																																								
+MIR205	na	MIR205																																								
+MIR20A	na	MIR20A																																								
+MIR21	na	MIR21																																								
+MIR21	na	MIR21																																								
+MIR214	na	MIR214																																								
+MIR221	na	MIR221																																								
+MIR222	na	MIR222																																								
+MIR23A	na	MIR23A																																								
+MIR23A	na	MIR23A																																								
+MIR23B	na	MIR23B																																								
+MIR23B	na	MIR23B																																								
+MIR25	na	MIR25																																								
+MIR27A	na	MIR27A																																								
+MIR29B*	na	MIR29B1	MIR29B*1	MIR29B2	MIR29B*2																																					
+MIR29B*	na	MIR29B1	MIR29B*1	MIR29B2	MIR29B*2																																					
+MIR29B1	na	MIR29B1	MIR29B*1																																							
+MIR30E	na	MIR30E																																								
+MIR30E	na	MIR30E																																								
+MIR31	na	MIR31																																								
+MIR31	na	MIR31																																								
+MIR34*	na	MIR34A	MIR34B	MIR34C																																						
+MIR34*	na	MIR34B	MIR34C																																							
+MIR34A	na	MIR34A																																								
+MIR34A	na	MIR34A																																								
+MIR34B	na	MIR34B																																								
+MIR34B	na	MIR34B																																								
+MIR34C	na	MIR34C																																								
+MIR34C	na	MIR34C																																								
+MIR372	na	MIR372																																								
+MIR372	na	MIR372																																								
+MIR373	na	MIR373																																								
+MIR373	na	MIR373																																								
+MIR374A	na	FTX																																								
+MIR374A*	na	FTX																																								
+MIR375	na	MIR375																																								
+MIR375	na	MIR375																																								
+MIR378	na	MIR378																																								
+MIR378	na	MIR378																																								
+MIR429	na	MIR429																																								
+MIR449*	na	MIR449A	MIR449B																																							
+MIR449A	na	MIR449A																																								
+MIR449A	na	MIR449A																																								
+MIR449B	na	MIR449B																																								
+MIR493	na	MIR493																																								
+MIR493	na	MIR493																																								
+MIR92A1	na	MIR92A1																																								
+MIR93	na	MIR93																																								
+MIR96	na	MIR96																																								
+MIRLET7A*	na	MIRLET7A1	MIRLET7A2	MIRLET7A3																																						
+MIZ1*	na	ZBTB17																																								
+MKNK1	na	MKNK1																																								
+MKNK2	na	MKNK2																																								
+MLC	na	MLC1																																								
+MLH1	na	MLH1																																								
+MLH1	na	MLH1																																								
+MLH3	na	MLH3																																								
+MLL2	na	MLL2																																								
+MLST8	na	MLST8																																								
+MLX	na	MLX																																								
+MLXIP	na	MLXIP																																								
+MMP1	na	MMP1																																								
+MMP1	na	MMP1	MMP3	MMP1																																						
+MMP1	na	MMP1																																								
+MMP11	na	MMP11																																								
+MMP11	na	MMP11																																								
+MMP12	na	MMP12																																								
+MMP13	na	MMP13																																								
+MMP13	na	MMP13																																								
+MMP13	na	MMP13																																								
+MMP14	na	MMP14																																								
+MMP14	na	MMP14																																								
+MMP14	na	MMP14																																								
+MMP15	na	MMP15																																								
+MMP16	na	MMP16																																								
+MMP2	na	MMP2																																								
+MMP2	na	MMP2																																								
+MMP2	na	MMP2																																								
+MMP3	na	MMP3																																								
+MMP3	na	MMP3																																								
+MMP3	na	MMP3																																								
+MMP9	na	MMP9																																								
+MMP9	na	MMP9																																								
+MMP9	na	MMP9																																								
+MNAT1	na	MNAT1																																								
+MNK*	na	MKNK1	MKNK2																																							
+MP1*	na	LAMTOR3																																								
+MPDZ	na	MPDZ																																								
+MPG	na	MPG																																								
+MPP4	na	MPP4																																								
+MPS1*	na	TTK																																								
+MRE11*	na	MRE11A	RE11B																																							
+MRG15*	na	MORF4L1																																								
+MRGBP	na	MRGBP																																								
+MRPL27	na	MRPL27																																								
+MRPS12	na	MRPS12																																								
+MRPS12	na	MRPS12																																								
+MRPS12	na	MRPS12																																								
+MSH2	na	MSH2																																								
+MSH2	na	MSH2																																								
+MSH3	na	MSH3																																								
+MSH6	na	MSH6																																								
+MSI1	na	MSI1																																								
+MSIN3*	na	SIN3A																																								
+MSK*	na	RPS6KA4	RPS6KA5																																							
+MSN	na	MSN																																								
+MST1	na	MST1																																								
+MTA1_2_3*	na	MTA1	MTA2	MTA3																																						
+MT-ATP6	na	MT-ATP6																																								
+MT-ATP6	na	MT-ATP6																																								
+MT-ATP8	na	MT-ATP8																																								
+MT-ATP8	na	MT-ATP8																																								
+MT-CO1	na	MT-CO1																																								
+MT-CO1	na	MT-CO1																																								
+MT-CO2	na	MT-CO2																																								
+MT-CO2	na	MT-CO2																																								
+MT-CO3	na	MT-CO3																																								
+MT-CO3	na	MT-CO3																																								
+MT-CYB	na	MT-CYB																																								
+MT-CYB	na	MT-CYB																																								
+MTERFD3	na	MTERFD3																																								
+MTHFD1	na	MTHFD1																																								
+MT-ND1	na	MT-ND1																																								
+MT-ND1	na	MT-ND1																																								
+MT-ND2	na	MT-ND2																																								
+MT-ND2	na	MT-ND2																																								
+MT-ND3	na	MT-ND3																																								
+MT-ND3	na	MT-ND3																																								
+MT-ND4	na	MT-ND4																																								
+MT-ND4	na	MT-ND4																																								
+MT-ND4L	na	MT-ND4L																																								
+MT-ND4L	na	MT-ND4L																																								
+MT-ND5	na	MT-ND5																																								
+MT-ND5	na	MT-ND5																																								
+MT-ND6	na	MT-ND6																																								
+MT-ND6	na	MT-ND6																																								
+MTOR	na	MTOR																																								
+MTOR	na	MTOR																																								
+MT-RNR1	na	MT-RNR1																																								
+MT-RNR2	na	MT-RNR2																																								
+MT-TA	na	MT-TA																																								
+MT-TC	na	MT-TC																																								
+MT-TD	na	MT-TD																																								
+MT-TE	na	MT-TE																																								
+MT-TF	na	MT-TF																																								
+MT-TI	na	MT-TI																																								
+MT-TK	na	MT-TK																																								
+MT-TL1	na	MT-TL1																																								
+MT-TM	na	MT-TM																																								
+MT-TN	na	MT-TN																																								
+MT-TP	na	MT-TP																																								
+MT-TQ	na	MT-TQ																																								
+MT-TS1	na	MT-TS1																																								
+MT-TT	na	MT-TT																																								
+MT-TV	na	MT-TV																																								
+MT-TW	na	MT-TW																																								
+MT-TY	na	MT-TY																																								
+MUS81 	na	MUS81																																								
+MUTH*	na	MUTYH																																								
+MXD1	na	MXD1																																								
+MXD3	na	MXD3																																								
+MXI1	na	MXI1																																								
+MYB	na	MYB																																								
+MYBL2	na	MYBL2																																								
+MYC	na	MYC																																								
+MYC	na	MYC																																								
+MYC	na	MYC																																								
+MYCN	na	MYCN																																								
+MYCN	na	MYCN																																								
+MYCN	na	MYCN																																								
+MYD88	na	MYD88																																								
+MYH1	na	MYH1																																								
+MYH10	na	MYH10																																								
+MYH11	na	MYH11																																								
+MYH13	na	MYH13																																								
+MYH14	na	MYH14																																								
+MYH15	na	MYH15																																								
+MYH2	na	MYH2																																								
+MYH3	na	MYH3																																								
+MYH4	na	MYH4																																								
+MYH6	na	MYH6																																								
+MYH7	na	MYH7																																								
+MYH7B	na	MYH7B																																								
+MYH8	na	MYH8																																								
+MYH9	na	MYH9																																								
+MYL1	na	MYL1																																								
+MYL10	na	MYL10																																								
+MYL12A	na	MYL12A																																								
+MYL12B	na	MYL12B																																								
+MYL2	na	MYL2																																								
+MYL3	na	MYL3																																								
+MYL4	na	MYL4																																								
+MYL5	na	MYL5																																								
+MYL6	na	MYL6																																								
+MYL6B	na	MYL6B																																								
+MYL7	na	MYL7																																								
+MYLL1	na	MYLL1																																								
+MYLPF	na	MYLPF																																								
+MYO9B	na	MYO9B																																								
+MyosinII*	na	MYH1	MYH2	MYH3	MYH4	MYH6	MYH7	MYH7B	MYH8	MYH9	MYH10	MYH11	MYH13	MYH14	MYH15																											
+MyosinLC*	na	MYL1	MYL2	MYL3	MYL4	MYL5	MYL6	MYL6B	MYL7	MYL10	MYL12A	MYL12B	MYLPF	MYLL1																												
+N1ICD*	na	NOTCH1																																								
+NAA10	na	NAA10																																								
+NAIP	na	NAIP																																								
+NARF	na	NARF																																								
+NBS1*	na	NBN																																								
+N-Cadhein*	na	CDH2																																								
+N-Cadherin*	na	CDH2																																								
+N-Cadherin*	na	CDH2																																								
+NCF1	na	NCF1																																								
+NCF2	na	NCF2																																								
+NCK1	na	NCK1																																								
+NCKAP1	na	NCKAP1																																								
+NDRG1	na	NDRG1																																								
+NDUFA1	na	NDUFA1																																								
+NDUFA10	na	NDUFA10																																								
+NDUFA11	na	NDUFA11																																								
+NDUFA12	na	NDUFA12																																								
+NDUFA13	na	NDUFA13																																								
+NDUFA2	na	NDUFA2																																								
+NDUFA3	na	NDUFA3																																								
+NDUFA4	na	NDUFA4																																								
+NDUFA5	na	NDUFA5																																								
+NDUFA6	na	NDUFA6																																								
+NDUFA7	na	NDUFA7																																								
+NDUFA8	na	NDUFA8																																								
+NDUFA9	na	NDUFA9																																								
+NDUFAB1	na	NDUFAB1																																								
+NDUFAF1	na	NDUFAF1																																								
+NDUFAF2	na	NDUFAF2																																								
+NDUFAF2	na	NDUFAF2																																								
+NDUFAF2	na	NDUFAF2																																								
+NDUFB1	na	NDUFB1																																								
+NDUFB10	na	NDUFB10																																								
+NDUFB11	na	NDUFB11																																								
+NDUFB2	na	NDUFB2																																								
+NDUFB3	na	NDUFB3																																								
+NDUFB4	na	NDUFB4																																								
+NDUFB5	na	NDUFB5																																								
+NDUFB6	na	NDUFB6																																								
+NDUFB7	na	NDUFB7																																								
+NDUFB8	na	NDUFB8																																								
+NDUFB9	na	NDUFB9																																								
+NDUFC1	na	NDUFC1																																								
+NDUFC2	na	NDUFC2																																								
+NDUFS1	na	NDUFS1																																								
+NDUFS2	na	NDUFS2																																								
+NDUFS3	na	NDUFS3																																								
+NDUFS4	na	NDUFS4																																								
+NDUFS5	na	NDUFS5																																								
+NDUFS6	na	NDUFS6																																								
+NDUFS7	na	NDUFS7																																								
+NDUFS8	na	NDUFS8																																								
+NDUFS8	na	NDUFS8																																								
+NDUFS8	na	NDUFS8																																								
+NDUFV1	na	NDUFV1																																								
+NDUFV2	na	NDUFV2																																								
+NDUFV3	na	NDUFV3																																								
+Nectin*	na	PVRL1																																								
+NEDD4	na	NEDD4																																								
+NEDD8	na	NEDD8																																								
+NEDL1*	na	HECW1	HECW2																																							
+NEIL1	na	NEIL1																																								
+NEIL2	na	NEIL2																																								
+NEIL3	na	NEIL3																																								
+NEK2	na	NEK2																																								
+NF-_kappa_B	na	NF-_KAPPA_B																																								
+NF-_kappa_B_p65*	na	RELA																																								
+NFAT*	na	NFATC1	NFATC3	NFATC2	NFATC4	NFAT5																																				
+NFAT1*	na	NFATC2																																								
+NFAT1_2*	na	NFATC2	NFATC1																																							
+NFAT1_2*	na	NFATC2	NFATC1																																							
+NFAT2*	na	NFATC1																																								
+NFAT3*	na	NFATC4																																								
+NFE2L2	na	NFE2L2																																								
+NFKB1	na	NFKB1																																								
+NFKB1_p50*	na	NFKB1																																								
+NFKBIA	na	NFKBIA																																								
+NFKBIA	na	NFKBIA																																								
+NFKBIA	na	NFKBIA																																								
+NICD*	na	NOTCH1	NOTCH2	NOTCH3	NOTCH4																																					
+NISCH	na	NISCH																																								
+NKD1	na	NKD1																																								
+NKX2-1	na	NKX2-1																																								
+NKX2-2	na	NKX2-2																																								
+NKX2-2	na	NKX2-2																																								
+NLK	na	NLK																																								
+NME*	na	NME1	NME2	NME3	NME4	NME5	NME6	NME7																																		
+NMT1	na	NMT1																																								
+NOD1	na	NOD1																																								
+NOS1	na	NOS1																																								
+NOS2	na	NOS2																																								
+NOS2	na	NOS2																																								
+NOS2	na	NOS2																																								
+NOS3	na	NOS3																																								
+NOTCH1	na	NOTCH1																																								
+NOTCH1	na	NOTCH1																																								
+NOX*	na	NOX1	CYBB	NOX3	NOX4	NOX5																																				
+NOX1	na	NOX1																																								
+NOX3	na	NOX3																																								
+NOX4	na	NOX4																																								
+NOX5	na	NOX5																																								
+NOXA*	na	NCF2	NOXA1																																							
+NOXA1	na	NOXA1																																								
+NOXO*	na	NCF1	NOXO1																																							
+NOXO1	na	NOXO1																																								
+NPAT	na	NPAT																																								
+NPM*	na	NPM1	NPM2	NPM3																																						
+NR4A1	na	NR4A1																																								
+NRF1	na	NRF1																																								
+NRF1	na	NRF1																																								
+NRF1	na	NRF1																																								
+NRON	na	NRON																																								
+NRP1	na	NRP1																																								
+NTH1*	na	NTHL1																																								
+NUMB	na	NUMB																																								
+N-WASP*	na	WASL																																								
+Occludin*	na	OCLN																																								
+Occludin*	na	OCLN																																								
+Occludin*	na	OCLN																																								
+Occludin_Claudin1_2_4_5_7_8_16*	na	OCLN	CLDN1	CLDN2	CLDN4	CLDN5	CLDN7	CLDN8	CLDN16																																	
+OGDH	na	OGDH																																								
+OGG1	na	OGG1																																								
+ORC1*	na	ORC1L																																								
+ORC2*	na	ORC2L																																								
+ORC3*	na	ORC3L																																								
+ORC4*	na	ORC4L																																								
+ORC5*	na	ORC5L																																								
+ORC6*	na	ORC6L																																								
+OS9	na	OS9																																								
+p101*	na	PIK3R5																																								
+p107*	na	RBL1																																								
+p110*	na	PIK3CA	PIK3CB	PIK3CD	PIK3CG																																					
+p110*	na	PIK3CA	PIK3CB	PIK3CD	PIK3CG																																					
+p110*	na	PIK3CA	PIK3CB	PIK3CD	PIK3CG																																					
+p110_beta__gamma_*	na	PIK3CB	PIK3CG																																							
+p120*	na	CTNND1	CTNND2																																							
+p130*	na	RBL2																																								
+p14ARF*	na	CDKN2A																																								
+p14ARF*	na	CDKN2A																																								
+p14ARF*	na	CDKN2A																																								
+p14INK4A*	na	CDKN2A																																								
+p14INK4A*	na	CDKN2A																																								
+p15INK4B*	na	CDKN2B																																								
+p15INK4B*	na	CDKN2B																																								
+p15INK4B*	na	CDKN2B																																								
+p16INK4A*	na	CDKN2A																																								
+p16INK4A*	na	CDKN2A																																								
+p18INK4C*	na	CDKN2C																																								
+p19INK4D*	na	CDKN2D																																								
+p19INK4D*	na	CDKN2D																																								
+p21CIP1*	na	CDKN1A																																								
+p21CIP1*	na	CDKN1A																																								
+p21CIP1*	na	CDKN1A																																								
+p27KIP1*	na	CDKN1B																																								
+p27KIP1*	na	CDKN1B																																								
+p27KIP1*	na	CDKN1B																																								
+p300*	na	EP300																																								
+p38*	na	MAPK11	MAPK12	MAPK13	MAPK14																																					
+p400*	na	EP400																																								
+p53*	na	TP53																																								
+p53*	na	TP53																																								
+p53*	na	TP53																																								
+p57KIP2*	na	CDKN1C																																								
+p68*	na	POLD3																																								
+p70_alpha_*	na	RPS6KB1																																								
+p70_beta_*	na	RPS6KB2																																								
+p73*	na	TP73																																								
+p73*	na	TP73																																								
+p85*	na	PIK3R1	PIK3R2	PIK3R3																																						
+PABP1*	na	PABPC1	PABPC3	PABP5																																						
+PAK*	na	PAK1	PAK2	PAK3																																						
+PAK1	na	PAK1																																								
+PAK2	na	PAK2																																								
+PAK3	na	PAK3																																								
+PAK4	na	PAK4																																								
+PALS1*	na	MPP5																																								
+PALS1*	na	MPP5	INADL																																							
+PALS1*	na	MPP5																																								
+PAM*	na	MYCBP2																																								
+PANK1	na	PANK1																																								
+PANK1	na	PANK1																																								
+PAR1*	na	F2R																																								
+PAR1_sub_TRUNC_endsub_*	na	F2R																																								
+PAR3*	na	PARD3																																								
+PAR3*	na	PARD3																																								
+PAR3*	na	PARD3																																								
+PAR6*	na	PARD6A	PARD6B	PARD6G																																						
+PARD6A	na	PARD6A																																								
+PARD6A	na	PARD6A																																								
+PARD6A	na	PARD6A																																								
+PARD6B	na	PARD6B																																								
+PARD6G	na	PARD6G																																								
+PARG	na	PARG																																								
+PARP*	na	PARP1	PARP2	PARP3	PARP4	PARP6	TIPARP	PARP8	PARP9	PARP10	PARP11	PARP12	PARP14	PARP15	PARP16																											
+PARP1	na	PARP1																																								
+PARP2	na	PARP2																																								
+PARP3	na	PARP3																																								
+PATJ*	na	INADL																																								
+PATJ*	na	INADL																																								
+PATJ*	na	INADL																																								
+PAX6	na	PAX6																																								
+PAX6	na	PAX6																																								
+PAX9	na	PAX9																																								
+PAX9	na	PAX9																																								
+PBK	na	PBK																																								
+P-Cadhein*	na	CDH3																																								
+P-Cadherin*	na	CDH3																																								
+P-Cadherin*	na	CDH3																																								
+PCAF*	na	TAF5L	KAT2B	KAT2A	EP300																																					
+PCNA	na	PCNA																																								
+PCNA	na	PCNA																																								
+PCR1	na	DPCR1																																								
+PCR2	na	GPR12																																								
+PDCD4	na	PDCD4																																								
+PDCD4	na	PDCD4																																								
+PDHA*	na	PDHA1	PDHA2																																							
+PDHA1	na	PDHA1																																								
+PDHA2	na	PDHA2																																								
+PDHB	na	PDHB																																								
+PDHX	na	PDHX																																								
+PDK1	na	PDK1																																								
+PDK1	na	PDK1																																								
+PDK1	na	PDK1																																								
+PDK2	na	PDK2																																								
+PDK3	na	PDK3																																								
+PDK3	na	PDK3																																								
+PDK3	na	PDK3																																								
+PDK4	na	PDK4																																								
+PDK4	na	PDK4																																								
+PDK4	na	PDK4																																								
+PDP1	na	PDP1																																								
+PDPK1	na	PDPK1																																								
+PDPR	na	CASC5																																								
+PERP	na	PERP																																								
+PFK*	na	PFKP	PFKL	PFKM																																						
+PFKFB*	na	PFKFB1	PFKFB2	PFKFB3	PFKFB4																																					
+PFKFB*	na	PFKFB1	PFKFB2	PFKFB3	PFKFB4																																					
+PFKFB1	na	PFKFB1																																								
+PFKFB2	na	PFKFB2																																								
+PFKFB3	na	PFKFB3																																								
+PFKFB3	na	PFKFB3																																								
+PFKFB3	na	PFKFB3																																								
+PFKFB4	na	PFKFB4																																								
+PFKFB4	na	PFKFB4																																								
+PFKFB4	na	PFKFB4																																								
+PFKL	na	PFKL																																								
+PFKM	na	PFKM																																								
+PFKM	na	PFKM																																								
+PFKM	na	PFKM																																								
+PFKP	na	PFKP																																								
+PFN1	na	PFN1																																								
+PFTK*	na	CDK14																																								
+PGAM*	na	PGAM1	PGAM2	PGAM4																																						
+PGAM1	na	PGAM1																																								
+PGAM2	na	PGAM2																																								
+PGAM4	na	PGAM4																																								
+PGD	na	PGD																																								
+PGGT1B	na	PGGT1B																																								
+PGK1	na	PGK1																																								
+PGK1	na	PGK1																																								
+PGK1	na	PGK1																																								
+PGK2	na	PGK2																																								
+PGLS	na	PGLS																																								
+ph_beta_-catenin stability	na	_beta_-catenin stability																																								
+phActin fibers	na	Actin fibers																																								
+phActin polymerization	na	Actin polymerization																																								
+phAdherens junctions	na	Adherens junctions																																								
+phAngiogenesis	na	Angiogenesis																																								
+phAngiogenesis	na	Angiogenesis																																								
+phAngiogenesis	na	Angiogenesis																																								
+phApoptosis	na	Apoptosis																																								
+phApoptosis	na	Apoptosis																																								
+phApoptosis	na	Apoptosis																																								
+phApoptosis	na	Apoptosis																																								
+phApoptosis	na	Apoptosis																																								
+phApoptosis	na	Apoptosis																																								
+phAutophagy	na	Autophagy																																								
+phAutophagy	na	Autophagy																																								
+phBER DNA Repair	na	BER DNA Repair																																								
+phBiomass production	na	Biomass production																																								
+phBMP pathway	na	BMP pathway																																								
+PHC1	na	PHC1																																								
+phCancer progression ER-neg	na	Cancer progression ER-neg																																								
+phCapped RNA translation	na	Capped RNA translation																																								
+phCell contraction	na	Cell contraction																																								
+phCell cycle	na	Cell cycle																																								
+phCell cycle pathway	na	Cell cycle pathway																																								
+phCell cycle pathway	na	Cell cycle pathway																																								
+phCell cycle pathway	na	Cell cycle pathway																																								
+phCell cycle pathway	na	Cell cycle pathway																																								
+phCell cycle~arrest	na	Cell cycle~arrest																																								
+phCell death	na	Cell death																																								
+phCell migration	na	Cell migration																																								
+phCell migration	na	Cell migration																																								
+phCell survival	na	Cell survival																																								
+phCell-cell adhesions	na	Cell-cell adhesions																																								
+phCell-matrix adhesions	na	Cell-matrix adhesions																																								
+phCentrosome positioning	na	Centrosome positioning																																								
+phChromatin remodeling	na	Chromatin remodeling																																								
+phChromosome	na	Chromosome																																								
+phChromosome integrity and DSB repair	na	Chromosome integrity and DSB repair																																								
+phChromosome segregation	na	Chromosome segregation																																								
+phClathrin-mediated endocytosis	na	Clathrin-mediated endocytosis																																								
+phCpG hyper-methylation	na	CpG hyper-methylation																																								
+phCytoskeleton	na	Cytoskeleton																																								
+phCytoskeleton	na	Cytoskeleton																																								
+phCytoskeleton remodeling	na	Cytoskeleton remodeling																																								
+PHD*	na	EGLN1	EGLN2	EGLN3																																						
+phDegradation	na	Degradation																																								
+phDegradation complex WNT canoncical pathway	na	Degradation complex WNT canoncical pathway																																								
+phDesmosomes	na	Desmosomes																																								
+phDifferentiation	na	Differentiation																																								
+phDisruption of cell adhesion	na	Disruption of cell adhesion																																								
+phDNA repair	na	DNA repair																																								
+phDNA replicarion	na	DNA replicarion																																								
+phDNA replication	na	DNA replication																																								
+phDNA synthesis	na	DNA synthesis																																								
+phDNA~damage	na	DNA~damage																																								
+phDNA~fragmentation	na	DNA~fragmentation																																								
+phDNA~integrity	na	DNA~integrity																																								
+phEarly to mid-G1 phase	na	Early to mid-G1 phase																																								
+phECM	na	ECM																																								
+phECM or cell-cell contact	na	ECM or cell-cell contact																																								
+phEMT	na	EMT																																								
+phEMT	na	EMT																																								
+phEndosomal trafficking	na	Endosomal trafficking																																								
+phEstablishment of cell polarity	na	Establishment of cell polarity																																								
+phExocytosis	na	Exocytosis																																								
+phFilopodium formation	na	Filopodium formation																																								
+phG0 phase	na	G0 phase																																								
+phG0 phase	na	G0 phase																																								
+phG1 phase	na	G1 phase																																								
+phG2 phase	na	G2 phase																																								
+phG2 phase	na	G2 phase																																								
+phG2_M phase	na	G2_M phase																																								
+phG2_M phase arrest	na	G2_M phase arrest																																								
+phGap junctions	na	Gap junctions																																								
+phGrowth arrest	na	Growth arrest																																								
+phGrowth arrest	na	Growth arrest																																								
+phHigh cell density	na	High cell density																																								
+phImmune response~to tumor cell	na	Immune response~to tumor cell																																								
+phImmune system	na	Immune system																																								
+phIntracellular sequestering~of iron ion	na	Intracellular sequestering~of iron ion																																								
+phJNK pathway	na	JNK pathway																																								
+phLamellipodium formation	na	Lamellipodium formation																																								
+phLate G1 phase	na	Late G1 phase																																								
+PHLDA3	na	PHLDA3																																								
+PHLDA3	na	PHLDA3																																								
+PHLDA3	na	PHLDA3																																								
+phLMP	na	LMP																																								
+PHLPP*	na	PHLPP1	PHLPP2																																							
+PHLPP*	na	PHLPP1	PHLPP2																																							
+PHLPP*	na	PHLPP1	PHLPP2																																							
+phLysosome membrane~integrity	na	Lysosome membrane~integrity																																								
+phM phase	na	M phase																																								
+phM phase exit	na	M phase exit																																								
+phMAPK pathway	na	MAPK pathway																																								
+phMAPK pathway	na	MAPK pathway																																								
+phMAPK pathway	na	MAPK pathway																																								
+phMAPK pathway	na	MAPK pathway																																								
+phMAPK pathway	na	MAPK pathway																																								
+phMAPK pathway	na	MAPK pathway																																								
+phMembrane spreading	na	Membrane spreading																																								
+phMetastasis	na	Metastasis																																								
+phMetastasis	na	Metastasis																																								
+phMicrotubele polymerisation	na	Microtubele polymerisation																																								
+phMicrotubule stability	na	Microtubule stability																																								
+phMicrotubules	na	Microtubules																																								
+phMicrotubules	na	Microtubules																																								
+phMitochondria dysfunction	na	Mitochondria dysfunction																																								
+phMitochondria metabolism	na	Mitochondria metabolism																																								
+phMitochondria outer~membrane integrity	na	Mitochondria outer~membrane integrity																																								
+phMitochondrial~DNA damage	na	Mitochondrial~DNA damage																																								
+phMOMP	na	MOMP																																								
+phMOMP	na	MOMP																																								
+phmRNA translation	na	mRNA translation																																								
+phNecroptosis	na	Necroptosis																																								
+phNF-_kappa_B pathway	na	NF-_kappa_B pathway																																								
+phNF-_kappa_B pathway	na	NF-_kappa_B pathway																																								
+phNo DNA replicarion	na	No DNA replicarion																																								
+phNO production	na	NO production																																								
+phNotch pathway	na	Notch pathway																																								
+phNotch pathway	na	Notch pathway																																								
+phNotch pathway	na	Notch pathway																																								
+phOxidative stress	na	Oxidative stress																																								
+php53 pathway	na	p53 pathway																																								
+php53-target genes	na	p53-target genes																																								
+phPhagocytes	na	Phagocytes																																								
+phPI3K AKT MTOR pathway	na	PI3K AKT MTOR pathway																																								
+phPI3K Akt MTOR pathway	na	PI3K Akt MTOR pathway																																								
+phPI3K AKT MTOR pathway	na	PI3K AKT MTOR pathway																																								
+phPI3K AKT MTOR pathway	na	PI3K AKT MTOR pathway																																								
+phPI3K AKT MTOR pathway	na	PI3K AKT MTOR pathway																																								
+phPI3K Akt MTOR pathway	na	PI3K Akt MTOR pathway																																								
+phProliferation	na	Proliferation																																								
+phProliferation	na	Proliferation																																								
+phProliferation	na	Proliferation																																								
+phProliferation	na	Proliferation																																								
+phProsurvival	na	Prosurvival																																								
+phRAS activation	na	RAS activation																																								
+phRAS activation	na	RAS activation																																								
+phRecycling 	na	Recycling 																																								
+phRenin-angiotensin system	na	Renin-angiotensin system																																								
+phReplication error	na	Replication error																																								
+phS phase	na	S phase																																								
+phS phase	na	S phase																																								
+phSelf-renewal	na	Self-renewal																																								
+phSenescence	na	Senescence																																								
+phSonic hedgehog pathway	na	Sonic hedgehog pathway																																								
+phSonic hedgehog pathway	na	Sonic hedgehog pathway																																								
+phSonic hedgehog pathway	na	Sonic hedgehog pathway																																								
+phSonic hedgehog pathway	na	Sonic hedgehog pathway																																								
+phSTAT3 pathway	na	STAT3 pathway																																								
+phStem cell/progenitor cell maintenance and proliferation	na	Stem cell/progenitor cell maintenance and proliferation																																								
+phStress fiber formation	na	Stress fiber formation																																								
+phSurvival	na	Survival																																								
+phTCF_LEF  transcriptional_br_regulation	na	TCF_LEF  transcriptional_br_regulation																																								
+phTelomere maintenance	na	Telomere maintenance																																								
+phTGF-_beta_  pathway	na	TGF-_beta_  pathway																																								
+phTGF_beta_ pathway	na	TGF_beta_ pathway																																								
+phTGF-_beta_ pathway	na	TGF-_beta_ pathway																																								
+phTGF-_beta_ pathway	na	TGF-_beta_ pathway																																								
+phTGF-_beta_ pathway	na	TGF-_beta_ pathway																																								
+phTight junctions	na	Tight junctions																																								
+phTight junctions	na	Tight junctions																																								
+phToxic compounds	na	Toxic compounds																																								
+phTrail pathway	na	Trail pathway																																								
+phTranscription	na	Transcription																																								
+phTranscription of WNT-target genes	na	Transcription of WNT-target genes																																								
+phTranscription regulation	na	Transcription regulation																																								
+phTumor invasion	na	Tumor invasion																																								
+phUbiquitination	na	Ubiquitination																																								
+phWNT canonical pathway	na	WNT canonical pathway																																								
+phWNT canonical pathway	na	WNT canonical pathway																																								
+phWNT canonical pathway	na	WNT canonical pathway																																								
+phWNT canonical pathway	na	WNT canonical pathway																																								
+phWNT canonical pathway	na	WNT canonical pathway																																								
+phWNT canonical pathway	na	WNT canonical pathway																																								
+phWNT canonical pathway nucleus	na	WNT canonical pathway nucleus																																								
+phWnt canonical signaling	na	Wnt canonical signaling																																								
+phWNT non canonical pathway	na	WNT non canonical pathway																																								
+phWNT pathway	na	WNT pathway																																								
+phWNT3 stimulation	na	WNT3 stimulation																																								
+phWNT5-signaling	na	WNT5-signaling																																								
+PI3K family*	na	PIK3CA	PIK3C2A	PIK3C2B	PIK3R5																																					
+PI4KII_alpha_*	na	PI4K2A	PI4K2B																																							
+PIAS1	na	PIAS1																																								
+PIK3C2A	na	PIK3C2A																																								
+PIK3C2B	na	PIK3C2B																																								
+PIK3C3	na	PIK3C3																																								
+PIK3CA	na	PIK3CA																																								
+PIK3R5	na	PIK3R5																																								
+PIM*	na	PIM1	PIM2	PIM3																																						
+PIM1	na	PIM1																																								
+PIM2	na	PIM2																																								
+PIM3	na	PIM3																																								
+PIN1	na	PIN1																																								
+PINK1	na	PINK1																																								
+PINK1	na	PINK1																																								
+PIP5K1*	na	PIP5K1A	PIP5K1B	PIP5K1C																																						
+PIP5K1A	na	PIP5K1A																																								
+PIP5K1B	na	PIP5K1B																																								
+PIP5K1C	na	PIP5K1C																																								
+PIP5KI_beta_*	na	PIP5K1A	PIP5K1B	PIP5K1C																																						
+PIPKI_gamma_i2*	na	PIP5KIC	PIP5K1C																																							
+PIRH2*	na	RCHY1																																								
+PK*	na	PKLR	PKM																																							
+PKA*	na	PRKACA	PRKACB																																							
+PKA_C*	na	PRKACA	PRKACB	PRKACG	PRKAA1	PRKAA2																																				
+PKA_R*	na	PRKAB1	PRKAB2																																							
+PKA_R*	na	PRKAB1	PRKAB2	PRKAG1	PRKAG2	PRKAG3	PRKAR1A	PRKAR1B	PRKAR2A	PRKAR2B																																
+PKA_R*	na	PRKAB1	PRKAB2																																							
+PKC*	na	PRKCA	PRKCB	PRKCE	PRKCG	PRKCZ	PRKCD	PRKCH	PRKCQ	PRKCI																																
+PKD*	na	PRKD1	PRKD2	PRKD3																																						
+PKD1	na	PKD1																																								
+PKLR	na	PKLR																																								
+PKM2	na	PKM																																								
+PKM2	na	PKM																																								
+PKM2*	na	PKM																																								
+PKMYT1	na	PKMYT1																																								
+PKN1	na	PKN1																																								
+PLA2G4A	na	PLA2G4A																																								
+Plakoglobin binding partners*	na	DSC1	DSC2	DSC3	DSG1	DSG2	DSG3	JUP	PKP2	ERBB2	DSP	TCF4	ARHGDIA	CTNNA1	APC	CDH1	CDH2	CDH3	CDH5																							
+Plakoglobin*	na	JUP																																								
+Plakophilin*	na	PKP1	PKP2	PKP3	PKP4																																					
+Plakophilin1*	na	PKP1																																								
+Plakophilin2 binding partners*	na	DSC1	DSC2	DSG1	DSG2	JUP	DSP	VIM	KRT18	KRT14	KRT8	KRT5																														
+Plakophilin2*	na	PKP2																																								
+Plakophilin3*	na	PKP3																																								
+Plakophilin3*	na	PKP3																																								
+Plakophilin3*	na	PKP3																																								
+Plakophilin4*	na	PKP4																																								
+PLAU	na	PLAU																																								
+PLC-_beta_*	na	PLCB1	PLCB2	PLCB3	PLCB4																																					
+PLCE1	na	PLCE1																																								
+PLCG1	na	PLCG1																																								
+PLD1	na	PLD1																																								
+PLK1	na	PLK1	PLK2	PLK3	PLK4																																					
+PLK1	na	PLK1																																								
+PLK1	na	PLK1	PLK2	PLK3	PLK4																																					
+PMAIP1	na	PMAIP1																																								
+PMAIP1	na	PMAIP1																																								
+PMAIP1	na	PMAIP1																																								
+PML	na	PML																																								
+PMS1	na	PMS1																																								
+PMS2	na	PMS2																																								
+PNK*	na	PNKP																																								
+PNRC2	na	PNRC2																																								
+POLA*	na	POLA1	POLA2																																							
+POLA*	na	POLA1	POLA2																																							
+POLB	na	POLB																																								
+POLD*	na	POLD1	POLD2	POLD3	POLD4																																					
+POLE*	na	POLE	POLE2	POLE3	POLE4																																					
+POLH	na	POLH																																								
+POLI	na	POLI																																								
+POLK	na	POLK																																								
+POLL	na	POLL																																								
+POLM	na	POLM																																								
+POLN	na	POLN																																								
+POLQ	na	POLQ																																								
+POLRMT	na	POLRMT																																								
+POLZ*	na	REV3L																																								
+Pontin*	na	RUVBL1																																								
+POSH*	na	SH3RF1																																								
+PP2_C*	na	PPP2CA	PPP2CB																																							
+PP2A*	na	PPP2CB	PPP2R1A	PPP2R4	PPP2CA	PPP2R5C	PPP2R5D	PPP2R2B	PPP2R5A	PPP2R2A	PPP2R5E	PPP2R1B	PPP2R2C	PPP2R5B	PPP2R3A	PPP2R2D	PPP2R3B																									
+PP2A_A*	na	PPP2R1A	PPP2R1B																																							
+PP2A_B*	na	PPP2R2A	PPP2R2B	PPP2R2C	PPP2R2D	PPP2R3A	PPP2R3B	PPP2R3C	PPP2R4	PPP2R5A	PPP2R5B	PPP2R5C	PPP2R5D	PPP2R5E																												
+PP2A_B55_alpha_*	na	PPP2R2A																																								
+PP2A_C*	na	PPP2CA	PPP2CB																																							
+PP2B_B*	na	PPP3R1	PPP3R2																																							
+PP2B_C*	na	PPP3CA	PPP3CB	PPP3CC																																						
+PPARG	na	PPARG																																								
+PPARGC1A	na	PPARGC1A																																								
+PPARGC1A	na	PPARGC1A																																								
+PPARGC1A	na	PPARGC1A																																								
+PPARGC1B	na	PPARGC1B																																								
+PPARGC1B	na	PPARGC1B																																								
+PPAT	na	PPAT																																								
+PPIA	na	PPIA																																								
+PPID	na	PPID																																								
+PPM1D	na	PPM1D																																								
+PPOX	na	PPOX																																								
+PPP1C*	na	PPP1CA	PPP1CB	PPP1CC																																						
+PPP1CA	na	PPP1CA																																								
+PPP1CB	na	PPP1CB																																								
+PPP1CC	na	PPP1CC																																								
+PPP1R*	na	PPP1R1A	PPP1R1C	PPP1R2	PPP1R3D	PPP1R1B	PPP1R3A	PPP1R3B	PPP1R3C	PPP1R3E	PPP1R3F	PPP1R3G	PPP1R7	PPP1R8	PPP1R9A	PPP1R9B	PPP1R10	PPP1R11	PPP1R12A	PPP1R12B	PPP1R12C	PPP1R13B	PPP1R14A	PPP1R14B	PPP1R14C	PPP1R14D	PPP1R15A	PPP1R15B	PPP1R15A	PPP1R16A	PPP1R16B	PPP1R17	PPP1R18	PPP1R21	PPP1R26	PPP1R27	PPP1R32	PPP1R35	PPP1R36	PPP1R37	PPP1R39	PPP1R42
+PPP1R13B	na	PPP1R13B																																								
+PPP3CB	na	PPP3CB																																								
+PPP3CB_sub_trunc_endsub_*	na	PPP3CB																																								
+PPP3R*	na	PPP3R1	PPP3PR2	PPP3R2																																						
+PPP3R1	na	PPP3R1																																								
+PPP5C	na	PPP5C																																								
+PPP6C	na	PPP6C																																								
+PR55_alpha_*	na	PPP2R2A																																								
+PR65_A*	na	PPP2R1A																																								
+PRAS40*	na	AKT1S1																																								
+PRDX*	na	PRDX1	PRDX2																																							
+PRDX1	na	PRDX1																																								
+PRDX1	na	PRDX1																																								
+PRDX1	na	PRDX1																																								
+PRDX2	na	PRDX2																																								
+PRDX2	na	PRDX2																																								
+PRDX3	na	PRDX3																																								
+PRDX3	na	PRDX3																																								
+PRDX3	na	PRDX3																																								
+pre-mRNA~APO*	na	C9orf3																																								
+pre-mRNA~CDC20B*	na	CDC20B																																								
+pre-mRNA~MCM7*	na	MCM7																																								
+pre-mRNA~PANK1*	na	PANK1																																								
+PREX*	na	PREX1	PREX2																																							
+PRICKLE1	na	PRICKLE1																																								
+PRIM*	na	PRIM1	PRIM2																																							
+PRKAA*	na	PRKAA1	PRKAA2																																							
+PRKAB1	na	PRKAB1																																								
+PRKAB2	na	PRKAB2																																								
+PRKAC*	na	PRKACA	PRKACB	PRKACG																																						
+PRKAG*	na	PRKAG1	PRKAG2	PRKAG3																																						
+PRKCA	na	PRKCA																																								
+PRKCB	na	PRKCB																																								
+PRKCD	na	PRKCD																																								
+PRKCE	na	PRKCE																																								
+PRKCE	na	PRKCE																																								
+PRKCE	na	PRKCE																																								
+PRKCE_ZEB1_ZEB2*	na	ZEB1	ZEB2	PRKCE																																						
+PRKCG	na	PRKCG																																								
+PRKCZ	na	PRKCZ																																								
+PRKDC	na	PRKDC																																								
+Pro HB-EGF*	na	HBEGF																																								
+promoter_reion	na	PROMOTER_REGION																																								
+PROTOR*	na	PRR5																																								
+PRPS1	na	PRPS1																																								
+PRPS1L1	na	PRPS1L1																																								
+PRPS2	na	PRPS2																																								
+PRR*	na	ATP6AP2	ATP6AP1																																							
+PSMA4	na	PSMA4																																								
+PTCH*	na	PTCH1	PTCH2																																							
+PTCH1	na	PTCH1	PTCH2																																							
+PTCH1	na	PTCH1	PTCH2																																							
+PTEN	na	PTEN																																								
+PTEN	na	PTEN																																								
+PTEN	na	PTEN																																								
+PTGS2	na	PTGS2																																								
+PTHR*	na	PTH1R	PTH26																																							
+PTK2	na	PTK2																																								
+PTK2B	na	PTK2B																																								
+PTK6	na	PTK6																																								
+PTMA	na	PTMA																																								
+PTPN11	na	PTPN11																																								
+PTPRF	na	PTPRF																																								
+PURALPHA*	na	PURA																																								
+PXN	na	PXN																																								
+PYCARD	na	PYCARD																																								
+PYCARD	na	PYCARD																																								
+PYCARD	na	PYCARD																																								
+PYGO*	na	PYGO1																																								
+RAB23	na	RAB23																																								
+RAC1	na	RAC1																																								
+RAC1_2*	na	RAC1	RAC2																																							
+Rac1_GAPs*	na	ARHGAP1	ARHGAP9	ARHGAP12	SRGAP3	ARHGAP24	ARHGAP32	BCR	RALBP1	ABR	CHN2																															
+Rac1_GDIs*	na	ARHGDIB																																								
+Rac1_GEFs*	na	ARHGEF2	ARHGEF4	ECT2	RAP1GDS1	VAV2	VAV1	MCF2	DEF6	TIAM1																																
+RAC2	na	RAC2																																								
+RACGAP1	na	RACGAP1																																								
+RACK1*	na	GNB2L1																																								
+RAD1	na	RAD1																																								
+RAD17	na	RAD17																																								
+RAD18	na	RAD18																																								
+RAD23*	na	RAD23A	RAD23B																																							
+RAD5*	na	SHPRH																																								
+RAD50	na	RAD50																																								
+RAD51	na	RAD51																																								
+RAD51	na	RAD51	RAD51L1	RAD51C	RAD51L3																																					
+RAD51	na	RAD51																																								
+RAD51AP1	na	RAD51AP1																																								
+RAD52	na	RAD52																																								
+RAD54*	na	RAD54B	RAD54L																																							
+RAD54L	na	RAD54L																																								
+RAD6*	na	UBE2A	UBE2B																																							
+RAD6B*	na	UBE2B																																								
+RAD6B*	na	UBE2B																																								
+RAD9*	na	RAD9A	RAD9B																																							
+RAF1	na	RAF1																																								
+RALA	na	RALA																																								
+RALBP1	na	RALBP1																																								
+RAP1GDS1	na	RAP1GDS1																																								
+RAS*	na	RASA1	RASA2	RASA3	RASA4	HRAS	KRAS	NRAS																																		
+RASA1	na	RASA1																																								
+RASA4	na	RASA4																																								
+RASGRP1	na	RASGRP1																																								
+RB1	na	RB1																																								
+RBBP4	na	RBBP4																																								
+RBBP4_7*	na	RBBP4	RBBP7																																							
+RBBP5	na	RBBP5																																								
+RBBP8	na	RBBP8																																								
+RBL1	na	RBL1																																								
+RBM25	na	RBM25																																								
+RBX1	na	RBX1																																								
+R-Cadhein*	na	CDH4																																								
+R-Cadherin*	na	CDH4																																								
+R-Cadherin*	na	CDH4																																								
+RCAN*	na	RCAN1	RCAN2	RCAN3																																						
+RDX	na	RDX																																								
+RECQL5 	na	RECQL5																																								
+REF*	na	ALYREF																																								
+RELA	na	RELA																																								
+REN*	na	KCTD11																																								
+Reptin*	na	RUVBL2																																								
+REV1	na	REV1																																								
+RFC*	na	RFC1	RFC2	RFC3	RFC4	RFC5																																				
+RFC5	na	RFC5																																								
+RFK	na	RFK																																								
+RGS19	na	RGS19																																								
+RGS3	na	RGS3																																								
+RHEB	na	RHEB																																								
+RHOA	na	RHOA																																								
+RhoA_and_CDC42_GDIs*	na	ARHGDIA	ARHGDIB	ARHGDIG																																						
+RhoA_B*	na	RHOB	RHOA																																							
+RhoA_cytoskeletal_effectos*	na	DIAPH1	ROCK1	RHPN1																																						
+RhoA_GAPs*	na	MYO9B	ARHGAP1	ARHGAP26	ARHGAP32	ARHGAP35																																				
+RhoA_GEFs*	na	ARHGEF1	ARHGEF2	ARHGEF3	ARHGEF4	ARHGEF10L	ARHGEF12	MCF2L	NGEF	ECT2	RAP1GDS1	VAV2																														
+RHOB	na	RHOB																																								
+RhoB_cytoskeletal_effectos*	na	DIAPH1	DIAPH3	RHPN2																																						
+RhoB_GDIs*	na	ARHGDIA	ARHGDIG																																							
+RhoB_GEFs*	na	ARHGEF2	ARHGEF3	ARHGEF10L																																						
+RHPN1	na	RHPN1																																								
+RHPN2	na	RHPN2																																								
+RICTOR	na	RICTOR																																								
+RING1	na	RING1																																								
+RIPK1	na	RIPK1																																								
+RIPK3	na	RIPK3																																								
+RIPK4	na	RIPK4																																								
+RMI1	na	RMI1																																								
+RNA	na	RNA5-8S1																																								
+RNF11	na	RNF11																																								
+RNF146	na	RNF146																																								
+RNF168	na	RNF168																																								
+RNF41	na	RNF41																																								
+RNF8	na	RNF8																																								
+RNPS1	na	RNPS1																																								
+ROCK*	na	ROCK1	ROCK2																																							
+ROCK1	na	ROCK1																																								
+ROCK2	na	ROCK2																																								
+ROR2	na	ROR2																																								
+RPA1	na	RPA1																																								
+RPA2	na	RPA2																																								
+RPA2	na	RPA2																																								
+RPA3	na	RPA3																																								
+RPB2*	na	POLR2B																																								
+RPE	na	RPE																																								
+RPIA	na	RPIA																																								
+RPL32	na	RPL32																																								
+RPL8	na	RPL8																																								
+RPS6	na	RPS6																																								
+RPTOR	na	RPTOR																																								
+RQCD1	na	RQCD1																																								
+RRM1	na	RRM1																																								
+RRM1	na	RRM1																																								
+RRM2	na	RRM2																																								
+RRM2	na	RRM2																																								
+RRM2*	na	RRM2B	RRM2																																							
+RRM2B	na	RRM2B																																								
+RRM2B	na	RRM2B																																								
+RRM2B	na	RRM2B																																								
+RSK*	na	RPS6KA1	RPS6KA3	RPS6KA2	RPS6KA6	RPS6KA4	RPS6KA4	PIM1	RPS6KA5																																	
+RSK1*	na	RPS6KA1																																								
+RSK2*	na	RPS6KA2																																								
+RSPO1	na	RSPO1																																								
+RSPO1-4*	na	RSPO1	RSPO2	RSPO3	RSPO4																																					
+RSPO3	na	RSPO3																																								
+RTK*	na	EGFR	ERBB2	ERBB3	ERBB4	FGFR1	FGFR2	FGFR3	FGFR4	FLT1	FLT3	FLT4	PDGFRA	PDGFRB	RTKN																											
+RTKN	na	RTKN																																								
+RUNX2	na	RUNX2																																								
+RUNX2	na	RUNX2																																								
+RUNX2	na	RUNX2																																								
+RUNX3	na	RUNX3																																								
+RYBP	na	RYBP																																								
+S100A7	na	S100A7																																								
+S100A7	na	S100A7																																								
+S100A9	na	S100A9																																								
+S100A9	na	S100A9																																								
+S6K*	na	RPS6KB1	RPS6KB2																																							
+SAP18	na	SAP18																																								
+SARA*	na	ZFYVE9																																								
+SART1	na	SART1																																								
+SCC1*	na	RAD21																																								
+SCO1	na	SCO1																																								
+SCO2	na	SCO2																																								
+SCO2	na	SCO2																																								
+SCO2	na	SCO2																																								
+SDC1	na	SDC1																																								
+SDHA	na	SDHA																																								
+SDHAF1	na	SDHAF1																																								
+SDHAF2	na	SDHAF2																																								
+SDHB	na	SDHB																																								
+SDHB	na	SDHB																																								
+SDHB	na	SDHB																																								
+SDHC	na	SDHC																																								
+SDHC	na	SDHC																																								
+SDHC	na	SDHC																																								
+SDHD	na	SDHD																																								
+SDHD	na	SDHD																																								
+SDHD	na	SDHD																																								
+SEC24B	na	SEC24B																																								
+Securin*	na	PTTG1																																								
+SEF*	na	IL17RD																																								
+Separin*	na	ESPL1																																								
+SERPINE1	na	SERPINE1																																								
+SERTAD1	na	SERTAD1																																								
+SESN1	na	SESN1																																								
+SESN1	na	SESN1																																								
+SESN1	na	SESN1																																								
+SESN2	na	SESN2																																								
+SESN2	na	SESN2																																								
+SESN2	na	SESN2																																								
+SFN	na	SFN																																								
+SFPQ	na	SFPQ																																								
+SFRP1	na	SFRP1																																								
+SFRP1	na	SFRP1																																								
+SGK1	na	SGK1																																								
+SHC1_p66*	na	SHC1																																								
+SHIP2*	na	INPP5D																																								
+SIAH*	na	SIAH1	SIAH2																																							
+SIAH1	na	SIAH1																																								
+SIAH1	na	SIAH1																																								
+SIL*	na	STIL																																								
+SIN3A	na	SIN3A																																								
+SIN3B	na	SIN3B																																								
+SIRT1	na	SIRT1																																								
+SIRT1	na	SIRT1																																								
+SIRT1_2*	na	SIRT1	SIRT2																																							
+SIRT3	na	SIRT3																																								
+SIVA1	na	SIVA1																																								
+SIVA1	na	SIVA1																																								
+SIVA1	na	SIVA1																																								
+SIX1	na	SIX1																																								
+SIX1	na	SIX1																																								
+SIX1	na	SIX1																																								
+SIX3	na	SIX3																																								
+SIX3	na	SIX3																																								
+SIX3	na	SIX3																																								
+SKAR*	na	POLDIP3																																								
+SKI	na	SKI																																								
+SKP*	na	SKP1	SKP2																																							
+SKP1	na	SKP1																																								
+SKP2	na	SKP2																																								
+SKP2	na	SKP2																																								
+SLC1A5	na	SLC1A5																																								
+SLC1A5	na	SLC1A5																																								
+SLC1A5	na	SLC1A5																																								
+SLC25A1	na	SLC25A1																																								
+SLC25A10	na	SLC25A10																																								
+SLC25A11	na	SLC25A11																																								
+SLC25A14	na	SLC25A14																																								
+SLC25A4	na	SLC25A4																																								
+SLC25A5	na	SLC25A5																																								
+SLC25A6	na	SLC25A6																																								
+SLC2A1	na	SLC2A1																																								
+SLC2A1	na	SLC2A1																																								
+SLC2A1	na	SLC2A1																																								
+SLC2A2	na	SLC2A2																																								
+SLC2A3	na	SLC2A3																																								
+SLC2A4	na	SLC2A4																																								
+SLC2A4	na	SLC2A4																																								
+SLC2A4	na	SLC2A4																																								
+SLC38A3	na	SLC38A3																																								
+SLC38A5	na	SLC38A5																																								
+SLC38A5	na	SLC38A5																																								
+SLC38A5	na	SLC38A5																																								
+SLC3A2	na	SLC3A2																																								
+SLX1*	na	SLX1A																																								
+SLX4*	na	BTBD12																																								
+SMAD1	na	SMAD1																																								
+SMAD1	na	SMAD1																																								
+SMAD1	na	SMAD1																																								
+SMAD2	na	SMAD2																																								
+SMAD2	na	SMAD2																																								
+SMAD2	na	SMAD2																																								
+SMAD2_TGFB2*	na	SMAD2	TGFB2																																							
+SMAD2_TGFBR1*	na	TGFBR1	SMAD2																																							
+SMAD3	na	SMAD3																																								
+SMAD3	na	SMAD3																																								
+SMAD3	na	SMAD3																																								
+SMAD4	na	SMAD4																																								
+SMAD4	na	SMAD4																																								
+SMAD4	na	SMAD4																																								
+SMAD5	na	SMAD5																																								
+SMAD5	na	SMAD5																																								
+SMAD5	na	SMAD5																																								
+SMAD6	na	SMAD6																																								
+SMAD6	na	SMAD6																																								
+SMAD6	na	SMAD6																																								
+SMAD7	na	SMAD7																																								
+SMAD7	na	SMAD7																																								
+SMAD7	na	SMAD7																																								
+SMAD9	na	SMAD9																																								
+SMAD9	na	SMAD9																																								
+SMAD9	na	SMAD9																																								
+SMAG	na	SMAG																																								
+small~MAF*	na	MAFK	MAFG																																							
+SMARCA5	na	SMARCA5																																								
+SMARCAL1	na	SMARCAL1																																								
+SMC1*	na	SMC1A	SMC1B																																							
+SMC3	na	SMC3																																								
+SMC5	na	SMC5																																								
+SMC6	na	SMC6																																								
+SMURF1	na	SMURF1																																								
+SNAI1	na	SNAI1																																								
+SNAI1	na	SNAI1																																								
+SNAI1	na	SNAI1																																								
+SNAI2	na	SNAI2																																								
+SNAI2	na	SNAI2																																								
+SNAI2	na	SNAI2																																								
+SNAP23	na	SNAP23																																								
+SNM1B*	na	DCLRE1B																																								
+SNRPE	na	SNRPE																																								
+SNX19	na	SNX19																																								
+SOAT2	na	SOAT2																																								
+SOCS1	na	SOCS1																																								
+SOD1	na	SOD1																																								
+SOD1	na	SOD1																																								
+SOD1	na	SOD1																																								
+SOD2	na	SOD2																																								
+SOD2	na	SOD2																																								
+SOD2	na	SOD2																																								
+SOS*	na	SOS1	SOS2																																							
+SOX2	na	SOX2																																								
+SOX2	na	SOX2																																								
+SOX2	na	SOX2																																								
+SOX9	na	SOX9																																								
+SP1	na	SP1																																								
+SPAG7	na	SPAG7																																								
+SPARC	na	SPARC																																								
+SPATA13	na	SPATA13																																								
+SPOCK1	na	SPOCK1																																								
+SPOP	na	SPOP																																								
+SPP1	na	SPP1																																								
+SPRY1	na	SPRY1																																								
+SPRY2	na	SPRY2																																								
+SRC	na	SRC																																								
+Src family kinases*	na	SRC	CSK	FYN																																						
+SRF	na	SRF																																								
+SRM160*	na	SRRM1																																								
+SRPR	na	SRPR																																								
+SRXN1	na	SRXN1																																								
+SRXN1	na	SRXN1																																								
+SRXN1	na	SRXN1																																								
+SSR4	na	SSR4																																								
+STAG*	na	STAG1	STAG2	STAG3																																						
+STAT1	na	STAT1																																								
+STAT3	na	STAT3																																								
+STAT3	na	STAT3																																								
+STAT5*	na	STAT5A	STAT5B																																							
+STAT5A	na	STAT5A																																								
+STAT5A	na	STAT5A																																								
+STAT5A	na	STAT5A																																								
+STK11	na	STK11																																								
+STMN1	na	STMN1																																								
+STMN1	na	STMN1																																								
+STRADA	na	STRADA																																								
+STX4	na	STX4																																								
+STXBP4	na	STXBP4																																								
+SUCLG1	na	SUCLG1																																								
+SUCLG2	na	SUCLG2																																								
+SUFU	na	SUFU																																								
+SUFU	na	SUFU																																								
+SUFU	na	SUFU																																								
+SUR-8*	na	SHOC2																																								
+SURF1	na	SURF1																																								
+SURF1	na	SURF1																																								
+SURF1	na	SURF1																																								
+SUV39H1	na	SUV39H1																																								
+SUZ12	na	SUZ12																																								
+SYN4*	na	SDC4																																								
+TAB*	na	TAB2	TAB3	TAB1																																						
+TAB1	na	TAB1																																								
+TAB2	na	TAB2																																								
+TAB3	na	TAB3																																								
+TACE*	na	ADAM17																																								
+TACO1	na	TACO1																																								
+TAK1*	na	MAP3K7																																								
+TALDO1	na	TALDO1																																								
+Talin*	na	TLN1	TLN2																																							
+TAOK*	na	TAOK1	TAOK2	TAOK3																																						
+TAX1BP1	na	TAX1BP1																																								
+TBX2	na	TBX2																																								
+TBX2	na	TBX2																																								
+TCEB1	na	TCEB1																																								
+TCEB2	na	TCEB2																																								
+TCEB3	na	TCEB3																																								
+TCF3	na	TCF3																																								
+TCF3	na	TCF3																																								
+TCF3	na	TCF3																																								
+TCF4	na	TCF4																																								
+TCF4	na	TCF4																																								
+TCF4	na	TCF4																																								
+TDG	na	TDG																																								
+TDP1	na	TDP1																																								
+TdT* 	na	DNTT																																								
+TERT	na	TERT																																								
+TFAM	na	TFAM																																								
+TFAM	na	TFAM																																								
+TFAM	na	TFAM																																								
+TFB1M	na	TFB1M																																								
+TFB1M	na	TFB1M																																								
+TFB1M	na	TFB1M																																								
+TFB2M	na	TFB2M																																								
+TFB2M	na	TFB2M																																								
+TFB2M	na	TFB2M																																								
+TFIIH*	na	GTF2H1	GTF2H2	GTF2H2B	GTF2H2C	GTF2H2D	GTF2H2D	GTF2H2C	GTF2H3	GTF2H4	GTF2H5																															
+TFIIH1*	na	GTF2H1																																								
+TFIIH2*	na	GTF2H2																																								
+TFIIH3*	na	GTF2H3																																								
+TFIIH4*	na	GTF2H4																																								
+TFIIH5*	na	GTF2H5																																								
+TGF_beta_*	na	TGFB1	TGFB2	TGFB3																																						
+TGFA	na	TGFA																																								
+TGFB1	na	TGFB1																																								
+TGFB1	na	TGFB1																																								
+TGFB1	na	TGFB1																																								
+TGFB2	na	TGFB2																																								
+TGFB3	na	TGFB3																																								
+TGFB3	na	TGFB3																																								
+TGFB3	na	TGFB3																																								
+TGFBR*	na	TGFBR1	TGFBR2	TGFBR3																																						
+TGFBR1	na	TGFBR1																																								
+TGFBR1	na	TGFBR1																																								
+TGFBR1	na	TGFBR1																																								
+TGFBR2	na	TGFBR2																																								
+TGFBR3	na	TGFBR3																																								
+THBS1	na	THBS1																																								
+THBS2	na	THBS2																																								
+THEM2*	na	ACOT13																																								
+Thrombin*	na	F2																																								
+TIAM1	na	TIAM1																																								
+TIAM1	na	TIAM1																																								
+TIGAR*	na	C12orf5																																								
+TIGAR*	na	C12orf5																																								
+TIGAR*	na	C12orf5																																								
+TIM1*	na	TIMELESS																																								
+TIMP2	na	TIMP2																																								
+TIMP3	na	TIMP3																																								
+TIP60*	na	KAT5																																								
+TIPIN	na	TIPIN																																								
+TK1	na	TK1																																								
+TKT	na	TKT																																								
+TKT	na	TKT																																								
+TKT	na	TKT																																								
+TKT*	na	TKT	TKTL2																																							
+TKTL1	na	TKTL1																																								
+TKTL2	na	TKTL2																																								
+TLE*	na	TLE1	TLE2	TLE3	TLE4	AES	TLE6																																			
+TLE1	na	TLE1																																								
+TLE1	na	TLE1																																								
+TLN1	na	TLN1																																								
+TLN2	na	TLN2																																								
+TMBIM6	na	TMBIM6																																								
+TMEM198	na	TMEM198																																								
+TMEM70	na	TMEM70																																								
+TNF	na	TNF																																								
+TNF-_alpha_*	na	TNF																																								
+TNFAIP3	na	TNFAIP3																																								
+TNFAIP3	na	TNFAIP3																																								
+TNFAIP3	na	TNFAIP3																																								
+TNFRSF1A	na	TNFRSF1A																																								
+TNFRSF1B	na	TNFRSF1B																																								
+TNK2	na	TNK2																																								
+TNKS1*	na	TNKS																																								
+TNKS1_2*	na	TNKS	TNKS2																																							
+TNKS2	na	TNKS2																																								
+TNPO1	na	TNPO1																																								
+TOP2A	na	TOP2A																																								
+TOP3A	na	TOP3A																																								
+TOPBP1	na	TOPBP1																																								
+TOPBP1	na	TOPBP1																																								
+TP53BP1	na	TP53BP1																																								
+TP53BP2	na	TP53BP1																																								
+TP53INP1	na	TP53IN91																																								
+TPI1	na	TPI1																																								
+TPI1	na	TPI1																																								
+TPI1	na	TPI1																																								
+TRADD	na	TRADD																																								
+TRADD	na	TRADD																																								
+TRADD	na	TRADD																																								
+TRAF2	na	TRAF2																																								
+TRAF6	na	TRAF6																																								
+TRAIL*	na	TNFSF10																																								
+TRAIL*	na	TNFSF10																																								
+TRIM55	na	TRIM55																																								
+TRIP12	na	TRIP12																																								
+TRRAP	na	TRRAP																																								
+TSC1	na	TSC1																																								
+TSC2	na	TSC2																																								
+TSC2	na	TSC2																																								
+TSC2	na	TSC2																																								
+TSP1*	na	THBS1																																								
+TSPAN3	na	TSPAN3																																								
+Tubulin-_alpha_*	na	TUBA1A	TUBA1B	TUBA1C	TUBA3C	TUBA3D	TUBA3E	TUBA4A	TUBA8																																	
+Tubulin-_alpha_1A*	na	TUBA1A																																								
+TUCAN*	na	CARD8																																								
+TULP3	na	TULP3																																								
+TWIST1	na	TWIST1																																								
+TWIST1	na	TWIST1																																								
+TWIST1	na	TWIST1																																								
+TWIST2	na	TWIST2																																								
+TWIST2	na	TWIST2																																								
+TWIST2	na	TWIST2																																								
+TXN	na	TXN																																								
+TXN	na	TXN																																								
+TXN	na	TXN																																								
+TXN2	na	TXN2																																								
+TXNIP	na	TXNIP																																								
+TXNIP	na	TXNIP																																								
+TXNIP	na	TXNIP																																								
+TXNRD1	na	TXNRD1																																								
+TXNRD1	na	TXNRD1																																								
+TXNRD1	na	TXNRD1																																								
+TXNRD2	na	TXNRD2																																								
+TYMS	na	TYMS																																								
+UAF1*	na	WDR48																																								
+UBA2	na	UBA2																																								
+UBB	na	UBB																																								
+UBC12*	na	UBE2V2																																								
+UBC4*	na	UBE2D1	UBE2D2	UBE2D3																																						
+UBC9*	na	UBE21	UBE2I	UBE2I	MSH6																																					
+UBCH10*	na	UBE2C																																								
+UBE2B	na	UBE2B																																								
+UBE2N	na	UBE2N																																								
+UBE2T	na	UBE2T																																								
+UCP*	na	UCP1	UCP2	UCP3	SLC25A27	SLC25A14	SLC25A47																																			
+UCRC*	na	UQCR10																																								
+UDG1A*	na	UNG																																								
+UHRF1	na	UHRF1																																								
+UIMC1	na	UIMC1																																								
+ULK*	na	ULK1	ULK2																																							
+ULK1	na	ULK1																																								
+ULK1	na	ULK1																																								
+ULK3	na	ULK3																																								
+UNG	na	UNG																																								
+UQCRB	na	UQCRB																																								
+UQCRB	na	UQCRB																																								
+UQCRB	na	UQCRB																																								
+UQCRC1	na	UQCRC1																																								
+UQCRC11	na	UQCR11																																								
+UQCRC2	na	UQCRC2																																								
+UQCRFS1	na	UQCRFS1																																								
+UQCRH	na	UQCRH																																								
+UQCRQ	na	UQCRQ																																								
+UROD	na	UROD																																								
+UROS	na	UROS																																								
+USP1	na	USP1																																								
+USP1	na	USP1																																								
+USP1	na	USP1																																								
+USP15	na	USP15																																								
+USP3	na	USP3																																								
+USP34	na	USP34																																								
+USP8	na	USP8																																								
+USP9X	na	USP9X																																								
+UXT	na	UXT																																								
+VAMP2	na	VAMP2																																								
+VANGL*	na	VANGL2	VANGL1																																							
+VAV1	na	VAV1																																								
+VAV2	na	VAV2																																								
+VCL	na	VCL																																								
+VDAC*	na	VDAC1	VDAC2	VDAC3																																						
+VDAC1	na	VDAC1																																								
+VDAC1	na	VDAC1																																								
+VDAC1	na	VDAC1																																								
+VDAC2	na	VDAC2																																								
+VDAC3	na	VDAC3																																								
+VDAC3	na	VDAC3																																								
+VDAC3	na	VDAC3																																								
+VE-Cadherin*	na	CDH5																																								
+VEGFA	na	VEGFA																																								
+VEGFA	na	VEGFA																																								
+VEGFA	na	VEGFA																																								
+VEGFR1*	na	FLT1																																								
+VEGFR1*	na	FLT1																																								
+VEGFR1*	na	FLT1																																								
+VEGFR2*	na	KDR																																								
+VEGFR2*	na	KDR																																								
+VEGFR2*	na	KDR																																								
+VHL	na	VHL																																								
+Vimentin*	na	VIM																																								
+Vimentin*	na	VIM																																								
+Vimentin*	na	VIM																																								
+VTN	na	VTN																																								
+WASF1	na	WASF1																																								
+WASF2	na	WASF2																																								
+WASP*	na	WAS																																								
+WASP_NWASP*	na	WAS	WASL																																							
+WDR19	na	WDR19																																								
+WDR36	na	WDR36																																								
+WDR5	na	WDR5																																								
+WEE1	na	WEE1																																								
+WGEF*	na	ARHGEF19																																								
+WIF1	na	WIF1																																								
+WIF1	na	WIF1																																								
+WNK4	na	WNK4																																								
+WNT*	na	WNT1	WNT2	WNT2B	WNT3	WNT3A	WNT4	WNT5A	WNT5B	WNT6	WNT7A	WNT7B	WNT8A	WNT8B	WNT9A	WNT9B	WNT10A	WNT10B	WNT11	WNT16	WNT5A-AS1																					
+WNT1	na	WNT1																																								
+WNT1	na	WNT1																																								
+WNT1	na	WNT1																																								
+WNT1_3*	na	WNT1	WNT3																																							
+WNT11	na	WNT11																																								
+WNT11	na	WNT11																																								
+WNT2B	na	WNT2B																																								
+WNT2B	na	WNT2B																																								
+WNT2B	na	WNT2B																																								
+WNT3	na	WNT3																																								
+WNT3	na	WNT3																																								
+WNT3	na	WNT3																																								
+WNT5A	na	WNT5A																																								
+WNT5A	na	WNT5A																																								
+WRN	na	WRN																																								
+WWOX	na	WWOX																																								
+XAB2	na	XAB2																																								
+XAF1	na	XAF1																																								
+XFZ3	na	XFZ3																																								
+XFZ7	na	XFZ7																																								
+XIAP	na	XIAP																																								
+XIAP	na	XIAP																																								
+XIAP	na	XIAP																																								
+XLF*	na	NHEJ1																																								
+XPA	na	XPA																																								
+XPB*	na	ERCC3																																								
+XPC	na	XPC																																								
+XPC	na	XPC																																								
+XPC	na	XPC																																								
+XPD*	na	ERCC2																																								
+XPF*	na	ERCC4																																								
+XPG*	na	ERCC5																																								
+XRCC1	na	XRCC1																																								
+XRCC2	na	XRCC2																																								
+XRCC3	na	XRCC3																																								
+XRCC4	na	XRCC4																																								
+Y14*	na	RBM8A																																								
+YAP1	na	YAP1																																								
+YL1*	na	VPS72																																								
+YWHAB	na	YWHAB																																								
+YWHAE	na	YWHAE																																								
+YWHAG	na	YWHAG																																								
+YWHAH	na	YWHAH																																								
+YWHAQ	na	YWHAQ																																								
+YWHAZ	na	YWHAZ																																								
+YY1	na	YY1																																								
+YY1	na	YY1																																								
+YY1	na	YY1																																								
+ZAP70	na	ZAP70																																								
+ZEB1	na	ZEB1																																								
+ZEB1	na	ZEB1																																								
+ZEB1	na	ZEB1																																								
+ZEB1_ZEB2*	na	ZEB1	ZEB2																																							
+ZEB2	na	ZEB2																																								
+ZEB2	na	ZEB2																																								
+ZEB2	na	ZEB2																																								
+ZNF451	na	ZNF451																																								
+ZNF83	na	ZNF83																																								
+ZO1*	na	TJP1																																								
+ZO1*	na	TJP1																																								
+ZO1*	na	TJP1																																								
+ZO1_2*	na	TJP1	TJP2																																							
+ZO1_2_3*	na	TJP1	TJP2	TJP3																																						
+ZO1_3*	na	TJP1	TJP3																																							
+ZO2*	na	TJP2																																								
+ZO2*	na	TJP2																																								
+ZO2*	na	TJP2																																								
+ZO2_3*	na	TJP2	TJP3																																							
+ZO3*	na	TJP3																																								
+ZO3*	na	TJP3																																								
+ZO3*	na	TJP3																																								
+ZYX	na	ZYX																																								

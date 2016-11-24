@@ -1,0 +1,10 @@
+Here is ACSN converted into a PPI-like database.
+
+Each node in ACSN can correspond to several HUGO names.
+
+The sif file describes pairwise interactions.
+
+The gmt file describes relations between the node names in ACSN
+and the HUGO names, in the gmt format
+(second column is description of a dataset which is always "na"
+in this case).

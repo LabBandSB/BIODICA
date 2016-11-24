@@ -1,0 +1,1 @@
+matlab -nodesktop -nosplash -r "doICAtxt('C:\Datas\BODICA\data\test1\transcriptome\','CAFBREAST.txt',10);quit;"
