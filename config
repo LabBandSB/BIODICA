@@ -6,5 +6,5 @@ ComputeRobustStatistics = false
 MinNumberOfDistinctValuesInNumericals = 10
 MinNumberOfSamplesInCategory = 3
 MaxNumberOfCategories = 10
-AssociationAnalysisThreshold = 0.0
+AssociationAnalysisInThreshold = 0.0
 MinimalTolerableStability = 0.8

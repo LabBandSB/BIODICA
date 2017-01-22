@@ -1,1 +1,1 @@
-java -Xmx5000M -jar ./bin/BIODICA/BIODICA.jar -config config -dobbhgraph C:\Datas\MOSAIC\analysis\ica\metaanalysis\_FINALGRAPH\
+java -Xmx5000M -jar ./bin/BIODICA/BIODICA.jar -config config -dobbhgraph ./data/METAANALYSIS_TEST/ 
