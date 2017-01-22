@@ -67,6 +67,7 @@ public class BIODICAPipeLine {
 			boolean doCreateAandSFromPrecomputed = false;
 			boolean doBBHGraph = false;
 			boolean doOFTEN = false;
+			boolean doToppGene = false;
 			
 			boolean splitPositiveAndNegativeTailsForMetaanalysis = false;
 
@@ -90,10 +91,11 @@ public class BIODICAPipeLine {
 				System.out.println("-docompileprecomputed <folderWithICAresults#number_of_components> - look into the folder folderWithICAresults with precomputed ICA results and compile a new pair of A and S files for <number_of_components>. folderWithICAresults should be specified as relative to the work folder. Example of use: '-docompileprecomputed stability#10'. If the precomputed <number_of_components> file won't be found then the file with the maximal number of components will be used. Instead of a number, the <number_of_components> can be specified as 'optimal'; in this case the optimal number of components will be chosen based on stability criterion.");
 				System.out.println("-dogsea <numberOfPermutations> - make GSEA analysis for all computed metagenes, using numberOfPermutations for assessing the p-values for the enrichment.");
 				System.out.println("-dometasampleanalysis <sampleAnnotationFile> - make automated analysis for associations between computed ICs and the sample annotations.");
-				System.out.println("-dometageneanalysis <sampleAnnotationFile> - make automated analysis for associations between computed ICs and the sample annotations.");
+				System.out.println("-dometageneanalysis <geneAnnotationFile> - make automated analysis for associations between computed ICs and the sample annotations.");
 				System.out.println("-dooften <ppinetworkfile>[#nstart,nstep,nend,nperm] - make automated analysis of ICA metagenes to associate them to a subnetwork in a global PPI network. If 'nstart,nstep,nend,nperm' values are not specified (parameters of OFTEN score scan) then the following defaults are used nstart=100, nstep=50, nend=600, nperm=100.");
 				System.out.println("-doreport <folderToCreateReport> - produce HTML report for all analyses made in the working folder in the specified folder <folderToCreateReport>.");
 				System.out.println("-dobbhgraph <folderWithSfiles> - compile BBH graph from a set of files ending with “_S.xls”, containing the metagenes corresponding to ICs.");
+				System.out.println("-dotoppgene - perform gene set enrichment analysis using toppgene suite");
 			}
 			
 			
@@ -132,6 +134,9 @@ public class BIODICAPipeLine {
 				if(args[i].equals("-dogsea")){
 					biodica.numberOfGSEAPermutations = Integer.parseInt(args[i+1]);
 					doGSEA = true;
+				}
+				if(args[i].equals("-dotoppgene")){
+					doToppGene = true;
 				}
 				if(args[i].equals("-dometasampleanalysis")){
 					biodica.sampleAnnotationFilePath = args[i+1];
@@ -374,6 +379,26 @@ public class BIODICAPipeLine {
 				MetaGeneAnnotation.FilterGSEAResults(wfgsear.getAbsolutePath()+System.getProperty("file.separator"),5,3f,0.01f,0.01f);
 				FileUtils.copyFile(new File(biodica.HTMLSourceFolder+System.getProperty("file.separator")+"filteredgsea.css"), new File(wfgsear.getAbsolutePath()+System.getProperty("file.separator")+"filteredgsea.css"));
 			}
+			
+			if(doToppGene){
+				
+				System.out.println("==========================================");
+				System.out.println("======  Performing ToppGene analysis =====");
+				System.out.println("==========================================");
+				
+				File wfica = new File(biodica.workFolder+File.separator+biodica.analysisprefix+"_ICA");
+				// Merge all gmt files in one
+				File wftoppgene = new File(biodica.workFolder+File.separator+biodica.analysisprefix+"_TOPPGENE");
+				wftoppgene.mkdir();
+				// Make RNK files
+				File sfile = new File(wfica.getAbsolutePath()+System.getProperty("file.separator")+biodica.analysisprefix+"_ica_S.xls");
+				Date timestart = new Date();
+
+				System.out.println("Finished all ToppGene computations. Total time spent "+((new Date().getTime()-timestart.getTime())/1000)+" secs");
+				//FileUtils.copyFile(new File(biodica.HTMLSourceFolder+System.getProperty("file.separator")+"filteredgsea.css"), new File(wfgsear.getAbsolutePath()+System.getProperty("file.separator")+"filteredgsea.css"));
+			}
+			
+			
 			if(doMetaGeneAnalysis){
 				
 				System.out.println("================================================================");

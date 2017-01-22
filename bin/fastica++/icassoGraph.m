@@ -337,9 +337,11 @@ if hull,
   caxis([0 size(clustercolor,1)]); 
   colormap(clustercolor); 
   h_colorbar=colorbar('vert');
+%  set(h_colorbar,'ytick',[0:size(clustercolor,1)]',...
+%		 'yticklabel',[0;clustercolorlimit(:); 1],'dataaspect',[1 1 ...
+%		    1],'plotboxaspect',[1 1 1]);
   set(h_colorbar,'ytick',[0:size(clustercolor,1)]',...
-		 'yticklabel',[0;clustercolorlimit(:); 1],'dataaspect',[1 1 ...
-		    1],'plotboxaspect',[1 1 1]);
+		 'yticklabel',[0;clustercolorlimit(:); 1]);
   set(get(h_colorbar,'ylabel'),'string','Averge intra-cluster similarity (cluster compactness)');
   % Set legend
 end
@@ -347,7 +349,7 @@ end
 if graph,
   i=1;
   while i<=length(h_graph.example)
-    if isnan(h_graph.example(i)),
+    if 0 & isnan(h_graph.example(i)),
       h_graph.example(i)=[];
       h_graph.edge(i)=[];
       h_graph.text(i)=[];
@@ -358,7 +360,8 @@ if graph,
   legendText{1}='Single-run-estimate'; 
   legendText{2}='"Best Estimate" (centrotype)'; 
   legendText=[legendText, h_graph.text];
-  legendHandle=[h_graph.vertex(1);h_centrotype(1);h_graph.example(:)];
+  %legendHandle=[h_graph.vertex(1);h_centrotype(1);h_graph.example(:)];
+  legendHandle=[h_graph.vertex(1);h_centrotype(1);[]];
 else
   legendText{1}='Single-run-estimate'; 
   legendText{2}='"Best Estimate" (centrotype)'; 

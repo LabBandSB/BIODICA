@@ -1,14 +1,24 @@
 package fr.curie.BIODICA;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.text.DecimalFormat;
 import java.util.Vector;
 
+import vdaoengine.TableUtils;
+import vdaoengine.data.VDataSet;
+import vdaoengine.data.VDataTable;
+import vdaoengine.data.io.VDatReadWrite;
 import vdaoengine.utils.Algorithms;
 import vdaoengine.utils.Utils;
+import vdaoengine.utils.VSimpleFunctions;
+import vdaoengine.utils.VSimpleProcedures;
 
 public class NumberOfComponentsOptimizer {
 
+	//public static String prefixes[] = {"ACC","BLCA"};
+	public static String prefixes[] = {"ACC","BLCA","BRCA","CESC","CHOL","COAD","DLBC","ESCA","GBM","HNSC","KICH","KIRC","KIRP","LGG","LIHC","LUAD","LUSC","MESO","OV","PAAD","PCPG","PRAD","READ","SARC","SKCM","STAD","TGCT","THCA","THYM","UCEC","UCS","UVM"};
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try{
@@ -27,10 +37,30 @@ public class NumberOfComponentsOptimizer {
 			//String prefix = "Rescue_ica";
 			//String folder = "D:/ICA_complete_output/PanCan_ICA/OV/";
 			//String prefix = "OV_expression_matrix";
-			String folder = "C:/Datas/BIODICA/work/NEUROBLASTOMAlf_ICA/stability/";
-			String prefix = "NEUROBLASTOMAlf_ica";
+			//String folder = "C:/Datas/BIODICA/work/NEUROBLASTOMAlf_ICA/stability/";
+			//String prefix = "NEUROBLASTOMAlf_ica";
 			 			
-			reccomendOptimalNumberOfComponentsFromStability(folder,prefix, 0.8f);
+			//reccomendOptimalNumberOfComponentsFromStability(folder,prefix, 0.8f);
+			
+			/*String prefixes[] = {"ACC","BLCA","BRCA","CESC","CHOL","COAD","DLBC","ESCA","GBM","HNSC","KICH","KIRC","KIRP","LGG","LIHC","LUAD","LUSC","MESO","OV","PAAD","PCPG","PRAD","READ","SARC","SKCM","STAD","TGCT","THCA","THYM","UCEC","UCS","UVM"};
+			//String prefixes[] = {"ACC","BLCA"};
+			FileWriter fw = new FileWriter("C:/Datas/ICA_numberOfComponents/nums.txt");
+			fw.write("CANCERTYPE\tnumberOfComponents6\tnumberOfComponents7\tnumberOfComponents8\n");
+			for(int i=0;i<prefixes.length;i++){
+				String folder = "D:/ICA_complete_output/PanCan_ICA/"+prefixes[i]+"/";
+				String prefix = prefixes[i]+"_expression_matrix";
+				int numberOfComponents6 = reccomendOptimalNumberOfComponentsFromStability(folder,prefix, 0.6f);
+				int numberOfComponents7 = reccomendOptimalNumberOfComponentsFromStability(folder,prefix, 0.7f);
+				int numberOfComponents8 = reccomendOptimalNumberOfComponentsFromStability(folder,prefix, 0.8f);
+				fw.write(prefixes[i]+"\t"+numberOfComponents6+"\t"+numberOfComponents7+"\t"+numberOfComponents8+"\n");
+				
+			}
+			fw.close();*/
+			
+			//compileDataSetForTesting();
+			//analyzeMetagene("C:/Datas/ICA_numberOfComponents/UnderShoot/","C:/Datas/ICA_numberOfComponents/metagenes/M7_CELLCYCLE.rnk");
+			analyzeMetagene("C:/Datas/ICA_numberOfComponents/numberOfComponents8/","C:/Datas/ICA_numberOfComponents/metagenes/M7_CELLCYCLE.rnk");
+			
 		}catch(Exception e){
 			e.printStackTrace();
 		}
@@ -147,5 +177,91 @@ public class NumberOfComponentsOptimizer {
 	    nums.clear(); stabilities.clear();
 	    for(int i=0;i<inds.length;i++){ nums.add((int)(numsa[inds[i]])); stabilities.add(staba[inds[i]]); }
 	}
+	
+	public static void compileDataSetForTesting() throws Exception{
+		//String field = "UnderShoot";
+		String field = "numberOfComponents8";
+		//String field = "OverShoot1";
+		String folderLists = "C:/Datas/ICA_numberOfComponents/lists_genesamples/";
+		VDataTable vt = VDatReadWrite.LoadFromSimpleDatFile("C:/Datas/ICA_numberOfComponents/nums.txt", true, "\t");
+		vt.makePrimaryHash("CANCERTYPE");
+		String folderICAResults = "D:/ICA_complete_output/PanCan_ICA/";
+		File dir = new File("C:/Datas/ICA_numberOfComponents/"+field);
+		dir.mkdir();
+		for(int i=0;i<prefixes.length;i++){
+			int k = vt.tableHashPrimary.get(prefixes[i]).get(0);
+			int numComp = Integer.parseInt(vt.stringTable[k][vt.fieldNumByName(field)]);
+			String Sfile = folderICAResults+prefixes[i]+"/S_"+prefixes[i]+"_expression_matrix_numerical.txt_"+numComp+".num";
+			String Afile = folderICAResults+prefixes[i]+"/A_"+prefixes[i]+"_expression_matrix_numerical.txt_"+numComp+".num";
+			VDataTable vtS = VDatReadWrite.LoadFromSimpleDatFile(Sfile, false, "\t");
+			
+			VDataTable vtA = VDatReadWrite.LoadFromSimpleDatFile(Afile, false, "\t");
+			FileWriter fS = new FileWriter(dir.getAbsolutePath()+File.separator+prefixes[i]+"_S.xls");
+			FileWriter fA = new FileWriter(dir.getAbsolutePath()+File.separator+prefixes[i]+"_A.xls");
+			Vector<String> genes = Utils.loadStringListFromFile(folderLists+prefixes[i]+"_expression_matrix_genes.txt");
+			Vector<String> samples = Utils.loadStringListFromFile(folderLists+prefixes[i]+"_expression_matrix_samples.txt");
+			fS.write("GENE\t"); for(int j=0;j<vtS.colCount;j++) fS.write("IC"+(j+1)+"\t"); fS.write("\n");
+			for(int j=0;j<vtS.rowCount;j++){
+				String gene = genes.get(j);
+				gene = Utils.replaceString(gene, "\"", "");
+				fS.write(gene+"\t"); 
+				for(int s=0;s<vtS.colCount;s++) 
+				{ float f = Float.parseFloat(vtS.stringTable[j][s]); fS.write(f+"\t"); } 
+				fS.write("\n");
+			}
+			fS.close();
+			
+			fA.write("SAMPLE\t"); for(int j=0;j<vtA.colCount;j++) fA.write("IC"+(j+1)+"\t"); fA.write("\n");
+			for(int j=0;j<vtA.rowCount;j++){
+				String sample = samples.get(j);
+				sample = Utils.replaceString(sample, "\"", "");
+				fA.write(sample+"\t"); 
+				for(int s=0;s<vtA.colCount;s++) 
+				{ float f = Float.parseFloat(vtA.stringTable[j][s]); fA.write(f+"\t"); } 
+				fA.write("\n");
+			}
+			fA.close();
+		}
+	}
+	
+	public static void analyzeMetagene(String folder, String metageneFile) throws Exception{
+		File files[] = (new File(folder)).listFiles();
+		File f = new File(metageneFile);
+		String mfn = f.getName();
+		mfn = mfn.substring(0,mfn.length()-4);
+		FileWriter fwCorrelations = new FileWriter(folder+mfn+"_corrs.txt");
+		for(int i=0;i<files.length;i++){
+			String fn = files[i].getName();
+			if(fn.endsWith("_S.xls")){
+				VDataTable vtS = VDatReadWrite.LoadFromSimpleDatFile(folder+fn, true, "\t");
+				VDataTable vtM = VDatReadWrite.LoadFromSimpleDatFile(metageneFile, false, "\t");
+				VDataTable merged = VSimpleProcedures.MergeTables(vtS, "GENE", vtM, "N1", "@");
+				TableUtils.findAllNumericalColumns(merged);
+				VDataSet mds = VSimpleProcedures.SimplyPreparedDatasetWithoutNormalization(merged, -1);
+				float correlations[] = new float[mds.coordCount-1];
+				float maxCorrel = -1f;
+				int imax  = -1;
+				for(int j=0;j<mds.coordCount-1;j++){
+					float x[] = new float[mds.pointCount];
+					float y[] = new float[mds.pointCount];
+					for(int k=0;k<mds.pointCount;k++){
+						x[k] = mds.massif[k][j];
+						y[k] = mds.massif[k][mds.coordCount-1];
+					}
+					correlations[j] = Math.abs(VSimpleFunctions.calcCorrelationCoeffMissingValues(x, y));
+					if(correlations[j]>maxCorrel){
+						imax = j;
+						maxCorrel = correlations[j];
+					}
+				}
+				fwCorrelations.write(fn+"\t");
+				//for(int k=0;k<correlations.length;k++) fwCorrelations.write(correlations[k]+"\t"); fwCorrelations.write("\n");
+				fwCorrelations.write(""+maxCorrel); fwCorrelations.write("\n");
+				fwCorrelations.flush();
+			}			
+		}
+		fwCorrelations.close();
+	}
+	
 
 }
