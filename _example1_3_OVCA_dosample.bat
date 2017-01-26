@@ -1,0 +1,1 @@
+java -Xmx5000M -jar ./bin/BIODICA/BIODICA.jar -config config -datatable data/OVCA_TCGA/transcriptome/OVCA.txt -dometasampleanalysis ./data/OVCA_TCGA/sample_info/OVCA.txt 

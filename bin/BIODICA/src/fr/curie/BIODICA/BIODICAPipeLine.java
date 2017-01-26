@@ -18,6 +18,7 @@ import vdaoengine.utils.VSimpleProcedures;
 public class BIODICAPipeLine {
 
 	public String MATLABICAFolder = "";
+	public String MATLABFolder = "";
 	public String workFolder = "";
 	public String DefaultWorkFolder = "";
 	public String ConfigFileName = "";
@@ -54,6 +55,7 @@ public class BIODICAPipeLine {
 
 			//FileUtils.deleteQuietly(new File("C:/Datas/BIODICA/work/pdx1000_ICA/_done"));
 			//ProcessTxtData.CompileAandSTables("C:/Datas/BIODICA/work/pdx1000_ICA/stability/","pdx1000_ica");
+			//MetaGeneAnnotation.produceRankFilesFromTable("C:/Datas/CAFibroblasts/analysis/gsea/caf_brca_ica/BRCA_cafs_S1S4diff_log10_T_ica_S.xls","C:/Datas/CAFibroblasts/analysis/gsea/caf_brca_ica/", "caf_brca_ica_");
 			//System.exit(0);
 			
 			Locale.setDefault(new Locale("en", "US"));
@@ -247,7 +249,10 @@ public class BIODICAPipeLine {
 				ProcessTxtData.main(arguments);;
 				System.out.println("Starting MATLAB ICA Computations...");
 				String fn_numerical = df.getName().substring(0, df.getName().length()-4)+"_ica_numerical.txt"; 
-				MATLABExcecutor.executeMatlabFastICANumerical(biodica.MATLABICAFolder, wfica.getAbsolutePath()+System.getProperty("file.separator"), fn_numerical, biodica.numberOfComponents);
+				String mfolder = biodica.MATLABFolder;
+				if(!mfolder.trim().equals(""))
+					mfolder+=File.separator;
+				MATLABExcecutor.executeMatlabFastICANumerical(mfolder,biodica.MATLABICAFolder, wfica.getAbsolutePath()+System.getProperty("file.separator"), fn_numerical, biodica.numberOfComponents);
 				System.out.println("Formatting results of ICA computations...");
 				ProcessTxtData.CompileAandSTables(wfica.getAbsolutePath()+System.getProperty("file.separator"), biodica.analysisprefix+"_ica");
 				
@@ -542,6 +547,10 @@ public class BIODICAPipeLine {
 			StringTokenizer st = new StringTokenizer(s,"=");
 			String left = st.nextToken().trim().toLowerCase();
 			String right = st.nextToken().trim();
+			if(left.equals("matlabfolder")){
+				MATLABFolder = right;
+				System.out.println("MATLABFolder = "+right);
+			}
 			if(left.equals("matlabicafolder")){
 				MATLABICAFolder = right;
 				System.out.println("MATLABICAFolder = "+right);
