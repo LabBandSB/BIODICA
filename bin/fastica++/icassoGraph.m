@@ -141,7 +141,7 @@ EDGECOLOR=[0.3 0.3 0.3];
 %% Set defaults and process optional input
 default={'line','on','l', 'rdim',...
 	 'graphlimit','auto','colorlimit',[0.5 0.75 0.9],...
-	 'dense','auto','hull','on'};
+	 'dense','auto','hull','off'};
 
 varargin=processvarargin(varargin,default);
 num_of_args=length(varargin);
@@ -285,7 +285,7 @@ edgeColorMatrix=repmat(EDGECOLOR,Ncluster,1);
 % bottom; otherwise they shade everything else
 
 if hull,
-  h_fill=clusterhull('fill',p,partition,faceColorMatrix);
+  %h_fill=clusterhull('fill',p,partition,faceColorMatrix);
 end
 
 title(sprintf('Estimate space as a 2D %s projection',upper(sR.projection.method)));

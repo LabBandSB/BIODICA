@@ -152,7 +152,7 @@ index2centrotypes=[]; clusterquality=[]; partition=[];
 %% Set defaults and process optional input
 default={'line','on','estimate','source', 'quality','simple','L',icassoGet(sR,'rdim'),...
 	 'graphlimit','auto','colorlimit',[0.5 0.75 0.9],...
-	 'dense','auto','hull','on'};
+	 'dense','auto','hull','off'};
 
 % initiate arguments to icassoGraph
 graphArgs=[];
