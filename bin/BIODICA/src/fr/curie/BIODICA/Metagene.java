@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.Vector;
@@ -16,8 +17,10 @@ public class Metagene {
 
 	public Vector<ObjectWeight> weights = new Vector<ObjectWeight>();
 	public String name = null;
+	public String description = "na";
 	public HashMap<String, Float> map = new HashMap<String, Float>();
- 	
+ 	public Vector<String> geneNames = null; 
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try{
@@ -143,6 +146,13 @@ public class Metagene {
 			fw.write("\n");
 			}
 		fw.close();
+	}
+	
+	public void updateGeneNames(){
+		if(geneNames==null) geneNames = new Vector<String>();
+		geneNames.clear();
+		Set<String> skeys = map.keySet();
+		for(String s: skeys) geneNames.add(s);
 	}
 
 }

@@ -1,8 +1,8 @@
-MATLABFolder = C:\MATLAB_R2015a\bin
-MATLABICAFolder = C:\Datas\BIODICA\bin\fastica++
-DefaultWorkFolder = C:\Datas\BIODICA\work
-GeneSetFolder = C:\Datas\BIODICA\knowledge\genesets
-HTMLSourceFolder = C:\Datas\BIODICA\bin\HTML
+MATLABFolder = /bioinfo/opt/build/Matlab-R2013a/bin
+MATLABICAFolder = bin/fastica++
+DefaultWorkFolder = work
+GeneSetFolder = knowledge/genesets
+HTMLSourceFolder = bin/HTML
 ComputeRobustStatistics = false
 MinNumberOfDistinctValuesInNumericals = 10
 MinNumberOfSamplesInCategory = 3

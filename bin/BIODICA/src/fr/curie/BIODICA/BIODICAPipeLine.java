@@ -252,8 +252,17 @@ public class BIODICAPipeLine {
 				String mfolder = biodica.MATLABFolder;
 				if(!mfolder.trim().equals(""))
 					mfolder+=File.separator;
+				
+				String wfolder = wfica.getAbsolutePath();
+				String wfolderstability = wficaStability.getAbsolutePath();
+				
 				MATLABExcecutor.executeMatlabFastICANumerical(mfolder,biodica.MATLABICAFolder, wfica.getAbsolutePath()+System.getProperty("file.separator"), fn_numerical, biodica.numberOfComponents);
 				System.out.println("Formatting results of ICA computations...");
+				
+				wfica = new File(wfolder);
+				wficaStability = new File(wfolderstability);
+				//System.out.println("Working folder: "+wfica.getAbsolutePath());
+				
 				ProcessTxtData.CompileAandSTables(wfica.getAbsolutePath()+System.getProperty("file.separator"), biodica.analysisprefix+"_ica");
 				
 				System.out.println("Cleaning the work folder...");

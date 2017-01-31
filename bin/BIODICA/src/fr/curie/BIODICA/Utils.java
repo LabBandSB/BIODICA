@@ -362,6 +362,39 @@ public static int[] SortMass(float cais[]){
 		 e.printStackTrace();
 	 }
  }
+ 
+ public static Vector<Metagene> readGMTFile(String fin, int minimalNumberOfGenesInModule, int maximalNumberOfGenesInModule){
+	    Vector res = new Vector();
+	    try{
+	      LineNumberReader lr = new LineNumberReader(new FileReader(fin));
+	      String s = null;
+	      while((s=lr.readLine())!=null)if(!s.trim().equals("")){
+	        StringTokenizer st = new StringTokenizer(s,"\t");
+	        Metagene gs = new Metagene();
+	        gs.name = st.nextToken();
+	        gs.description = st.nextToken();
+	        String sname = null;
+	        while(st.hasMoreTokens()){
+	          String name = st.nextToken();
+	          sname = name;
+	          float weight = 1f;
+	          if(name.indexOf("[")>=0){
+	          	sname = name.substring(0,name.indexOf("["));
+	          	String sweight = name.substring(name.indexOf("[")+1,name.length()-1);
+	          	weight = Float.parseFloat(sweight);
+	          }
+	          if(!gs.map.containsKey(sname))
+	        	  gs.map.put(sname,1f);
+	        }
+	        if((minimalNumberOfGenesInModule<0)||((gs.map.size()>=minimalNumberOfGenesInModule)&&(gs.map.size()<=maximalNumberOfGenesInModule)))
+	        	res.add(gs);
+	      }
+	    }catch(Exception e){
+	      e.printStackTrace();
+	    }
+	    return res;
+
+ }
   
 
 	
