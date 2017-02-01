@@ -15,4 +15,4 @@ for i=3:size(ls,1)
     end
 end
 
-bar(array(:,1),array(:,2)); title(sprintf('Average component stability for %s', folder)); ylim([0.7 1]);
+bar(array(:,1),array(:,2)); title(sprintf('Average component stability for %s', folder)); ylim([0 1]);
