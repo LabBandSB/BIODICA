@@ -1,4 +1,4 @@
-MATLABFolder = /bioinfo/opt/build/Matlab-R2013a/bin
+MATLABFolder = C:\MATLAB_R2015a\bin
 MATLABICAFolder = bin/fastica++
 DefaultWorkFolder = work
 GeneSetFolder = knowledge/genesets

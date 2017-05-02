@@ -1,0 +1,454 @@
+INPUT {
+	COLOR: #000000;
+	padding: 1px;
+	border: 1px solid #00264d;
+}
+SELECT {
+	COLOR: #000000
+}
+BODY {
+	MARGIN: 0px;
+	COLOR: #000000; 
+	BACKGROUND-COLOR: #ffffff;
+	font-family: Ariel, Helvetica;
+	font-size: 10pt;
+}
+
+TD.caption {
+	BACKGROUND-COLOR: #5f8cb8
+}
+TD.navigation {
+	COLOR: #ffffff; BACKGROUND-COLOR: #5f8cb8
+}
+TD.navigation A {
+	FONT-WEIGHT: bold; COLOR: #ffffff
+}
+TD.navigation A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none;
+}
+TD.button {
+	BORDER-RIGHT: #ffffff 3px outset; PADDING-RIGHT: 5px; BORDER-TOP: #ffffff 3px outset; PADDING-LEFT: 5px; PADDING-BOTTOM: 3px; BORDER-LEFT: #ffffff 3px outset; COLOR: #ffffff; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 3px outset; BACKGROUND-COLOR: #5f8cb8
+}
+TD.button A {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+TD.button A:hover {
+	COLOR: #ffff00; TEXT-DECORATION: underline
+}
+
+TABLE { font-size: 10pt; }
+TABLE.results  {  background-color: #DDDDDD; font-size: 12px; border: 2px solid black; cell-spacing: 0px}
+TABLE.texttable { background-color: #FFFFFF; font-size: 12px; border: 2px solid black; cell-spacing: 0px}
+TD.results     {  font-size: 10px; font-family:verdana; border: 1px solid #FFFFFF; text-align: left }
+TD.resultsdesc {  font-size: 12px; border: 1px solid #FFFFFF; text-align: left }
+TD.resultstitle  {  backgrounD-color: #5f8cb8; font-size: 12px; border: 2px solid #DDDDDD; text-align: center }
+TD.texttd       {  background-color: #F0F0F0 ; font-size: 12px; border: 0px; text-align: left }
+TD.textheadtd   {  background-color: #E8E8E8 ; font-size: 12px; border: 1px solid #DDDDDD; text-align: left }
+/* Sortable tables */
+table.sortable a.sortheader {
+        font-size:12px;
+        background-color: #6699cc;
+        padding: 5px 5px 5px 5px;
+        color: white;
+        text-align: center;
+        border: 0.5px solid #cecece;
+        font-family:verdana,arial,helvetica,sans-serif;
+        font-weight: normal;
+}
+table.sortable span.sortarrow {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* User Specified */
+.resultsCell {
+        padding: 4px 5px 5px 5px;
+        border: 1px solid #cecece;
+	font-family:verdana;
+	font-size:11px;
+}
+.leftParameter {
+        font-size:10px;
+        background-color: #6699cc;
+        padding: 5px 5px 5px 5px;
+        color: white;
+}
+
+.spArea {
+	padding: 10px;
+}
+.sp {
+	background-color: #ffffff;
+	border: 1px solid #294766;
+	text-align: center;
+	min-height: 60px;
+	vertical-align: middle;
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #050f1a;
+	}
+.sp a {
+	vertical-align: middle;
+	}
+.sp a img {
+	vertical-align: middle;
+	}
+	
+div#mainhelp p {
+	text-align: justify;
+	padding: 5px;
+	max-width: 1000px;
+}
+
+div#mainhelp h3 {
+	margin-top: 40px;
+	border-top: 1px solid #6699cc;
+}
+
+.mybutton { 
+	width: 150px;
+	height: 40px;
+	background-color: #6699cc;
+	color: #1a2633;
+    font-family:helvetica,sans-serif;
+    font-size:84%;
+    font-weight:bold;
+    border:1px solid #030e1a;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #050f1a;
+}
+
+.r {
+	text-align: right;
+}
+.tblhead {
+	background-color:#80bfff;
+	}
+.even_row{
+	background-color:#d9ecff;
+	}
+.odd_row{
+	background-color:#FFFFFF;
+	}
+.special_row{
+	background-color:#FFF1C1;
+	}
+
+.little-font{
+	font-size:10px;
+	font-family: arial, "lucida console", sans-serif;
+	}
+.table-font{
+	font-size:8pt;
+	font-family: arial, "lucida console", sans-serif;
+	border-collapse: collapse;
+	}
+.table-font tr th {
+	border: 1px solid #6699cc;
+	}
+
+.table-font tr td {
+	max-width: 600px;
+	border: 1px solid #6699cc;
+	}
+.table-font tr td.m {
+	max-width: 250px;
+}
+	
+.nowrap tr td {
+	white-space: nowrap;
+}
+
+.solid {
+    border: 1px solid #01274d;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #6b8fb3;
+	}
+
+.solid2 {
+	border: 2px solid #6699cc;
+	}
+	
+table#results tr td {
+	text-align: right;
+}
+
+h1 {
+	border-bottom: solid 1px #e3f1ff;
+}
+h3{
+	font-family: sans-serif;
+	background-color: #ccd9e6;
+	padding:8px;
+	
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px #888;
+	}
+h4{
+	font-family: sans-serif;
+	border: 1px solid #ccd9e6;
+	background-color: #edf6ff;
+	padding: 2px;
+	margin: 0px;
+    border-radius: 3px;
+	}
+h5.copyright {
+	margin: 5px;
+	text-align: center;
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+.container {
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px #888;
+	position: relative;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	background-color: #e3f1ff;
+	padding:5px;
+	height: 32px;
+}
+
+table#setTable tr td {
+	vertical-align: top;
+}
+div.geneTable {
+	max-height: 400px;
+	height: auto;
+	overflow: auto;
+}
+
+table.geneTable {
+	max-width: 900px;
+	min-width: 200px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table.geneTable tr th {
+        font-size:14px;
+        background-color: #6699cc;
+        padding: 5px 5px 5px 5px;
+        color: white;
+        text-align: center;
+        font-family:verdana;
+        font-weight: normal;
+}
+table.geneTable tr {
+	vertical-align: top;
+}
+
+table.geneTable tr.even {
+	background-color: #d9ecff;
+}
+
+.buildinfo {
+	color: #a3b8cc;
+	font-size: 8pt;
+}
+
+span.subfunction {
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.left-element {
+   position: absolute;
+   left: 10;
+   }
+
+.right-element {
+	font-size:12px;
+	font-family: arial, "lucida console", sans-serif;
+	color:#FF3333;
+   position: absolute;
+   right: 10;
+   width: 50%;
+   text-align: right; /* depends on element width */
+   } 
+
+li {
+	font-size:14px;
+	margin-top:10px;
+	}
+	
+.lastupdate {
+	text-align: right;
+	color: #738699;
+	padding-right: 5px;
+	font-size: 8pt;
+}
+
+.lookup {
+	text-align: right;
+	padding: 2px;
+}
+
+#feature-table {
+	border: 1px solid #1f5c99;
+	border-collapse: collapse;
+}
+#feature-table tr th {
+	font-size: 9pt;
+	font-weight: bold;
+	padding: 2px;
+}
+
+#feature-table tr.all td {
+	background: #8bb2d9;
+}
+
+.synonym {
+	text-indent: -50px;
+	padding-left: 50px;
+}
+
+.via {
+	font-size: 8pt;
+	color: #6699cc;
+}
+
+.o {
+	font-size: 7pt;
+	color: #804040;
+}
+
+.r {
+	text-align: right;
+}
+
+div.message {
+	border: 1px solid #004400;
+	background: #e0ffe0;
+	color: #004400;
+	font-weight: bold;
+	font-size: 12pt;
+	padding: 15px 30px;
+	margin: 15px 30px;
+}
+div.message .info {
+	font-size: 8pt;
+	padding-bottom: 10px;
+	text-align: right;
+}
+
+div.error {
+	border: 1px solid #440000;
+	background: #ffe0e0;
+	color: #440000;
+	font-weight: bold;
+	font-size: 12pt;
+	padding: 15px 30px;
+	margin: 15px 30px;
+}
+div.error .info {
+	font-size: 8pt;
+	padding-bottom: 10px;
+	text-align: right;
+}
+
+div#share {
+	float: right;
+	background: #f0f7ff;
+	border: 1px solid #cce6ff;
+	font-size: 8pt;
+	vertical-align: middle;
+	}
+
+A {
+	text-decoration: none; 
+	color: #1f5c99;
+}
+.small {
+	font-size: 7pt;
+	}
+A:visited {
+	text-decoration: none; 
+	color: #1f5c99;
+}
+A:active {text-decoration: none;background-color: #4e7194; color: #FFFFFF}
+A:hover {text-decoration: none;background-color: #4e7194; color: #FFFFFF}
+
+.error {
+	COLOR: #ff0000
+}
+.label {
+	FONT-WEIGHT: bold; COLOR: #5f8cb8;
+}
+.caption {
+	COLOR: #ffffff
+}
+.warn {
+	font-weight: bold;
+	color: #52789e;
+}
+
+td.deletegene {
+	cursor: pointer;
+	width: 15px;
+	height: 15px;
+	background: url(files/delete.png) center right no-repeat;
+}
+
+a.external {
+	background: url(files/external.png) center right no-repeat;
+	padding: 0 13px;
+}
+
+.imgright {
+	float: right;
+	padding: 5px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	border: 1px solid #cce6ff;
+    border-radius: 5px;
+}
+
+fieldset {
+	border-radius: 6px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+	border: 1px solid #3380cc;
+}
+
+div.firstfive tr.p5 {
+	display: none;
+}
+
+.showmore {
+	display: none;
+}
+
+.srcToggle {
+	padding: 2px;
+	cursor: pointer;
+	width: 30px;
+}
+
+.srcInfo {
+	display: none;
+	padding-left: 45px;
+}
+
+.reenrich {
+	float: right;
+	font-size: 7pt;
+	padding: 1px;
+	color: #142433
+}
+div.indent {
+	padding-left: 10px;
+}
+div.firstfive .showmore {
+	display: inline;
+	cursor: pointer;
+    font-size: 8pt;
+    font-weight: bold;
+	border: 1px solid #cce6ff;
+    background-color: #6699cc;
+}

@@ -1,1 +1,1 @@
-java -Xmx5000M -jar ./bin/BIODICA/BIODICA.jar -config config -datatable data/OVCA_TCGA/transcriptome/OVCA.txt -dogsea 100
+java -Xmx5000M -cp BIODICA_GUI.jar BIODICAPipeLine -config config -datatable data/OVCA_TCGA/transcriptome/OVCA.txt -dogsea 100
