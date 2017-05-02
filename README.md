@@ -22,7 +22,13 @@ Otherwise, launch the BIODICA GUI by executing
 java -jar BIODICA_GUI.jar
 ```
 
+Tips and tricks:
 
+It is not necessary to re-compute the ICA decomposition each time. Application of different procedures is possible for the results computed earlier, or even for the decompositions computed not with BIODICA.
+For example, the toppgene analysis can be launched by executing
+```
+java -cp BIODICA_GUI.jar BIODICAPipeLine -config config -sfile [path_to_metagene_file] -dotoppgene
+```
 
 
 
