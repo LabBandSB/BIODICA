@@ -1,1 +1,0 @@
-java -Xmx5000M -cp BIODICA_GUI.jar BIODICAPipeLine -config config -sfile work\OVCA_ICA\OVCA_ica_S.xls -dotoppgene
