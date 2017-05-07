@@ -13,7 +13,7 @@ or it can use MATLAB RunTime under Windows.
 
 For installing BIODICA
 
-1) clone the repository into a local folder, with all files
+1) clone the repository into a local folder, *with all files*
 
 2) check that the Java is installed. Java 1.8 is required.
 
@@ -22,6 +22,8 @@ For installing BIODICA
 4) For minimal configuration, edit the config file in the root folder for the way to use MATLAB (MATLAB RunTime is used by default).
 One can change the 'MATLABFolder' parameter, specifying the path to MATLAB bin folder: in this case, the MATLAB installation will be used instead.
 If you want to run the examples of the command line BIODICA uses ('cmdline_examples' folder), modify the 'cmdline_examples/config' file also.
+
+## Use of BIODICA
 
 To list all options for the command line use, execute
 
@@ -35,7 +37,7 @@ Otherwise, launch the BIODICA GUI by executing
 java -jar BIODICA_GUI.jar
 ```
 
-##Tips and tricks:
+## Tips and tricks:
 
 It is not necessary to re-compute the ICA decomposition each time. Application of different procedures is possible for the results computed earlier, or even for the decompositions computed not with BIODICA.
 For example, the toppgene analysis can be launched by executing
