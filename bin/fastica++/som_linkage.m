@@ -189,12 +189,16 @@ Z = zeros(n-1,3)+NaN;  % merged clusters and distance for each step
 clusters = 1:dlen;     % each vector is at first in its own cluster
 Cd = Md;               % distances between clusters
 
+if ~isdeployed&0
 h = waitbar(0,'Constructing hierarchical clustering'); 
+end
   
 for i=1:n-1,   
 
+  if ~isdeployed&0
   % tracking
   waitbar(i/(n-1),h); 
+  end
 
   %% combine two closest clusters  
   % find the clusters which are closest to each other (c1 and c2)
@@ -239,7 +243,10 @@ for i=1:n-1,
     end  
   end
 end
+
+if ~isdeployed&0
 close(h); 
+end
 
 last = Z(i,1); 
 if isnan(last), 

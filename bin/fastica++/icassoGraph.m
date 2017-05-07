@@ -250,7 +250,11 @@ index2centrotypes=icassoIdx2Centrotype(sR,'partition',partition);
 
 %%%%%%%%%% Visualization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-clf reset; hold on;
+if ~isdeployed&0
+clf reset; 
+end;
+
+hold on;
 
 p=sR.projection.coordinates; 
 

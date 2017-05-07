@@ -72,7 +72,11 @@ goodness = array(inds,11);
         nmstd7 = mstd(find(abs(sminvalues-0.7)<0.001));
         nmstd8 = mstd(find(abs(sminvalues-0.8)<0.001));
 
+if isdeployed|1
+figure('doublebuffer','off','Visible','Off');
+else
 figure;
+end
 
 ttl = [total(:,1)/std(total(:,1)) total(:,2)/std(total(:,2))];
 [line1,line2,inters] = TwoLineClustering(ttl,[0 0],[0 1000]);
@@ -129,7 +133,11 @@ text(max(nums)*0.7, 0.9,sprintf('MSTD=%i',MSTDT),'FontSize',20);
 fn = sprintf('%s_MSTD_estimate.png',folder);
 print('-dpng',fn,'-r300');
 
+if isdeployed|1
+figure('doublebuffer','off','Visible','Off');
+else
 figure;
+end
 
 %plot(nums(3:end),goodness(3:end),'ko-'); hold on;
 

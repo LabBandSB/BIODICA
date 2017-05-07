@@ -1,5 +1,5 @@
-MATLABFolder = C:\MATLAB_R2015a\bin
 MATLABICAFolder = bin/fastica++
+MATLABFolder = 
 DefaultWorkFolder = work
 GeneSetFolder = knowledge/genesets
 GenePropertiesFile = knowledge/geneproperties/genes.txt

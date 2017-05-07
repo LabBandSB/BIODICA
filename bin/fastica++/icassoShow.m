@@ -229,13 +229,22 @@ s=clusterstat(c,partition);
 
 %%%%%%%%%%%%%%%%% Clustering validity index %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+if isdeployed|1
+hf=figure(1); set(hf,'doublebuffer','off','Visible','Off');
+else
 figure(1); clf reset;
+end
 
 icassoRindex(sR,level);
 
 %%%%%%%%%%%%%%%% Ranking clusters & number of estimates %%%%%%%%%%%%%%%
 
+if isdeployed|1
+hf=figure(2); set(hf,'doublebuffer','off','Visible','Off');
+else
 figure(2); clf;
+end
+
 
 % compute & plot quality index
 
@@ -269,13 +278,23 @@ print('-dpng',fn,'-r300');
 %%%%%%%%%%%%%%% Dendrogram %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % Show dendrogram 
 
-figure(3);
-clf reset;
+if isdeployed|1
+hf=figure(3); set(hf,'doublebuffer','off','Visible','Off');
+else
+figure(3); clf reset;
+end
+
 icassoDendrogram(sR,level);
 
 %%%%%%%%%%%%%%% Correlation graph %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+if isdeployed|1
+hf=figure(4); set(hf,'doublebuffer','off','Visible','Off');
+else
 figure(4); clf reset;
+end
+
+
 if ~isempty(sR.projection.coordinates),  
   icassoGraph(sR,graphArgs{:});
 else
@@ -292,7 +311,12 @@ print('-dpng',fn,'-r300');
 
 switch est 
  case 'source'
-  figure(5); clf reset;
+if isdeployed|1
+hf=figure(5); set(hf,'doublebuffer','off','Visible','Off');
+else
+figure(5); clf reset;
+end
+  
   set(5,'name','Icasso: Source Estimates (centrotypes)');
   signalplot(S(estimateOrder,:)); 
   set(gca,'yticklabel',estimateOrder); 
@@ -300,7 +324,12 @@ switch est
   xlabel('Sample #');
   title(['Independent components (ranked according to I_q)']);
  case 'demixing'
-  figure(5); clf reset;
+if isdeployed|1
+hf=figure(5); set(hf,'doublebuffer','off','Visible','Off');
+else
+figure(5); clf reset;
+end
+
   set(5,'name','Icasso: Demixing Matrix Estimate');
   signalplot(W(estimateOrder,:)); 
   set(gca,'yticklabel',estimateOrder); 
@@ -309,7 +338,12 @@ switch est
   title(['Demixing matrix rows (ranked according to' ...
 	 ' I_q)']);
  case 'mixing'
-  figure(5); clf reset;
+if isdeployed|1
+hf=figure(5); set(hf,'doublebuffer','off','Visible','Off');
+else
+figure(5); clf reset;
+end
+
   set(5,'name','Icasso: Mixing Matrix Estimate');
   signalplot(A(:,estimateOrder)'); 
   set(gca,'yticklabel',estimateOrder); 
@@ -323,7 +357,12 @@ end
 %%%%%%%%%%%%% Details of Iq %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 if detailedrankplot,
-  figure(6); clf;
+if isdeployed|1
+hf=figure(6); set(hf,'doublebuffer','off','Visible','Off');
+else   
+figure(6); clf;
+end
+
   set(6,'name','Icasso: Detaild Estimate Stability');
   icassoStability(sR,level,'plotstat');  
 end

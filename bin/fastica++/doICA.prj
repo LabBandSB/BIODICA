@@ -1,0 +1,166 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="2562220042" file="C:\Datas\BIODICA_GUI\bin\fastica++\doICA.prj" location="C:\Datas\BIODICA_GUI\bin\fastica++" name="doICA" preferred-package-location="C:\Datas\BIODICA_GUI\bin\fastica++\doICA\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>doICA</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.net.saved.interface />
+    <param.installpath.string>\doICA\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\doICA\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\doICA\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\doICA\for_redistribution</param.output>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.required.mcr.products>
+      <item>35000</item>
+      <item>35010</item>
+      <item>35001</item>
+    </param.required.mcr.products>
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>doICAInstaller</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.net.saved.interface />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\doICA.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\cca.m</file>
+      <file>${PROJECT_ROOT}\centrotype.m</file>
+      <file>${PROJECT_ROOT}\clusterhull.m</file>
+      <file>${PROJECT_ROOT}\clusterquality.m</file>
+      <file>${PROJECT_ROOT}\clusterstat.m</file>
+      <file>${PROJECT_ROOT}\corrw.m</file>
+      <file>${PROJECT_ROOT}\fastica.m</file>
+      <file>${PROJECT_ROOT}\fpica.m</file>
+      <file>${PROJECT_ROOT}\hcluster.m</file>
+      <file>${PROJECT_ROOT}\icaplot.m</file>
+      <file>${PROJECT_ROOT}\icasso.m</file>
+      <file>${PROJECT_ROOT}\icassoCluster.m</file>
+      <file>${PROJECT_ROOT}\icassoDendrogram.m</file>
+      <file>${PROJECT_ROOT}\icassoEst.m</file>
+      <file>${PROJECT_ROOT}\icassoExp.m</file>
+      <file>${PROJECT_ROOT}\icassoGet.m</file>
+      <file>${PROJECT_ROOT}\icassoGraph.m</file>
+      <file>${PROJECT_ROOT}\icassoIdx2Centrotype.m</file>
+      <file>${PROJECT_ROOT}\icassoProjection.m</file>
+      <file>${PROJECT_ROOT}\icassoResult.m</file>
+      <file>${PROJECT_ROOT}\icassoRindex.m</file>
+      <file>${PROJECT_ROOT}\icassoShow.m</file>
+      <file>${PROJECT_ROOT}\icassoStability.m</file>
+      <file>${PROJECT_ROOT}\icassoStruct.m</file>
+      <file>${PROJECT_ROOT}\mmds.m</file>
+      <file>${PROJECT_ROOT}\pcamat.m</file>
+      <file>${PROJECT_ROOT}\processvarargin.m</file>
+      <file>${PROJECT_ROOT}\redscale.m</file>
+      <file>${PROJECT_ROOT}\reducesim.m</file>
+      <file>${PROJECT_ROOT}\remmean.m</file>
+      <file>${PROJECT_ROOT}\rindex.m</file>
+      <file>${PROJECT_ROOT}\sammon.m</file>
+      <file>${PROJECT_ROOT}\signalplot.m</file>
+      <file>${PROJECT_ROOT}\sim2dis.m</file>
+      <file>${PROJECT_ROOT}\similaritygraph.m</file>
+      <file>${PROJECT_ROOT}\som_dendrogram.m</file>
+      <file>${PROJECT_ROOT}\som_grid.m</file>
+      <file>${PROJECT_ROOT}\som_linkage.m</file>
+      <file>${PROJECT_ROOT}\som_set.m</file>
+      <file>${PROJECT_ROOT}\sqrtsim2dis.m</file>
+      <file>${PROJECT_ROOT}\vis_valuetype.m</file>
+      <file>${PROJECT_ROOT}\whitenv.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\doICA\for_testing" name="readme.txt" optional="true">C:\Datas\BIODICA_GUI\bin\fastica++\doICA\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\doICA\for_testing" name="splash.png" optional="false">C:\Datas\BIODICA_GUI\bin\fastica++\doICA\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\doICA\for_testing" name="doICA.exe" optional="false">C:\Datas\BIODICA_GUI\bin\fastica++\doICA\for_testing\doICA.exe</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\MATLAB_R2015a</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

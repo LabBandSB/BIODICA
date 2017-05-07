@@ -1,0 +1,23 @@
+ant:
+<ant>
+  <mkdir dir="C:\Datas\BIODICA_GUI\bin\fastica++\doICA\for_redistribution" />
+  <mkdir dir="C:\Datas\BIODICA_GUI\bin\fastica++\doICA\for_testing" />
+  <mkdir dir="C:\Datas\BIODICA_GUI\bin\fastica++\doICA\for_redistribution_files_only" />
+</ant>
+mcc -C -o doICA -W WinMain:doICA -T link:exe -d C:\Datas\BIODICA_GUI\bin\fastica++\doICA\for_testing -v C:\Datas\BIODICA_GUI\bin\fastica++\doICA.m -a C:\Datas\BIODICA_GUI\bin\fastica++\sim2dis.m -a C:\Datas\BIODICA_GUI\bin\fastica++\sqrtsim2dis.m 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+[Warning: Adding path "C:\Datas\BIODICA_GUI\bin\fastica++" to Compiler path
+instance.] 
+Parsing file "C:\Datas\BIODICA_GUI\bin\fastica++\doICA.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "C:\Datas\BIODICA_GUI\bin\fastica++\doICA\for_testing\readme.txt".
+Packaging...
+Adding custom icon C:\MATLAB_R2015a\toolbox\compiler\Resources\default_icon.ico to C:\Datas\BIODICA_GUI\bin\fastica++\doICA\for_testing\doICA.exe.
+Attempting to embed the CTF archive into the application C:\Datas\BIODICA_GUI\bin\fastica++\doICA\for_testing\doICA.exe.
+Finished embedding CTF archive. Deleting the external CTF archive.
+Creating the bundle...
+Web based installer created at C:\Datas\BIODICA_GUI\bin\fastica++\doICA\for_redistribution\doICAInstaller.exe.
+Packaging complete.
+Elapsed packaging time was: 45 seconds.

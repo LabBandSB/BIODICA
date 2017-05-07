@@ -4,6 +4,11 @@ global ICAFolder;
 global ICAFileName;
 global ICANumberOfComponents;
 
+if isdeployed
+     ncomp = str2num(ncomp);
+end
+
+
 ICAFolder = folder;
 ICAFileName = fn;
 ICANumberOfComponents = ncomp;
@@ -13,6 +18,9 @@ numiterations = 100;
     for i=1:2:length(varargin)
         if strcmpi(varargin{i},'NumIterations')
             numiterations = varargin{i+1};
+		if isdeployed
+     			numiterations = str2num(numiterations);
+		end
         end
     end
 
@@ -32,3 +40,5 @@ save(fnA,'A1','-ascii','-tabs');
 done = 1;
 doneF = sprintf('%s_done',folder);
 save(doneF,'done','-ascii');
+
+close all;
