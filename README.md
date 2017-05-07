@@ -15,9 +15,9 @@ For installing BIODICA
 
 1) clone the repository into a local folder, *with all files*
 
-2) check that the Java is installed. Java 1.8 is required.
+2) check that the Java is installed. Java 1.8 or later version is required.
 
-3) go to folder bin/fastica++/doICA and unzip the file doICA.zip into this folder.
+3) go to folder *bin/fastica++/doICA* and unzip the file *doICA.zip* into this folder.
 
 4) For minimal configuration, edit the config file in the root folder for the way to use MATLAB (MATLAB RunTime is used by default).
 One can change the 'MATLABFolder' parameter, specifying the path to MATLAB bin folder: in this case, the MATLAB installation will be used instead.
