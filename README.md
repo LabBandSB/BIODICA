@@ -6,14 +6,20 @@ and performing analyses for interpreting the results of ICA application.
 
 BIODICA can work as Graphical User Interface (GUI) or in the command line mode.
 
-For installing BIODICA, clone the repository into a local folder, with all files, and check that the Java is installed.
-It is recommended to update your Java installation to the latest version (Java 1.8 is required).
-
 Current version of BIODICA requires either MATLAB installed (any operating system)
 or it can use MATLAB RunTime under Windows.
 
-For minimal configuration, edit the config file in the root folder for the way to use MATLAB
-(MATLAB RunTime is used by default).
+## Installation
+
+For installing BIODICA
+
+1) clone the repository into a local folder, with all files
+
+2) check that the Java is installed. Java 1.8 is required.
+
+3) go to folder bin/fastica++/doICA and unzip the file doICA.zip into this folder.
+
+4) For minimal configuration, edit the config file in the root folder for the way to use MATLAB (MATLAB RunTime is used by default).
 One can change the 'MATLABFolder' parameter, specifying the path to MATLAB bin folder: in this case, the MATLAB installation will be used instead.
 If you want to run the examples of the command line BIODICA uses ('cmdline_examples' folder), modify the 'cmdline_examples/config' file also.
 
