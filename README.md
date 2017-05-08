@@ -17,7 +17,7 @@ For installing BIODICA
 
 2) check that the Java is installed. Java 1.8 or later version is required.
 
-3) run install.bat (Windows) in the root folder (this will copy the MATLAB RunTime binaries).
+3) run *install.bat* (Windows) in the root folder (this will copy the MATLAB RunTime binaries).
 
 4) For minimal configuration, edit the config file in the root folder for the way to use MATLAB (MATLAB RunTime is used by default so no need for modifications in this case).
 One can change the 'MATLABFolder' parameter, specifying the path to MATLAB bin folder: in this case, the MATLAB installation will be used instead.
