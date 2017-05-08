@@ -17,13 +17,13 @@ For installing BIODICA
 
 2) check that the Java is installed. Java 1.8 or later version is required.
 
-3) go to folder *bin/fastica++/doICA* and unzip the file *doICA.zip* in this folder (this step is needed since GitHub does not allow uploading executables).
+3) run install.bat (Windows) in the root folder (this will copy the MATLAB RunTime binaries).
 
-4) For minimal configuration, edit the config file in the root folder for the way to use MATLAB (MATLAB RunTime is used by default).
+4) For minimal configuration, edit the config file in the root folder for the way to use MATLAB (MATLAB RunTime is used by default so no need for modifications in this case).
 One can change the 'MATLABFolder' parameter, specifying the path to MATLAB bin folder: in this case, the MATLAB installation will be used instead.
 If you want to run the examples of the command line BIODICA uses ('cmdline_examples' folder), modify the 'cmdline_examples/config' file also.
 
-## Use of BIODICA
+## Running BIODICA
 
 To list all options for the command line use, execute
 
@@ -36,6 +36,7 @@ Otherwise, launch the BIODICA GUI by executing
 ```
 java -jar BIODICA_GUI.jar
 ```
+Look at few examples of BIODICA command line use in *cmdline_examples* folder.
 
 ## Tips and tricks:
 
