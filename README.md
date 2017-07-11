@@ -17,9 +17,22 @@ For installing BIODICA
 
 2) check that the Java is installed. Java 1.8 or later version is required.
 
-3) run *install.bat* (Windows) in the root folder (this will copy the MATLAB RunTime binaries).
+3) run *install.bat* (Windows) or *install.sh* in the root folder (this will copy the MATLAB RunTime binaries).
 
-4) For minimal configuration, edit the config file in the root folder for the way to use MATLAB (MATLAB RunTime is used by default so no need for modifications in this case).
+4) if you can use docker (recommended) for performing Matlab computations (then MATLAB or binaries are not required and no configuration of MATLAB Runtime is needed) then execute first 
+
+```
+docker pull auranic/biodica
+```
+
+and change 
+
+```
+UseDocker = true
+```
+in the *config* file.
+
+5) For minimal configuration, edit the *config* file in the root folder for the way to use MATLAB (docker solution is used by default, otherwise see tutorial on how to configure).
 One can change the 'MATLABFolder' parameter, specifying the path to MATLAB bin folder: in this case, the MATLAB installation will be used instead.
 If you want to run the examples of the command line BIODICA uses ('cmdline_examples' folder), modify the 'cmdline_examples/config' file also.
 
