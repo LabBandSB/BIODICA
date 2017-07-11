@@ -33,7 +33,7 @@ else
       args="${args} \"${token}\"" 
       shift
   done
-  eval "\"${exe_dir}/plotAverageStabilityLunyx\"" $args
+  eval "\"${exe_dir}/plotAverageStability_linux\"" $args
 fi
 exit
 
