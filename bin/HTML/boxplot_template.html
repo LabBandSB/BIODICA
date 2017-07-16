@@ -1,0 +1,73 @@
+<head>
+<!-- Plotly.js -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        </head>
+        <body>
+        <!-- Plotly chart will be drawn inside this DIV -->
+        <div id="$CHART_ID$"></div>
+        <script>
+        /* JAVASCRIPT CODE GOES HERE */
+
+
+
+var xData = [$XDATA$];
+
+var yData = [
+$YDATA$
+];
+
+var colors = [$COLORS$];
+
+var data = [];
+
+for ( var i = 0; i < xData.length; i ++ ) {
+  var result = {
+    type: 'box',
+    y: yData[i],
+    name: xData[i],
+    boxpoints: 'all',
+    jitter: 0.5,
+    whiskerwidth: 0.2,
+    fillcolor: 'cls',
+    marker: {
+      size: 2
+    },
+    line: {
+      width: 1
+    }
+  };
+  data.push(result);
+};
+
+layout = {
+    title: '$CHART_TITLE$',
+    yaxis: {
+        autorange: true,
+        showgrid: true,
+        zeroline: true,
+        dtick: 5,
+        gridcolor: 'rgb(255, 255, 255)',
+        gridwidth: 1,
+        zerolinecolor: 'rgb(255, 255, 255)',
+        zerolinewidth: 2
+    },
+    margin: {
+        l: 40,
+        r: 30,
+        b: 80,
+        t: 100
+    },
+    paper_bgcolor: 'rgb(243, 243, 243)',
+    plot_bgcolor: 'rgb(243, 243, 243)',
+    showlegend: false
+};
+
+Plotly.newPlot('$CHART_ID$', data, layout);
+
+
+
+
+
+
+        </script>
+        </body>

@@ -1,0 +1,49 @@
+<head>
+<!-- Plotly.js -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        </head>
+        <body>
+        <!-- Plotly chart will be drawn inside this DIV -->
+        <div id="$CHART_ID$"></div>
+        <script>
+        /* JAVASCRIPT CODE GOES HERE */
+
+
+var trace1 = {
+  x: $XDATA$,
+  y: $YDATA$,
+  text: $NAMES$, 
+  mode: 'markers',
+  type: 'scatter'
+};
+
+
+var data = [trace1];
+
+
+var layout = {
+    title:'$CHART_TITLE$',
+    xaxis:{
+        title:'$X_AXIS_LABEL$',
+        titlefont:{
+            family:'Courier New, monospace',
+            size:18,
+            color:'#7f7f7f'
+        }
+    },
+    yaxis:{
+        title:'$Y_AXIS_LABEL$',
+        titlefont:{
+            family:'Courier New, monospace',
+            size:18,
+            color:'#7f7f7f'
+        }
+    }
+}
+
+
+Plotly.newPlot('$CHART_ID$', data, layout);
+
+
+        </script>
+        </body>

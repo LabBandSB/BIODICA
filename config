@@ -1,5 +1,6 @@
 MATLABICAFolder = bin/fastica++
-MATLABFolder = 
+MATLABFolder =
+UseDocker = true 
 DefaultWorkFolder = work
 GeneSetFolder = knowledge/genesets
 GenePropertiesFile = knowledge/geneproperties/genes.txt

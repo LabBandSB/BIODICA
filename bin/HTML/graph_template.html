@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <title>$TITLE$</title>
+
+  <script type="text/javascript" src="vis.js"></script>
+  <link href="vis-network.min.css" rel="stylesheet" type="text/css" />
+
+  <style type="text/css">
+    #$GRAPH_ID$ {
+      width: 1000px;
+      height: 500px;
+      border: 1px solid gray;
+    }
+
+    p {
+      max-width:700px;
+    }
+  </style>
+</head>
+<body>
+
+<p>
+$DESCRIPTION$
+</p>
+
+<div id="$GRAPH_ID$"></div>
+
+<script type="text/javascript">
+  // create an array with nodes
+  var nodes = new vis.DataSet([
+	$NODES$
+  ])
+
+  // create an array with edges
+  var edges = new vis.DataSet([
+	$EDGES$
+  ]);
+
+  // create a network
+  var container = document.getElementById('$GRAPH_ID$');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {
+    nodes: {borderWidth: 2},
+    interaction: {hover: true}
+  }
+  var network = new vis.Network(container, data, options);
+</script>
+
+
+</body>
+</html>
