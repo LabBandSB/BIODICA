@@ -6,8 +6,8 @@ and performing analyses for interpreting the results of ICA application.
 
 BIODICA can work as Graphical User Interface (GUI) or in the command line mode.
 
-Current version of BIODICA requires either MATLAB installed (any operating system)
-or it can use MATLAB RunTime under Windows.
+Our tests show that BIODICA is the most performant existing implementation of fastICA algorithm
+(10-50 times faster than existing implementation in R).
 
 ## Installation
 
