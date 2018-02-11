@@ -1,1 +1,0 @@
-java -Xmx5000M -cp ../BIODICA_GUI.jar BIODICAPipeLine -config config -dobbhgraph ../data/METAANALYSIS_TEST/ 

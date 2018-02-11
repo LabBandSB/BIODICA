@@ -13,7 +13,9 @@ Our tests show that BIODICA is the most performant existing implementation of fa
 
 For installing BIODICA
 
-1) clone the repository into a local folder, *with all files*
+1) clone the repository into a local folder, *with all files*. 
+Make sure that the name of the local folder does not contain spaces and hypens: otherwise, certain functions won't work.
+Do not use the name "BIODICA-master" which will be suggested by GitHub after downloading the repository!
 
 2) check that the Java is installed. Java 1.8 or later version is required.
 
