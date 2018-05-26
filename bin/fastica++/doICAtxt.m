@@ -16,7 +16,7 @@ global ICAFileName;
 global ICANumberOfComponents;
 
 ICAFolder = folder;
-ICAFileName = fn;
+ICAFileName = fn;   
 ICANumberOfComponents = ncomp;
 
 [iq, A, W, S, sR]=icasso(x,5,'g','pow3','lastEig',ncomp);

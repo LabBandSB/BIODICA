@@ -8,10 +8,22 @@ function [line1,line2,intersection,i1,i2] = TwoLineClustering(x,initialLine1,ini
     while(eps>0.001)
         l1m = l1;
         [i1,i2] = SplitByLineProximity(x,l1,l2);
+        if(size(i1,2)>1)
         [v,u,s] = pca(x(i1,:),'NumComponents',1);
         l1 = convertPrincipalVector2Line(mean(x(i1,:)),v);
+        else
+        v = rand(2,1);
+        l1 = convertPrincipalVector2Line(x(i1(1),:),v/norm(v));
+        end
+
+        if(size(i2,2)>1)
         [v,u,s] = pca(x(i2,:),'NumComponents',1);
         l2 = convertPrincipalVector2Line(mean(x(i2,:)),v);
+        else
+        v = rand(2,1);
+        l2 = convertPrincipalVector2Line(x(i2(1),:),v/norm(v));
+        end
+
         eps = norm(l1m-l1)/norm(l1);
         %display(sprintf('%f',eps));
     end

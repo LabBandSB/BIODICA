@@ -284,7 +284,7 @@ else
 figure(3); clf reset;
 end
 
-icassoDendrogram(sR,level);
+%icassoDendrogram(sR,level);
 
 %%%%%%%%%%%%%%% Correlation graph %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

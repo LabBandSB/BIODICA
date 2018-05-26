@@ -1,4 +1,4 @@
-function [Out1, Out2, Out3] = fastica(mixedsig, varargin)
+function [Out1, Out2, Out3, convergence] = fastica(mixedsig, varargin)
 %FASTICA - Fast Independent Component Analysis
 %
 % FastICA for Matlab 7.x and 6.x
@@ -206,6 +206,9 @@ function [Out1, Out2, Out3] = fastica(mixedsig, varargin)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Check some basic requirements of the data
+
+convergence = 0;
+
 if nargin == 0,
   error ('You must supply the mixed data as input argument.');
 end
@@ -283,6 +286,8 @@ else
     end
     % change the value of parameter
     switch lower (varargin{i})
+     case 'data'
+         ;
      case 'stabilization'
       stabilization = lower (varargin{i+1});
      case 'maxfinetune'
@@ -467,7 +472,7 @@ if only > 2
   end
   
   % Calculate the ICA with fixed point algorithm.
-  [A, W] = fpica (whitesig,  whiteningMatrix, dewhiteningMatrix, approach, ...
+  [A, W, convergence] = fpica (whitesig,  whiteningMatrix, dewhiteningMatrix, approach, ...
 		  numOfIC, g, finetune, a1, a2, myy, stabilization, epsilon, ...
 		  maxNumIterations, maxFinetune, initState, guess, sampleSize, ...
 		  displayMode, displayInterval, verbose);

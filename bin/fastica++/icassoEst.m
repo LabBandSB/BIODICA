@@ -1,4 +1,4 @@
-function sR=icassoEst(mode,X,M,varargin)
+function [sR,convs]=icassoEst(mode,X,M,varargin)
 %function sR=icassoEst(mode,X,M,['FastICAparamName1',value1,'FastICAparamName2',value2,...])
 %
 %PURPOSE
@@ -153,7 +153,7 @@ while i<num_of_args,
   switch fasticaoptions{i}
    case {'approach','firstEig','lastEig','numOfIC','finetune','mu','g','a1','a2',...
 	 'stabilization','epsilon','maxNumIterations','maxFinetune','verbose',...
-	 'pcaE','pcaD'}
+	 'pcaE','pcaD','data'}
     ; % these are ok
       
    %% Get explicit whitening if given & update flags; note that the
@@ -216,7 +216,7 @@ if (isWhitesig | isWhitemat | isDewhitemat),
   end
 else
   % compute whitening for original data
-  [w,White,deWhite]=fastica(X,'only','white',fasticaoptions{:});
+  [w,White,deWhite,convergence]=fastica(X,'only','white',fasticaoptions{:});
 end
 
 % store whitening for original data:
@@ -244,7 +244,7 @@ end
 sR.fasticaoptions=fasticaoptions;
 
 %% Compute N times FastICA
-k=0; index=[];
+k=0; index=[]; convs=[];
 for i=1:M,
   %clc; 
   fprintf('\n\n%s\n\n',['Randomization using FastICA: Round ' num2str(i) '/' ...
@@ -257,16 +257,17 @@ for i=1:M,
    case {'bootstrap','both'}
     % Bootstrap and compute whitening for _bootstrapped_ data
     X_=bootstrap(X);
-    [w,White,deWhite]=fastica(X_,'only','white',fasticaoptions{:});
+    [w,White,deWhite,convergence]=fastica(X_,'only','white',fasticaoptions{:});
+    convs(i)=convergence;
    otherwise
     error('Internal error?!');
   end
   
   % Estimate FastICA set displayMode off
-  [dummy,A_,W_]=fastica(X_,fasticaoptions{:},...
+  [dummy,A_,W_,convergence]=fastica(X_,fasticaoptions{:},...
 			'whiteMat',White,'dewhiteMat',deWhite,'whiteSig',w,...
 			'sampleSize',1,'displayMode','off');
-  
+  convs(i)=convergence;
   % Store results if any
   n=size(A_,2);
   if n>0, 

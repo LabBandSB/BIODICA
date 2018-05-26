@@ -1,8 +1,12 @@
-function [A, W] = fpica(X, whiteningMatrix, dewhiteningMatrix, approach, ...
+function [A, W, convergence] = fpica(X, whiteningMatrix, dewhiteningMatrix, approach, ...
 			numOfIC, g, finetune, a1, a2, myy, stabilization, ...
 			epsilon, maxNumIterations, maxFinetune, initState, ...
 			guess, sampleSize, displayMode, displayInterval, ...
 			s_verbose);
+
+
+convergence = -1;
+
 %FPICA - Fixed point ICA. Main algorithm of FASTICA.
 %
 % [A, W] = fpica(whitesig, whiteningMatrix, dewhiteningMatrix, approach,
@@ -368,7 +372,7 @@ if approachMode == 1,
 	
       else
         if b_verbose, fprintf('Convergence after %d steps\n', round); end
-	
+	convergence = round;
         % Calculate the de-whitened vectors.
         A = dewhiteningMatrix * B;
         break;

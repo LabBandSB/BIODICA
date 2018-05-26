@@ -1,4 +1,4 @@
-function [Iq,A,W,S,sR]=icasso(X,M,varargin)
+function [Iq,A,W,S,sR,convergences]=icasso(X,M,varargin)
 %function [Iq,A,W,S,sR]=icasso(X,M,['argid1',value1,'argid2',value2,...])
 %
 %PURPOSE
@@ -124,9 +124,9 @@ end
 %%% 1. Estimate ICA: icassoEst
 
 if isempty(fasticaoptions)
-  sR=icassoEst('both',X,M)
+  [sR,convergences]=icassoEst('both',X,M)
 else
-  sR=icassoEst('both',X,M,fasticaoptions{:});
+  [sR,convergences]=icassoEst('both',X,M,fasticaoptions{:});
 end
 
 %%% 2. Compute & visualize/return results
@@ -138,7 +138,7 @@ switch vis
   sR=icassoExp(sR);
   [Iq,A,W,S]=icassoShow(sR,'L',L);
  case 'off'
-  sR=icassoCluster(sR);
+  sR=icassoCluster(sR,'doSimpleLinkageClustering',1);
   [Iq,A,W,S]=icassoResult(sR,L);
  %case 'interactive' % not yet ready
  % sR=icassoExp(sR);

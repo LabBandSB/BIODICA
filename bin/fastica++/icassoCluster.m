@@ -128,10 +128,13 @@ default={'simfcn','abscorr','s2d','sim2dis','strategy','AL','L','rdim'};
 clusterparameters=processvarargin(varargin,default);
 num_of_args=length(clusterparameters);
 
+doSimpleLinkageClustering = 0;
+
 %% check arguments
 for i=1:2:num_of_args;
   switch lower(clusterparameters{i})
-    
+   case 'dosimplelinkageclustering'
+    doSimpleLinkageClustering = clusterparameters{i+1};	
    case 'simfcn'
     simfcn=clusterparameters{i+1};
     
@@ -207,26 +210,46 @@ for i=1:2:num_of_args;
 end
 
 %%%% Compute similarities %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+display('Compute similarities...');
+tic
 switch lower(sR.cluster.simfcn)
  case '<similarities given explicitly>'
   ; % already handled
  case 'abscorr'
   sR.cluster.similarity=abs(corrw(icassoGet(sR,'W'),icassoGet(sR,'dewhitemat')));
+  WD = icassoGet(sR,'W')*icassoGet(sR,'dewhitemat');
+  %save('C:/Datas/BIODICA_GUI/Component_matrix','WD','-ascii','-tabs');
   %just to make sure  
   sR.cluster.similarity(sR.cluster.similarity>1)=1; 
   sR.cluster.similarity(sR.cluster.similarity<0)=0;
 end
-
+toc
 %%%%% Convert to dissimilarities using .s2d
 
 D=feval(sR.cluster.s2d, sR.cluster.similarity);
 
 %%%% Make partition %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+display(sprintf('Clustering components, strategy %s...',sR.cluster.strategy));
+%save('C:/Datas/BIODICA_GUI/D_matrix','D','-ascii','-tabs');
+tic 
+if 1|doSimpleLinkageClustering
+   %DD = pdist(WD,'correlation');
+   %DD = WD*WD';
+   %s=abs(sqrt(sum(DD.^2,2))); DD=DD./repmat(s,1,size(DD,2));
+   %DD=feval(sR.cluster.s2d, DD);
+   %DD = DD-diag(diag(DD)); 
+   %DD = squareform(DD);
+   DD = squareform(D-diag(diag(D))); 
+   sR.cluster.dendrogram.Z = linkage(DD,'average');
+   T = cluster(sR.cluster.dendrogram.Z,'MaxClust',[1:L]);
+   sR.cluster.partition = T';	
+else
 [sR.cluster.partition,sR.cluster.dendrogram.Z,sR.cluster.dendrogram.order]=...
     hcluster(D,sR.cluster.strategy);
-
+end
+partit = sR.cluster.partition;
+%save('C:/Datas/BIODICA_GUI/partition_matrix','partit','-ascii','-tabs');
+toc
 %%%%% Compute cluster validity %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % init R

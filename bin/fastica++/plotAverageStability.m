@@ -78,8 +78,10 @@ else
 figure;
 end
 
-ttl = [total(:,1)/std(total(:,1)) total(:,2)/std(total(:,2))];
-[line1,line2,inters] = TwoLineClustering(ttl,[0 0],[0 1000]);
+ttl = [total(:,1)/std(total(:,1)) (total(:,2))/std(total(:,2))];
+%ttl = [zscore(total(:,1)) zscore(total(:,2))];
+%clf reset; plot(ttl(:,1),ttl(:,2),'ko');
+[line1,line2,inters] = TwoLineClustering(ttl,[mean(ttl(:,1)) 0],[mean(ttl(:,2)) 1000]);
 MSTDT = round(inters*std(total(:,1)));
 display(sprintf('MSTDT = %f',MSTDT));     
 
