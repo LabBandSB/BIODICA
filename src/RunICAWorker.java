@@ -1,5 +1,3 @@
-
-
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
@@ -16,6 +14,7 @@ import javax.swing.border.Border;
 import org.apache.commons.io.FileUtils;
 
 import logic.MATLABExcecutor;
+import logic.PythonExcecutor;
 import logic.NumberOfComponentsOptimizer;
 import model.ConfigDTO;
 import model.ConstantCodes;
@@ -71,7 +70,7 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 		{
 			if(method == ConstantCodes.ICA_METHOD)
 			{
-				doICAMATLAB();
+				doICA();
 			}
 			else if(method == ConstantCodes.OPTIMAL_COMPONENT_NO)
 			{
@@ -105,6 +104,7 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 		Border progressBorder = BorderFactory.createTitledBorder("");
 		pbProgress.setBorder(progressBorder);
 		iCAMethod.BindData();
+		System.out.println("Action="+action);
 		switch(action){
 			case ConstantCodes.FINISHED:
 				workingFolder = icaDTO.getDefaultWorkFolderPath()+File.separator + analysisprefix+"_ICA";
@@ -174,7 +174,7 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 		return true;
 	}
 	
-	private void doICAMATLAB() throws Exception
+	private void doICA() throws Exception
 	{		
 		publish("=========================================");
 		publish("======  Performing ICA computations =====");
@@ -200,15 +200,31 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 		
 		ProcessTxtData.main(arguments);
 		
-		publish("Starting MATLAB ICA Computations...");
-		String fn_numerical = df.getName().substring(0, df.getName().length()-4)+"_ica_numerical.txt"; 
-		String mfolder = icaDTO.getMATLABFolderPath();
-		if(!mfolder.trim().equals(""))
-			mfolder+=File.separator;
 		String wfolder = wfica.getAbsolutePath();
 		String wfolderstability = wficaStability.getAbsolutePath();
+		String fn_numerical = df.getName().substring(0, df.getName().length()-4)+"_ica_numerical.txt"; 		
 		
-		MATLABExcecutor.executeMatlabFastICANumerical(mfolder,icaDTO.getMatlabicaFolderPath(), wfica.getAbsolutePath()+System.getProperty("file.separator"), fn_numerical, numberOfComponents, icaDTO.isUseDocker(),icaDTO.isVisOption(),icaDTO.getICAApproach(),icaDTO.getICAMeasure(),icaDTO.getICAMaxNumIterations());
+		if(icaDTO.getICAImplementation().equals("matlab")){	
+			publish("Starting MATLAB ICA Computations...");
+			String mfolder = icaDTO.getMATLABFolderPath();
+			if(!mfolder.trim().equals(""))
+				mfolder+=File.separator;
+			MATLABExcecutor.executeMatlabFastICANumerical(mfolder,icaDTO.getMatlabicaFolderPath(), wfica.getAbsolutePath()+System.getProperty("file.separator"), fn_numerical, numberOfComponents, icaDTO.isUseDocker(),icaDTO.isVisOption(),icaDTO.getMATLABICAApproach(),icaDTO.getMATLABICAMeasure(),icaDTO.getMATLABICAMaxNumIterations());
+		}
+		
+    	if(icaDTO.getICAImplementation().equals("python")){
+    		publish("Starting Python ICA Computations...");
+			String pythonCodeFolder = icaDTO.getPythonicaFolderPath();
+			String workingFolder = wfica.getAbsolutePath()+System.getProperty("file.separator"); 
+			String dataFile = fn_numerical;
+			String ICAApproach = icaDTO.getPythonICAApproach();
+			String ICAMeasure = icaDTO.getPythonICAMeasure();
+			int ICAMaxNumIterations = icaDTO.getPythonICAMaxNumIterations();
+			int ICANumberOfRuns = 100;
+			String PythonVisualizationType = "umap";						
+			PythonExcecutor.executePythonICANumerical(pythonCodeFolder,workingFolder,dataFile,numberOfComponents,ICAApproach,ICAMeasure,ICAMaxNumIterations,ICANumberOfRuns,PythonVisualizationType);
+		}
+
 		publish("Formatting results of ICA computations...");
 		
 		wfica = new File(wfolder);
@@ -271,9 +287,9 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 
 	private void doAnalysisForOptimalComponentNumber()throws Exception
 	{
-		publish("=======================================================");
-		publish("======  Choosing the optimal number of components =====");
-		publish("=======================================================");
+		publish("=========================================================");
+		publish("======  Estimating the optimal number of components =====");
+		publish("=========================================================");
 		
 		File workingFolder = new File(icaDTO.getDefaultWorkFolderPath()+File.separator + analysisprefix+"_ICA"+File.separator);
 		File stabilityFolder = new File(workingFolder.getAbsolutePath()+File.separator+folderWithPrecomputedICAResults+File.separator);
@@ -281,7 +297,8 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 		
 		ConfigHelper cfHelper = new ConfigHelper();
 		ConfigDTO cfDTO = cfHelper.getFoldersPathValuesFromConfigFile();
-		minimalTolerableStability = (float)cfDTO.getMinimalTolerableStability();
+		
+		/*minimalTolerableStability = (float)cfDTO.getMinimalTolerableStability();
 		numberOfComponentsToSelect = NumberOfComponentsOptimizer.reccomendOptimalNumberOfComponentsFromStability(stabilityFolder.getAbsolutePath()+File.separator,analysisprefix+"_ica",minimalTolerableStability,report);
 		icaDTO.setSNoOfComponents(""+numberOfComponentsToSelect);
 		publish(report.toString());
@@ -300,14 +317,26 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 		FileUtils.moveFileToDirectory(new File(stabilityFolder.getAbsolutePath()+File.separator+analysisprefix+"_ica_A.xls"), workingFolder, true);
 		FileUtils.moveFileToDirectory(new File(stabilityFolder.getAbsolutePath()+File.separator+analysisprefix+"_ica_S.xls"), workingFolder, true);
 
+		*/
+
 		File wfica = new File(icaDTO.getDefaultWorkFolderPath() + File.separator+analysisprefix+"_ICA");
 		File wficaStability = new File(icaDTO.getDefaultWorkFolderPath() + File.separator+analysisprefix+"_ICA"+File.separator+"stability");
-		String mfolder = icaDTO.getMATLABFolderPath();
-		if(!mfolder.trim().equals(""))
-			mfolder+=File.separator;
 		String wfolder = wfica.getAbsolutePath();
 		String wfolderstability = wficaStability.getAbsolutePath();
-		MATLABExcecutor.executeMatlabProduceStabilityPlots(mfolder,icaDTO.getMatlabicaFolderPath(), wfica.getAbsolutePath()+System.getProperty("file.separator"),icaDTO.isUseDocker());
+		
+		if(icaDTO.getICAImplementation().equals("matlab")){	
+			publish("Starting MATLAB script...");
+			String mfolder = icaDTO.getMATLABFolderPath();
+			if(!mfolder.trim().equals(""))
+				mfolder+=File.separator;
+			MATLABExcecutor.executeMatlabProduceStabilityPlots(mfolder,icaDTO.getMatlabicaFolderPath(), wfica.getAbsolutePath()+System.getProperty("file.separator"),icaDTO.isUseDocker());
+		}
+		
+    	if(icaDTO.getICAImplementation().equals("python")){
+    		publish("Starting Python script...");
+    		PythonExcecutor.executePythonProduceStabilityPlots(icaDTO.getPythonicaFolderPath(), wficaStability.getAbsolutePath()+System.getProperty("file.separator"));
+    	}
+
 		
 		action= ConstantCodes.FINISHED;
 	}

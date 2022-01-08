@@ -7,12 +7,9 @@ public class ConstantCodes
 	public static String TITLE = "BiODICA";
 
 	public static String CONFIG_FILE_NAME = "config";	
-	public static String MATLABICA_FOLDER = "MATLABICAFolder";
 	public static String DEFAULT_WORK_FOLDER = "DefaultWorkFolder";
 	public static String GENE_SET_FOLDER = "GeneSetFolder";
 	public static String HTML_SOURCE_FOLDER = "HTMLSourceFolder";
-	public static String MATLAB_FOLDER = "MATLABFolder";
-	public static String USE_DOCKER = "UseDocker";
 	public static String GENE_PROPERTIES_FILE = "GenePropertiesFile";
 	public static String METAGENE_FOLDER = "MetaGeneFolder";
 	public static String NETWORK_UNDIRECTED_FILE = "NetworkUndirectedFile";
@@ -28,9 +25,24 @@ public class ConstantCodes
 	public static String CORRELATION_THRESHOLD_FOR_SHOWING_PLOTS = "CorrelationThresholdForShowingPlots";
 	public static String MINIMAL_TOLERABLE_STABILITY = "MinimalTolerableStability";
 	
-	public static String ICA_APPROACH = "ICAApproach";
-	public static String ICA_MEASURE = "ICAMeasure";
-	public static String ICA_MAXNUMBER_ITERATIONS = "ICAMaxNumIterations";
+	public static String ICA_IMPLEMENTATION = "ICAImplementation";
+
+	// MATLAB parameters
+	public static String MATLABICA_FOLDER = "MATLABICAFolder";
+	public static String MATLAB_FOLDER = "MATLABFolder";
+	public static String USE_DOCKER = "UseDocker";
+	public static String MATLAB_ICA_APPROACH = "MATLABICAApproach";
+	public static String MATLAB_ICA_MEASURE = "MATLABICAMeasure";
+	public static String MATLAB_ICA_MAXNUMBER_ITERATIONS = "MATLABICAMaxNumIterations";
+	public static String MATLAB_NUMBER_OF_ICA_RUNS = "MATLABNumberOfICARuns"; 
+	
+	// Python parameters
+	public static String PYTHONICA_FOLDER = "PythonICAFolder";
+	public static String PYTHON_TYPE_VISUALIZATION = "PythonTypeOfVisualization";
+	public static String PYTHON_ICA_APPROACH = "PythonICAApproach";
+	public static String PYTHON_ICA_MEASURE = "PythonICAMeasure";
+	public static String PYTHON_ICA_MAXNUMBER_ITERATIONS = "PythonICAMaxNumIterations";
+	public static String PYTHON_NUMBER_OF_ICA_RUNS = "PythonNumberOfICARuns"; 
 	
 
 	public static String FONT_FAMILY = "Helvetica";
@@ -38,7 +50,7 @@ public class ConstantCodes
 	public static int FONT_SIZE = 12;
 	
 	
-	public static String ICA_METHOD = "ICAMATLAB";
+	public static String ICA_METHOD = "ComputeICA";
 	public static String OPTIMAL_COMPONENT_NO = "AnalysisForOptimalComponentNumber";
 	public static String PRECOMPUTED = "PrecomputedComponentNumber";
 	public static String OPEN_ICA_RESULTS = "OpenICAResults";

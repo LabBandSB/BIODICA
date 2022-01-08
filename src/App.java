@@ -59,7 +59,7 @@ public class App {
 							}
 						} catch(Exception e){ 
 					    }
-						MainFrame mainFrame = new MainFrame();
+						MainFrame_new mainFrame = new MainFrame_new();
 						setUIFont (new FontUIResource(ConstantCodes.FONT_FAMILY,ConstantCodes.FONT_WEIGHT,ConstantCodes.FONT_SIZE));
 						mainFrame.setVisible(true);
 				} catch (Exception e) {

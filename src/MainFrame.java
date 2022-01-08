@@ -37,6 +37,7 @@ public class MainFrame extends JFrame implements ActionListener  {
 		setBounds(400, 300, 450, 300);
 		setBackground(new Color(220, 220, 220));
 		
+		
 		ImageIcon mainIcon = new ImageIcon(getClass().getResource("BiODICA.png"));
 		
 		setIconImage(mainIcon.getImage());
@@ -69,7 +70,7 @@ public class MainFrame extends JFrame implements ActionListener  {
      	lbMethodsgbc.gridx = 0;
      	lbMethodsgbc.gridy = 4;
      	lbMethodsgbc.insets = new Insets(5, 15, 15,5);
-     	JLabel lbMethods = new JLabel("Select Procedure");
+     	JLabel lbMethods = new JLabel("Select Program");
      	lbMethods.setFont(new Font(ConstantCodes.FONT_FAMILY,Font.BOLD,ConstantCodes.FONT_SIZE));
      	centerPanel.add(lbMethods, lbMethodsgbc);   
      	
@@ -105,7 +106,7 @@ public class MainFrame extends JFrame implements ActionListener  {
 		
     	//South Panel
     	
-    	JLabel copyrightLb = new JLabel("<html>© Copyright 2017, Bioinformatics and Computational Systems Biology, Nazarbayev University, Kazakhstan / <br/> Computational Systems Biology of Cancer, Institute Curie, France</html>");
+    	JLabel copyrightLb = new JLabel("<html>© Copyright 2017-2021, Bioinformatics and Computational Systems Biology, Nazarbayev University, Kazakhstan / <br/> Computational Systems Biology of Cancer, Institute Curie, France</html>");
     	copyrightLb.setFont(new Font("Tahoma", Font.PLAIN, 10));
     	copyrightLb.setBorder(new EmptyBorder (45, 10, 5, 10));
     	

@@ -102,7 +102,7 @@ public class IcaMethod extends JDialog implements ActionListener{
 	 	csLbTitle.weightx = 1.0;
 	 	csLbTitle.weighty = 1.0;
 	 	JLabel lbTitle = new JLabel("<html><b>Type of the Analysis:</b> Independent Component Analysis</html>");
-	 	contentPane.add(lbTitle, csLbTitle);
+	 	// contentPane.add(lbTitle, csLbTitle);
 
 		//Second row - Data Table path
 	 	
@@ -156,7 +156,7 @@ public class IcaMethod extends JDialog implements ActionListener{
 
 	 	csLbVisOption.weighty = 1.0;
 	 	JLabel lbVisOption = new JLabel("Produce visualization (unselect to accelerate)");
-	 	contentPane.add(lbVisOption, csLbVisOption);
+	 	// contentPane.add(lbVisOption, csLbVisOption);
 	 	
 	 	csLbVisOption = new GridBagConstraints();
 	 	csLbVisOption.fill = GridBagConstraints.HORIZONTAL;
@@ -168,7 +168,7 @@ public class IcaMethod extends JDialog implements ActionListener{
 	 	csLbVisOption.weighty = 1.0;
 	 	cbVisOption = new JCheckBox();
 	 	cbVisOption.setSelected(true);
-	 	contentPane.add(cbVisOption, csLbVisOption);	 	
+	 	// contentPane.add(cbVisOption, csLbVisOption);	 	
 
 	 	
 	 	// Parameters of ICA Method
@@ -229,7 +229,7 @@ public class IcaMethod extends JDialog implements ActionListener{
 		
 		// Parameters 3 row
 		
-		optimalNoRBtn = new JRadioButton("<html> <b>Select optimal number IC's </b> </html>");
+		optimalNoRBtn = new JRadioButton("<html> <b>Estimate optimal number IC's </b> </html>");
 		optimalNoRBtn.addActionListener(this);
 		optimalNoRBtn.setBorder(new EmptyBorder(10, 10, 10, 10));
 
@@ -311,7 +311,7 @@ public class IcaMethod extends JDialog implements ActionListener{
 		csTAconsole.weightx = 1.0;
 		csTAconsole.weighty = 2.0;
 		
-		tAConsole = new JTextArea(20,80);
+		tAConsole = new JTextArea(20,20);
 		tAConsole.setLineWrap(true);
 		tAConsole.setEditable(false);
 		tAConsole.setWrapStyleWord(true);
@@ -322,7 +322,7 @@ public class IcaMethod extends JDialog implements ActionListener{
 		sptAConsole = new JScrollPane(tAConsole);	
 		sptAConsole.setVerticalScrollBarPolicy(
                 JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-		sptAConsole.setMinimumSize(new Dimension(100,300));		
+		sptAConsole.setMinimumSize(new Dimension(100,100));		
 	 	contentPane.add(sptAConsole, csTAconsole);
 	 	
 	 	
@@ -531,13 +531,24 @@ public class IcaMethod extends JDialog implements ActionListener{
 		IcaDTO icaDTO = new IcaDTO();
 		icaDTO.setDataTablePath(tfDataTable.getText().trim());
 		icaDTO.setDefaultWorkFolderPath(cfDTO.getDefaultWorkFolderPath().trim());
+		
+		icaDTO.setICAImplementation(cfDTO.getICAImplementation());
+		
 		icaDTO.setMATLABFolderPath(cfDTO.getMATLABFolderPath());
 		icaDTO.setMatlabicaFolderPath(cfDTO.getMatlabicaFolderPath());
 		icaDTO.setUseDocker(cfDTO.isUseDocker());
 		icaDTO.setVisOption(cbVisOption.isSelected());
-		icaDTO.setICAApproach(cfDTO.getICAApproach());
-		icaDTO.setICAMeasure(cfDTO.getICAMeasure());
-		icaDTO.setICAMaxNumIterations(cfDTO.getICAMaxNumIterations());
+		icaDTO.setMATLABICAApproach(cfDTO.getMATLABICAApproach());
+		icaDTO.setMATLABICAMeasure(cfDTO.getMATLABICAMeasure());
+		icaDTO.setMATLABICAMaxNumIterations(cfDTO.getMATLABICAMaxNumIterations());
+		
+		icaDTO.setPythonicaFolderPath(cfDTO.getPythonICAFolderPath());
+		icaDTO.setPythonICAApproach(cfDTO.getPythonICAApproach());
+		icaDTO.setPythonICAMeasure(cfDTO.getPythonICAMeasure());
+		icaDTO.setPythonICAMaxNumIterations(cfDTO.getPythonICAMaxNumIterations());
+		icaDTO.setPythonNumberOfICARuns(cfDTO.getPythonNumberOfICARuns());
+		icaDTO.setPythonTypeOfVisualization(cfDTO.getPythonTypeOfVisualization());
+		
 		if(tfRangeNoOfComponents.isEnabled())
 			icaDTO.setSNoOfComponents(tfRangeNoOfComponents.getText());
 		else

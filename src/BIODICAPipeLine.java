@@ -968,9 +968,9 @@ public class BIODICAPipeLine{
 		AssociationAnalysisThreshold = cfDTO.getAssociationAnalysisInThreshold();
 		MinimalTolerableStability = cfDTO.getMinimalTolerableStability();
 		
-		ICAApproach = cfDTO.getICAApproach();
-		ICAMeasure = cfDTO.getICAMeasure();
-		ICAMaxNumIterations = cfDTO.getICAMaxNumIterations();  
+		ICAApproach = cfDTO.getMATLABICAApproach();
+		ICAMeasure = cfDTO.getMATLABICAMeasure();
+		ICAMaxNumIterations = cfDTO.getMATLABICAMaxNumIterations();  
 		
 	}
 	

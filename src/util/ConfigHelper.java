@@ -63,23 +63,30 @@ public class ConfigHelper
 			configDTO.setNetworkDirectedFilePath(prop.getProperty(ConstantCodes.NETWORK_DIRECTED_FILE));
 			configDTO.setComputeRobustStatistics(Boolean.parseBoolean(prop.getProperty(ConstantCodes.COMPUTE_ROBUST_STATISTICS)));
 			
-			String ICAApproach = prop.getProperty(ConstantCodes.ICA_APPROACH);
-			if(ICAApproach!=null && !ICAApproach.isEmpty()){
-				configDTO.setICAApproach(prop.getProperty(ConstantCodes.ICA_APPROACH));
+			String MATLABICAApproach = prop.getProperty(ConstantCodes.MATLAB_ICA_APPROACH);
+			if(MATLABICAApproach!=null && !MATLABICAApproach.isEmpty()){
+				configDTO.setMATLABICAApproach(prop.getProperty(ConstantCodes.MATLAB_ICA_APPROACH));
 			}else
-				configDTO.setICAApproach("symm");
+				configDTO.setMATLABICAApproach("symm");
 			
-			String ICAMeasure = prop.getProperty(ConstantCodes.ICA_MEASURE);
-			if(ICAMeasure!=null && !ICAMeasure.isEmpty()){
-				configDTO.setICAMeasure(prop.getProperty(ConstantCodes.ICA_MEASURE));
+			String MATLABICAMeasure = prop.getProperty(ConstantCodes.MATLAB_ICA_MEASURE);
+			if(MATLABICAMeasure!=null && !MATLABICAMeasure.isEmpty()){
+				configDTO.setMATLABICAMeasure(prop.getProperty(ConstantCodes.MATLAB_ICA_MEASURE));
 			}else
-				configDTO.setICAMeasure("pow3");
+				configDTO.setMATLABICAMeasure("pow3");
 
-			String ICAMaxNumIterations = prop.getProperty(ConstantCodes.ICA_MAXNUMBER_ITERATIONS);
-			if(ICAMaxNumIterations!=null && !ICAMaxNumIterations.isEmpty()){
-				configDTO.setICAMaxNumIterations(Integer.parseInt(prop.getProperty(ConstantCodes.ICA_MAXNUMBER_ITERATIONS)));
+			String MATLABICAMaxNumIterations = prop.getProperty(ConstantCodes.MATLAB_ICA_MAXNUMBER_ITERATIONS);
+			if(MATLABICAMaxNumIterations!=null && !MATLABICAMaxNumIterations.isEmpty()){
+				configDTO.setMATLABICAMaxNumIterations(Integer.parseInt(prop.getProperty(ConstantCodes.MATLAB_ICA_MAXNUMBER_ITERATIONS)));
 			}else
-				configDTO.setICAMaxNumIterations(100);
+				configDTO.setMATLABICAMaxNumIterations(100);
+
+			String MATLABNumberOfICARuns = prop.getProperty(ConstantCodes.MATLAB_NUMBER_OF_ICA_RUNS);
+			if(MATLABNumberOfICARuns!=null && !MATLABNumberOfICARuns.isEmpty()){
+				configDTO.setMATLABNumberOfICARuns(Integer.parseInt(prop.getProperty(ConstantCodes.MATLAB_NUMBER_OF_ICA_RUNS)));
+			}else
+				configDTO.setMATLABNumberOfICARuns(100);
+			
 			
 			String minNumberOfDistinctValuesInNumbericals = prop.getProperty(ConstantCodes.MIN_NUMBER_OF_DISTINCT_VALUES_IN_NUMERICALS);
 			if(minNumberOfDistinctValuesInNumbericals != null && !minNumberOfDistinctValuesInNumbericals.isEmpty())
@@ -137,6 +144,46 @@ public class ConfigHelper
 				configDTO.setMinimalTolerableStability(Double.parseDouble(minimalTolerableStability));
 			}
 			
+			String ICAImplementation = prop.getProperty(ConstantCodes.ICA_IMPLEMENTATION);
+			
+			if(ICAImplementation != null && !ICAImplementation.isEmpty())
+			{
+				configDTO.setICAImplementation(ICAImplementation);
+			}			
+			
+			String PythonICAFolder = prop.getProperty(ConstantCodes.PYTHONICA_FOLDER);
+			
+			if(PythonICAFolder != null && !PythonICAFolder.isEmpty())
+			{
+				configDTO.setPythonICAFolderPath(PythonICAFolder);
+			}
+			
+			String PythonTypeOfVisualization = prop.getProperty(ConstantCodes.PYTHON_TYPE_VISUALIZATION);
+			
+			if(PythonTypeOfVisualization != null && !PythonTypeOfVisualization.isEmpty())
+			{
+				configDTO.setPythonTypeOfVisualization(PythonTypeOfVisualization);
+			}			
+
+			String PythonICAApproach = prop.getProperty(ConstantCodes.PYTHON_ICA_APPROACH);
+			
+			if(PythonICAApproach != null && !PythonICAApproach.isEmpty())
+			{
+				configDTO.setPythonICAApproach(PythonICAApproach);
+			}
+
+			String PythonICAMeasure = prop.getProperty(ConstantCodes.PYTHON_ICA_MEASURE);
+			
+			if(PythonICAMeasure != null && !PythonICAMeasure.isEmpty())
+			{
+				configDTO.setPythonICAMeasure(PythonICAMeasure);
+			}
+			
+			configDTO.setPythonICAMaxNumIterations(Integer.parseInt(prop.getProperty(ConstantCodes.PYTHON_ICA_MAXNUMBER_ITERATIONS)));
+			configDTO.setPythonNumberOfICARuns(Integer.parseInt(prop.getProperty(ConstantCodes.PYTHON_NUMBER_OF_ICA_RUNS)));			
+			
+			
+			
     	} catch (FileNotFoundException ex) {
 		    // file does not exist
 		} catch (IOException ex) {
@@ -146,24 +193,16 @@ public class ConfigHelper
 	
 	}
 	
-	
-	
 	public String generateAndGetDataForConfigFile(ConfigDTO cfDTO)
 	{
 		 StringWriter sw = new StringWriter(); 
-		 sw.append(ConstantCodes.MATLABICA_FOLDER).append(" = ").append(cfDTO.getMatlabicaFolderPath()).append('\n');
 		 sw.append(ConstantCodes.DEFAULT_WORK_FOLDER).append(" = ").append(cfDTO.getDefaultWorkFolderPath()).append('\n');
 		 sw.append(ConstantCodes.GENE_SET_FOLDER).append(" = ").append(cfDTO.getGeneSetPath()).append('\n');
 		 sw.append(ConstantCodes.HTML_SOURCE_FOLDER).append(" = ").append(cfDTO.getHTMLSourcePath()).append('\n');
-		 sw.append(ConstantCodes.MATLAB_FOLDER).append(" = ").append(cfDTO.getMATLABFolderPath()).append('\n');
-		 sw.append(ConstantCodes.USE_DOCKER).append(" = ").append(""+cfDTO.isUseDocker()).append('\n');
-
-		 
 		 sw.append(ConstantCodes.GENE_PROPERTIES_FILE).append(" = ").append(cfDTO.getGenePropertiesFilePath()).append('\n');
 		 sw.append(ConstantCodes.METAGENE_FOLDER).append(" = ").append(cfDTO.getMetaGeneFolderPath()).append('\n');
 		 sw.append(ConstantCodes.NETWORK_UNDIRECTED_FILE).append(" = ").append(cfDTO.getNetworkUndirectedFilePath()).append('\n');
 		 sw.append(ConstantCodes.NETWORK_DIRECTED_FILE).append(" = ").append(cfDTO.getNetworkDirectedFilePath()).append('\n');
-
 		 sw.append(ConstantCodes.COMPUTE_ROBUST_STATISTICS).append(" = ").append(Boolean.toString(cfDTO.getComputeRobustStatistics())).append('\n');
 		 sw.append(ConstantCodes.MIN_NUMBER_OF_DISTINCT_VALUES_IN_NUMERICALS).append(" = ").append(Integer.toString(cfDTO.getMinNumberOfDistinctValuesInNumericals())).append('\n');
 		 sw.append(ConstantCodes.MIN_NUMBER_OF_SAMPLES_IN_CATEGORY).append(" = ").append(Integer.toString(cfDTO.getMinNumberOfSamplesInCategory())).append('\n');
@@ -171,9 +210,22 @@ public class ConfigHelper
 		 sw.append(ConstantCodes.ASSOCIATION_ANALYSIS_IN_THRESHOLD).append(" = ").append(Double.toString(cfDTO.getAssociationAnalysisInThreshold())).append('\n');
 		 sw.append(ConstantCodes.MINIMAL_TOLERABLE_STABILITY).append(" = ").append(Double.toString(cfDTO.getMinimalTolerableStability())).append('\n');
 		 
-		 sw.append(ConstantCodes.ICA_APPROACH).append(" = ").append(cfDTO.getICAApproach()).append("\n");
-		 sw.append(ConstantCodes.ICA_MEASURE).append(" = ").append(cfDTO.getICAMeasure()).append("\n");
-		 sw.append(ConstantCodes.ICA_MAXNUMBER_ITERATIONS).append(" = ").append(Integer.toString(cfDTO.getICAMaxNumIterations())).append("\n");
+		 sw.append(ConstantCodes.ICA_IMPLEMENTATION).append(" = ").append(cfDTO.getICAImplementation()).append("\n");		 
+		 
+		 sw.append(ConstantCodes.MATLABICA_FOLDER).append(" = ").append(cfDTO.getMatlabicaFolderPath()).append('\n');		 
+		 sw.append(ConstantCodes.MATLAB_FOLDER).append(" = ").append(cfDTO.getMATLABFolderPath()).append('\n');
+		 sw.append(ConstantCodes.USE_DOCKER).append(" = ").append(""+cfDTO.isUseDocker()).append('\n');
+		 sw.append(ConstantCodes.MATLAB_ICA_APPROACH).append(" = ").append(cfDTO.getMATLABICAApproach()).append("\n");
+		 sw.append(ConstantCodes.MATLAB_ICA_MEASURE).append(" = ").append(cfDTO.getMATLABICAMeasure()).append("\n");
+		 sw.append(ConstantCodes.MATLAB_ICA_MAXNUMBER_ITERATIONS).append(" = ").append(Integer.toString(cfDTO.getMATLABICAMaxNumIterations())).append("\n");			 
+		 sw.append(ConstantCodes.MATLAB_NUMBER_OF_ICA_RUNS).append(" = ").append(Integer.toString(cfDTO.getMATLABNumberOfICARuns())).append("\n");		 
+
+		 sw.append(ConstantCodes.PYTHONICA_FOLDER).append(" = ").append(cfDTO.getPythonICAFolderPath()).append("\n");
+		 sw.append(ConstantCodes.PYTHON_TYPE_VISUALIZATION).append(" = ").append(cfDTO.getPythonTypeOfVisualization()).append("\n");
+		 sw.append(ConstantCodes.PYTHON_ICA_APPROACH).append(" = ").append(cfDTO.getPythonICAApproach()).append("\n");
+		 sw.append(ConstantCodes.PYTHON_ICA_MEASURE).append(" = ").append(cfDTO.getPythonICAMeasure()).append("\n");
+		 sw.append(ConstantCodes.PYTHON_ICA_MAXNUMBER_ITERATIONS).append(" = ").append(Integer.toString(cfDTO.getPythonICAMaxNumIterations())).append("\n");
+		 sw.append(ConstantCodes.PYTHON_NUMBER_OF_ICA_RUNS).append(" = ").append(Integer.toString(cfDTO.getPythonNumberOfICARuns())).append("\n");		 		 
 		 
 		 return sw.toString();
 	}

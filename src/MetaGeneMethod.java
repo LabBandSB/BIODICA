@@ -1,6 +1,7 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.EventQueue;
 import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -36,6 +37,20 @@ import util.WindowEventHandler;
 
 public class MetaGeneMethod extends JDialog implements ActionListener{
 
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					MetaGeneMethod frame = new MetaGeneMethod(null);
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+	
+	
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private ConfigDTO cfDTO;

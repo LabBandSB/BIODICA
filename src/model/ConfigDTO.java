@@ -2,12 +2,9 @@ package model;
 
 public class ConfigDTO 
 {
-	private String matlabicaFolderPath;
 	private String defaultWorkFolderPath;
 	private String geneSetPath;
 	private String hTMLSourcePath;
-	private String mATLABFolderPath;
-	private boolean useDocker;
 	private String GenePropertiesFilePath;
 	private String MetaGeneFolderPath; 
 	private String NetworkUndirectedFilePath; 
@@ -24,13 +21,23 @@ public class ConfigDTO
 	private double significanceThresholdForShowingPlots;
 	private double associationCorrelationThreshold;
 	private double correlationThresholdForShowingPlots;
-	
-	private String ICAApproach;
-	private String ICAMeasure;
-	private int ICAMaxNumIterations;
-
-	
 	private double minimalTolerableStability;
+
+	private String ICAImplementation;
+	private String matlabicaFolderPath;
+	private String mATLABFolderPath;
+	private boolean useDocker;	
+	private String MATLABICAApproach;
+	private String MATLABICAMeasure;
+	private int MATLABICAMaxNumIterations;	
+	private int MATLABNumberOfICARuns;	
+		
+	private String PythonICAFolderPath;
+	private String PythonTypeOfVisualization;
+	private String PythonICAApproach;
+	private String PythonICAMeasure;
+	private int PythonICAMaxNumIterations;	
+	private int PythonNumberOfICARuns;		
 	
 	
 	public void setMatlabicaFolderPath(String matlabicaFolderPath) 
@@ -217,28 +224,92 @@ public class ConfigDTO
 		this.useDocker = useDocker;
 	}
 
-	public String getICAApproach() {
-		return ICAApproach;
+	public String getMATLABICAApproach() {
+		return MATLABICAApproach;
 	}
 
-	public void setICAApproach(String iCAApproach) {
-		ICAApproach = iCAApproach;
+	public void setMATLABICAApproach(String iCAApproach) {
+		MATLABICAApproach = iCAApproach;
 	}
 
-	public String getICAMeasure() {
-		return ICAMeasure;
+	public String getMATLABICAMeasure() {
+		return MATLABICAMeasure;
 	}
 
-	public void setICAMeasure(String iCAMeasure) {
-		ICAMeasure = iCAMeasure;
+	public void setMATLABICAMeasure(String iCAMeasure) {
+		MATLABICAMeasure = iCAMeasure;
 	}
 
-	public int getICAMaxNumIterations() {
-		return ICAMaxNumIterations;
+	public int getMATLABICAMaxNumIterations() {
+		return MATLABICAMaxNumIterations;
 	}
 
-	public void setICAMaxNumIterations(int iCAMaxNumIterations) {
-		ICAMaxNumIterations = iCAMaxNumIterations;
+	public void setMATLABICAMaxNumIterations(int iCAMaxNumIterations) {
+		MATLABICAMaxNumIterations = iCAMaxNumIterations;
+	}
+
+	public String getICAImplementation() {
+		return ICAImplementation;
+	}
+
+	public void setICAImplementation(String iCAImplementation) {
+		ICAImplementation = iCAImplementation;
+	}
+
+	public String getPythonICAFolderPath() {
+		return PythonICAFolderPath;
+	}
+
+	public void setPythonICAFolderPath(String pythonICAFolderPath) {
+		PythonICAFolderPath = pythonICAFolderPath;
+	}
+
+	public String getPythonTypeOfVisualization() {
+		return PythonTypeOfVisualization;
+	}
+
+	public void setPythonTypeOfVisualization(String pythonTypeOfVisualization) {
+		PythonTypeOfVisualization = pythonTypeOfVisualization;
+	}
+
+	public int getMATLABNumberOfICARuns() {
+		return MATLABNumberOfICARuns;
+	}
+
+	public void setMATLABNumberOfICARuns(int mATLABNumberOfICARuns) {
+		MATLABNumberOfICARuns = mATLABNumberOfICARuns;
+	}
+
+	public String getPythonICAApproach() {
+		return PythonICAApproach;
+	}
+
+	public void setPythonICAApproach(String pythonICAApproach) {
+		PythonICAApproach = pythonICAApproach;
+	}
+
+	public String getPythonICAMeasure() {
+		return PythonICAMeasure;
+	}
+
+	public void setPythonICAMeasure(String pythonICAMeasure) {
+		PythonICAMeasure = pythonICAMeasure;
+	}
+
+	public int getPythonICAMaxNumIterations() {
+		return PythonICAMaxNumIterations;
+	}
+
+	public void setPythonICAMaxNumIterations(int pythonICAMaxNumIterations) {
+		PythonICAMaxNumIterations = pythonICAMaxNumIterations;
+	}
+
+	public int getPythonNumberOfICARuns() {
+		return PythonNumberOfICARuns;
+	}
+
+	public void setPythonNumberOfICARuns(int pythonNumberOfICARuns) {
+		PythonNumberOfICARuns = pythonNumberOfICARuns;
 	}
 
 	

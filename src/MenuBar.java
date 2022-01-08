@@ -75,7 +75,7 @@ public class MenuBar implements ActionListener
 	{
 		if(e.getSource() == config)
 		{
-			 ConfigDialog configDialog = new ConfigDialog(jParent);
+			 ConfigDialogNew configDialog = new ConfigDialogNew(jParent);
 			 configDialog.setVisible(true);
 		}
 		else if(e.getSource() == exit)
