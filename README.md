@@ -23,6 +23,7 @@ Do not use the name "BIODICA-master" which will be suggested by GitHub after dow
 4) in case of using MATLAB ICA implementation (currently, it is of interest only for historical and compatibility reasons), the following instruction must be followed:
 
 	4a) run *install.bat* (Windows) or *install.sh* in the root folder (this will copy the MATLAB RunTime binaries).
+
 	4b) if you can use docker (recommended) for performing Matlab computations (then MATLAB or binaries are not required and no configuration of MATLAB Runtime is needed) then execute first 
 	```
 	docker pull auranic/biodica
