@@ -140,8 +140,13 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 //				}
 				try {
 					
-					if(!method.equals(ConstantCodes.PRECOMPUTED))
-						HTMLGenerator.generateICAHtml(workingFolder+File.separator+analysisprefix+"_ica_A.xls",workingFolder+File.separator+analysisprefix+"_ica_S.xls",pngFiles,analysisprefix);
+					if(!method.equals(ConstantCodes.PRECOMPUTED)) {
+						//String url1 = workingFolder+File.separator+analysisprefix+"_ica_A.xls";
+						//String url2 = workingFolder+File.separator+analysisprefix+"_ica_S.xls";
+						String url1 = "../"+analysisprefix+"_ICA/"+analysisprefix+"_ica_A.xls";
+						String url2 = "../"+analysisprefix+"_ICA/"+analysisprefix+"_ica_S.xls";
+						HTMLGenerator.generateICAHtml(url1,url2,pngFiles,analysisprefix);
+					}
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

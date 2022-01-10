@@ -87,7 +87,7 @@ public class HTMLGenerator
 			for (File image : images) 
 			{
 				page.append("<div class='col-xs-6 col-md-6'><a href='#' class='thumbnail'><img src='"
-						+ image.getAbsolutePath() + "' height='550px' width='600px'></a></div>");
+						+ FormatFileURL(image.getAbsolutePath()) + "' height='550px' width='600px'></a></div>");
 			}
 
 			page.append("</div></div></div></body>");
@@ -819,6 +819,10 @@ public class HTMLGenerator
 		}
         
 	}
-
+	
+	public static String FormatFileURL(String absolutePath) {
+		String formattedURL = "file:///"+Utils.replaceString(absolutePath, "\\", "/");
+		return formattedURL;
+	}
 	
 }

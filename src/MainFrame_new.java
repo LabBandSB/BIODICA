@@ -14,11 +14,17 @@ import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.Color;
 import java.awt.Cursor;
+import java.awt.Dimension;
 
 import javax.swing.UIManager;
 import java.awt.SystemColor;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Toolkit;
+import java.awt.DisplayMode;
+import java.awt.GraphicsEnvironment;
+
+
 
 public class MainFrame_new extends JFrame implements ActionListener {
 
@@ -56,6 +62,20 @@ public class MainFrame_new extends JFrame implements ActionListener {
 	 */
 	public MainFrame_new() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		int screenHeight = screenSize.height;
+		int screenWidth = screenSize.width; 
+		
+		System.out.println("screenWidth="+screenWidth+",screenHeight="+screenHeight);
+		
+		//for (DisplayMode mode : GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDisplayModes())
+		//{
+		//  System.out.println(mode.getWidth() + " x " + mode.getHeight() + "(" + mode.getBitDepth() + ") : refresh rate " + mode.getRefreshRate());
+		//}
+		DisplayMode mode = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDisplayMode();
+		System.out.println(mode.getWidth() + " x " + mode.getHeight() + "(" + mode.getBitDepth() + ") : refresh rate " + mode.getRefreshRate());
+		
 		setBounds(100, 100, 787, 388);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));

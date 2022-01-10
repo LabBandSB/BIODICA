@@ -383,6 +383,7 @@ public class ConfigDialogNew extends JDialog implements ActionListener{
 		cmbPythonICAApproach.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		cmbPythonICAApproach.setEditable(true);
 		cmbPythonICAApproach.setBounds(220, 113, 203, 22);
+		cmbPythonICAApproach.setSelectedItem(cfDTO.getPythonICAApproach());
 		panelPython.add(cmbPythonICAApproach);
 		
 		cmbPythonNonlinearity = new JComboBox();
@@ -391,6 +392,7 @@ public class ConfigDialogNew extends JDialog implements ActionListener{
 		cmbPythonNonlinearity.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		cmbPythonNonlinearity.setEditable(true);
 		cmbPythonNonlinearity.setBounds(220, 148, 203, 22);
+		cmbPythonNonlinearity.setSelectedItem(cfDTO.getPythonICAMeasure());
 		panelPython.add(cmbPythonNonlinearity);
 		
 		JLabel lblNewLabel_1_1_1_2_2 = new JLabel("Component visualization");
@@ -404,6 +406,7 @@ public class ConfigDialogNew extends JDialog implements ActionListener{
 		cmbPythonVisualizationMethod.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		cmbPythonVisualizationMethod.setEditable(true);
 		cmbPythonVisualizationMethod.setBounds(220, 281, 203, 22);
+		cmbPythonVisualizationMethod.setSelectedItem(cfDTO.getPythonTypeOfVisualization());
 		panelPython.add(cmbPythonVisualizationMethod);
 		
 		JLabel lblNewLabel_1_1_2_1 = new JLabel("Python code folder");
@@ -489,6 +492,7 @@ public class ConfigDialogNew extends JDialog implements ActionListener{
 		cmbMATLABNonlinearity.setModel(new DefaultComboBoxModel(new String[] {"pow3", "tanh", "gauss", "skew"}));
 		cmbMATLABNonlinearity.setSelectedIndex(0);
 		cmbMATLABNonlinearity.setBounds(228, 195, 203, 22);
+		cmbMATLABNonlinearity.setSelectedItem(cfDTO.getMATLABICAMeasure());
 		panelMatlab.add(cmbMATLABNonlinearity);
 		
 		JLabel lblNewLabel_1_1_1_2 = new JLabel("fastICA approach");
@@ -503,6 +507,7 @@ public class ConfigDialogNew extends JDialog implements ActionListener{
 		cmbMATLABICAApproach.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		cmbMATLABICAApproach.setEditable(true);
 		cmbMATLABICAApproach.setBounds(228, 160, 203, 22);
+		cmbMATLABICAApproach.setSelectedItem(cfDTO.getMATLABICAApproach());
 		panelMatlab.add(cmbMATLABICAApproach);
 		
 		tfMATLABMaxNumberOfIterations = new JFormattedTextField();
