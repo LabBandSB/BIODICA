@@ -128,7 +128,7 @@ for i in components:
     # Save the mean stability and plot the stability distribution within the MSTD plot
     #mean.append(np.mean(sICA.stability_indexes_))
     
-    fig, ax = plt.subplots(1 , 1 , figsize = (20 , 7))
+    fig, ax = plt.subplots(1 , 1 , figsize = (10 , 7))
     ax.plot(range(1 , len(sICA.stability_indexes_)+1) , sICA.stability_indexes_ , 'ko-')
     ax.set_title("Index stability, order="+str(i))
     ax.set_xlabel("Number of components") 
