@@ -22,6 +22,6 @@ MATLABNumberOfICARuns = 100
 PythonICAFolder = bin/python_sica
 PythonTypeOfVisualization = umap
 PythonICAApproach = fastica_par
-PythonICAMeasure = cube
+PythonICAMeasure = logcosh
 PythonICAMaxNumIterations = 200
 PythonNumberOfICARuns = 100
