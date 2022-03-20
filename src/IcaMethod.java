@@ -1,3 +1,39 @@
+/*
+BIODICA Navigator software
+Copyright (C) 2017-2022 Curie Institute, 26 rue d'Ulm, 75005 Paris - FRANCE
+
+Copyright (C) 2017-2022 National Laboratory Astana, Center for Life Sciences, Nazarbayev University, Nur-Sultan, Kazakhstan
+
+
+
+BIODICA Navigator is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+
+
+BIODICA Navigator is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Lesser General Public License for more details.
+
+
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA
+*/
+
+
+
+/*
+BIODICA Navigator authors:
+Andrei Zinovyev : http://andreizinovyev.site
+Ulykbek Kairov : ulykbek.kairov@nu.edu.kz
+Askhat Molkenov : askhat.molkenov@nu.edu.kz
+*/
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -38,6 +74,7 @@ import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import javax.swing.text.NumberFormatter;
 
+import logic.PythonExcecutor;
 import model.ConfigDTO;
 import model.ConstantCodes;
 import model.IcaDTO;
@@ -47,24 +84,27 @@ import util.WindowEventHandler;
 import vdaoengine.utils.Utils;
 
 
+
 public class IcaMethod extends JDialog implements ActionListener{
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField tfDataTable, tfRangeNoOfComponents;
-	private JButton btnDataTable, btnRunMethod, btnClear, btnOpenResults;
+	public JButton btnDataTable, btnRunMethod, btnStopMethod, btnClear, btnOpenResults;
 	private JFileChooser fileChooser;
 	private JRadioButton fixedNoRBtn, rangeNoRbtn, optimalNoRBtn, precomputedNoRBtn;
 	private ButtonGroup groupRBtn;
 	private JSpinner sNoOfComponents;
 	private JLabel lbNoOfComponents,lbRangeOfComponents;
 	private ConfigDTO cfDTO;
-	private JScrollPane sptAConsole;
-	private JProgressBar pbProgress;
-	private JTextArea tAConsole;
+	public JScrollPane sptAConsole;
+	public JProgressBar pbProgress;
+	public JTextArea tAConsole;
 	private RunICAWorker runICAWorker;
 	private JCheckBox cbVisOption;
 	private JComboBox cbPrecomputed; 	
+	
+	public WindowEventHandler windowHandler;
 	
 	
 	//Default values
@@ -86,7 +126,8 @@ public class IcaMethod extends JDialog implements ActionListener{
 	
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setAlignmentY(JComponent.CENTER_ALIGNMENT);
-		this.addWindowListener(new WindowEventHandler());
+		windowHandler = new WindowEventHandler();
+		this.addWindowListener(windowHandler);
 		
 		fileChooser = new JFileChooser();
 		fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
@@ -367,9 +408,15 @@ public class IcaMethod extends JDialog implements ActionListener{
 	 	btnRunMethod.setIcon(new ImageIcon(getClass().getResource("Run.png")));
 	 	btnRunMethod.addActionListener(this);
 
+	 	btnStopMethod = new JButton("Stop");
+	 	btnStopMethod.setIcon(new ImageIcon(getClass().getResource("Stop.png")));
+	 	btnStopMethod.addActionListener(this);
+	 	btnStopMethod.setEnabled(false);
+	 	
 
 	 	JPanel runStopPanel = new JPanel(new FlowLayout());
 	 	runStopPanel.add(btnRunMethod);
+	 	runStopPanel.add(btnStopMethod);
 
 	 	btnOpenResults = new JButton("Open results");
 	 	btnOpenResults.setIcon(new ImageIcon(getClass().getResource("Browse.png")));
@@ -492,22 +539,35 @@ public class IcaMethod extends JDialog implements ActionListener{
 				try {					 
 					
 					 if(optimalNoRBtn.isSelected())
-						 runICAWorker = new RunICAWorker(tAConsole,btnRunMethod, pbProgress,getICAValues(),ConstantCodes.OPTIMAL_COMPONENT_NO,this);
+						 runICAWorker = new RunICAWorker(this,getICAValues(),ConstantCodes.OPTIMAL_COMPONENT_NO,this);
 					 else if(precomputedNoRBtn.isSelected())
-						 runICAWorker = new RunICAWorker(tAConsole,btnRunMethod, pbProgress,getICAValues(),ConstantCodes.PRECOMPUTED, this);
+						 runICAWorker = new RunICAWorker(this,getICAValues(),ConstantCodes.PRECOMPUTED, this);
 					 else
-						 runICAWorker = new RunICAWorker(tAConsole,btnRunMethod, pbProgress,getICAValues(),ConstantCodes.ICA_METHOD, this);
-					 runICAWorker.execute();	
-					 this.setEnabled(false);
+						 runICAWorker = new RunICAWorker(this,getICAValues(),ConstantCodes.ICA_METHOD, this);
+	
+					 runICAWorker.execute();
+					 
+					 //this.setEnabled(false);
 				} catch (Exception e1) {
 					e1.printStackTrace();
 				}
 			}
 		}
+		else if(e.getSource() == btnStopMethod)
+		{
+			//JOptionPane.showMessageDialog(this, "Trying to cancel.");
+			System.out.println("PythonExcecutor.running = "+PythonExcecutor.running);
+		     if(PythonExcecutor.running){
+		     	PythonExcecutor.process.destroy();
+		     }
+		     runICAWorker.action = ConstantCodes.CANCELED;
+			
+			runICAWorker.cancel(true);
+		}
 		else if(e.getSource() == btnOpenResults)
 		{
 			try {
-				 runICAWorker = new RunICAWorker(tAConsole,btnOpenResults, pbProgress,getICAValues(),ConstantCodes.OPEN_ICA_RESULTS,this);
+				 runICAWorker = new RunICAWorker(this,getICAValues(),ConstantCodes.OPEN_ICA_RESULTS,this);
 				 runICAWorker.execute();	
 				 this.setEnabled(false);
 			} catch (Exception e3) {

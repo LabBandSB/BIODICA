@@ -1,3 +1,39 @@
+/*
+BIODICA Navigator software
+Copyright (C) 2017-2022 Curie Institute, 26 rue d'Ulm, 75005 Paris - FRANCE
+
+Copyright (C) 2017-2022 National Laboratory Astana, Center for Life Sciences, Nazarbayev University, Nur-Sultan, Kazakhstan
+
+
+
+BIODICA Navigator is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+
+
+BIODICA Navigator is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Lesser General Public License for more details.
+
+
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA
+*/
+
+
+
+/*
+BIODICA Navigator authors:
+Andrei Zinovyev : http://andreizinovyev.site
+Ulykbek Kairov : ulykbek.kairov@nu.edu.kz
+Askhat Molkenov : askhat.molkenov@nu.edu.kz
+*/
+
 import java.awt.EventQueue;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

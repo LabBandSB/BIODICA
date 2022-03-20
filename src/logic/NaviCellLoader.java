@@ -15,10 +15,11 @@ public class NaviCellLoader {
 		// TODO Auto-generated method stub
 		try{
 			
-			String data = "C:/Datas/BIODICA_GUI/work/OVCA_ICA/OVCA_ica_S.xls";
+			//String data = "C:/Datas/BIODICA_GUI/work/OVCA_ICA/OVCA_ica_S.xls";
+			String data = "C:/Datas/BIODICA_GUI/work/OVCA_NAVICELL/OVCA_ica_S_onlytop.txt";
 			//String data = "C:/MyPrograms/_github/JNaviCell/dist/v1.1/DU145_data.txt";
-			String URLNaviCell = "https://navicell.curie.fr/navicell/newtest/maps/infosigmap/master/index.php";
-			//String URLNaviCell = "https://acsn.curie.fr/navicell/maps/survival/master/index.html";
+			//String URLNaviCell = "https://navicell.curie.fr/navicell/newtest/maps/infosigmap/master/index.php";
+			String URLNaviCell = "https://acsn.curie.fr/navicell/maps/natural_killer_cell/master/index.html";
 			//String URLNaviCell = "https://navicell.curie.fr/navicell/maps/cellcycle/master/index.php";
 			int compNumber = 3;
 			String columnName = "IC"+compNumber;
@@ -26,11 +27,12 @@ public class NaviCellLoader {
 
 			VDataTable vt = VDatReadWrite.LoadFromSimpleDatFile(data, true, "\t");
 			TableUtils.findAllNumericalColumns(vt);
-			VDataTable vt1 = takeOnlyTopContributingGenes(vt,5f);
-			VDatReadWrite.useQuotesEverywhere = false;
-			VDatReadWrite.saveToSimpleDatFile(vt1, data.substring(0, data.length()-4)+"_onlytop.txt");
+			//VDataTable vt1 = takeOnlyTopContributingGenes(vt,5f);
+			//VDatReadWrite.useQuotesEverywhere = false;
+			//VDatReadWrite.saveToSimpleDatFile(vt1, data.substring(0, data.length()-4)+"_onlytop.txt");
 			
-			LoadNaviCellWithData(data.substring(0, data.length()-4)+"_onlytop.txt",URLNaviCell,columnName,"ICA");
+			//LoadNaviCellWithData(data.substring(0, data.length()-4)+"_onlytop.txt",URLNaviCell,columnName,"ICA");
+			LoadNaviCellWithData(data,URLNaviCell,columnName,"ICA");
 			
 		}catch(Exception e){
 			e.printStackTrace();
@@ -43,10 +45,14 @@ public class NaviCellLoader {
         NaviCell n = new NaviCell();
         
         n.setMapUrl(URLNaviCell);
+        
+        n.setProxyUrl("https://navicell.vincent-noel.fr/cgi-bin/nv_proxy.php");
 
         n.launchBrowser();
+        System.out.println("Browser launched.");
 
         n.importData("", dataFile,  "mRNA Expression data", analysisPrefix);
+        System.out.println("Data '+dataFile+' imported");
         
         // select heatmap for visualization
         //n.drawingConfigSelectHeatmap("", true);

@@ -55,7 +55,7 @@ public class ConstantCodes
 	public static String PRECOMPUTED = "PrecomputedComponentNumber";
 	public static String OPEN_ICA_RESULTS = "OpenICAResults";
 	
-	
+	public static final String CANCELED = "Canceled";	
 	public static final String FINISHED = "Finished";
 	public static final String ERROR = "Error";
 

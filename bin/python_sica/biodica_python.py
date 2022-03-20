@@ -138,6 +138,7 @@ for i in components:
     fig , ax = plt.subplots(figsize = (10 , 7))
     start = timer()    
     sICA.projection(ax = ax , method = type_of_visualization)
+    print('type_of_visualization=',type_of_visualization)
     if type_of_visualization=='umap':
         ax.set_title("UMAP for ICA components, order="+str(i))
     elif type_of_visualization=='tsne':

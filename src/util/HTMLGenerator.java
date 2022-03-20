@@ -84,10 +84,12 @@ public class HTMLGenerator
 	        		+ "</li></ul></div>");
 	        
 	        page.append("<div class='row' style='padding:20px'>");
+	        
 			for (File image : images) 
 			{
 				page.append("<div class='col-xs-6 col-md-6'><a href='#' class='thumbnail'><img src='"
 						+ FormatFileURL(image.getAbsolutePath()) + "' height='550px' width='600px'></a></div>");
+				if(image.getAbsolutePath().contains("_stability")) { page.append("<br><br>"); }
 			}
 
 			page.append("</div></div></div></body>");

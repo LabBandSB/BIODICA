@@ -1,10 +1,49 @@
+/*
+BIODICA Navigator software
+Copyright (C) 2017-2022 Curie Institute, 26 rue d'Ulm, 75005 Paris - FRANCE
+
+Copyright (C) 2017-2022 National Laboratory Astana, Center for Life Sciences, Nazarbayev University, Nur-Sultan, Kazakhstan
+
+
+
+BIODICA Navigator is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+
+
+BIODICA Navigator is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Lesser General Public License for more details.
+
+
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA
+*/
+
+
+
+/*
+BIODICA Navigator authors:
+Andrei Zinovyev : http://andreizinovyev.site
+Ulykbek Kairov : ulykbek.kairov@nu.edu.kz
+Askhat Molkenov : askhat.molkenov@nu.edu.kz
+*/
+
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.CancellationException;
+import java.util.concurrent.ExecutionException;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import javax.swing.JProgressBar;
 import javax.swing.JTextArea;
@@ -21,6 +60,7 @@ import model.ConstantCodes;
 import model.IcaDTO;
 import util.ConfigHelper;
 import util.HTMLGenerator;
+import util.WindowEventHandler;
 import vdaoengine.ProcessTxtData;
 
 
@@ -41,6 +81,14 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 	public float minimalTolerableStability = 0.6f;
 	public String action = ConstantCodes.ERROR;
 	private IcaMethod iCAMethod;
+	
+	private File wfica;
+	private File wficaStability;
+	private Thread executionThread;
+	private String wfolder;
+	private String wfolderstability;
+
+	private IcaMethod ICAMethodDialog;
 
 	
 	
@@ -49,11 +97,12 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 	private String workingFolder;
 	private String stabilityFolder;
 	
-	public RunICAWorker(JTextArea tAConsole, JButton btnRunMethod,JProgressBar pbProgress, IcaDTO icaDTO, String method, IcaMethod iCAMethod)
+	public RunICAWorker(IcaMethod ICAMethodDialog, IcaDTO icaDTO, String method, IcaMethod iCAMethod)
 	{
-		this.tAConsole = tAConsole;
-		this.btnRunMethod = btnRunMethod;
-		this.pbProgress = pbProgress;
+		this.ICAMethodDialog = ICAMethodDialog;
+		this.tAConsole = ICAMethodDialog.tAConsole;
+		this.btnRunMethod = ICAMethodDialog.btnRunMethod;
+		this.pbProgress = ICAMethodDialog.pbProgress;
 		this.icaDTO = icaDTO;
 		this.method = method;
 		this.iCAMethod = iCAMethod;
@@ -66,11 +115,14 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 		Border progressBorder = BorderFactory.createTitledBorder("Running...");
 		pbProgress.setBorder(progressBorder);
 		
+		ICAMethodDialog.btnRunMethod.setEnabled(false);
+		ICAMethodDialog.removeWindowListener(ICAMethodDialog.windowHandler);
+		
 		if(init())
 		{
 			if(method == ConstantCodes.ICA_METHOD)
 			{
-				doICA();
+				startICA();		
 			}
 			else if(method == ConstantCodes.OPTIMAL_COMPONENT_NO)
 			{
@@ -84,6 +136,7 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 				doOpenResultsPage();
 			}
 		}
+		ICAMethodDialog.btnRunMethod.setEnabled(true);		
 		return true;
 	}
 
@@ -96,21 +149,36 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 	    }
 	}
 
+	
+
 	@Override
 	protected void done() {
+		
+        try {
+        			
 		btnRunMethod.setEnabled(true);
+		ICAMethodDialog.btnStopMethod.setEnabled(true);
+		ICAMethodDialog.btnOpenResults.setEnabled(true);
+		
+		ICAMethodDialog.addWindowListener(ICAMethodDialog.windowHandler);
+		
 		iCAMethod.setEnabled(true);
 		pbProgress.setIndeterminate(false);
 		Border progressBorder = BorderFactory.createTitledBorder("");
 		pbProgress.setBorder(progressBorder);
 		iCAMethod.BindData();
-		System.out.println("Action="+action);
+		System.out.println("In done. Action="+action);
 		switch(action){
+		    case ConstantCodes.CANCELED:
+				publish("Cancelling process...");
+				JOptionPane.showMessageDialog (null, "Process has been cancelled.", "CANCEL", JOptionPane.INFORMATION_MESSAGE);
+				break;
 			case ConstantCodes.FINISHED:
+				
 				workingFolder = icaDTO.getDefaultWorkFolderPath()+File.separator + analysisprefix+"_ICA";
 				stabilityFolder = workingFolder+File.separator+folderWithPrecomputedICAResults;
 				File [] pngFiles = null;
-				
+								
 				if((method == ConstantCodes.ICA_METHOD)||(method == ConstantCodes.OPEN_ICA_RESULTS))
 				{
 					JOptionPane.showMessageDialog (null, "Process has been successfully finished.", "SUCCESS", JOptionPane.INFORMATION_MESSAGE);
@@ -124,7 +192,7 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 				else if(method == ConstantCodes.OPTIMAL_COMPONENT_NO)
 				{
 					
-					JOptionPane.showMessageDialog (null, "Process has been successfully finished.\n "+icaDTO.getSNoOfComponents()+" components is selected.", "SUCCESS", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog (null, "Process has been successfully finished.", "SUCCESS", JOptionPane.INFORMATION_MESSAGE);
 					
 					pngFiles = new File(stabilityFolder).listFiles(new FileFilter() {
 					     public boolean accept(File file) {
@@ -156,6 +224,11 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 				JOptionPane.showMessageDialog (null, "An error occurred. ", "ERROR", JOptionPane.ERROR_MESSAGE);
 				break;
 		}
+		
+         } catch(CancellationException e) {
+           System.out.println("The process has been cancelled");
+         }
+				
 		super.done();
 	}
 
@@ -179,14 +252,21 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 		return true;
 	}
 	
-	private void doICA() throws Exception
-	{		
+	private void startICA() throws Exception{
+		
+		
+		/*executionThread = new Thread(new Runnable() {
+		    //private Process process;
+		    @Override
+		    public void run() {
+		    	try { */
+		
 		publish("=========================================");
 		publish("======  Performing ICA computations =====");
 		publish("=========================================");		
-		File wfica = new File(icaDTO.getDefaultWorkFolderPath() + File.separator+analysisprefix+"_ICA");
+		wfica = new File(icaDTO.getDefaultWorkFolderPath() + File.separator+analysisprefix+"_ICA");
 		wfica.mkdir();
-		File wficaStability = new File(icaDTO.getDefaultWorkFolderPath() + File.separator+analysisprefix+"_ICA"+File.separator+"stability");
+		wficaStability = new File(icaDTO.getDefaultWorkFolderPath() + File.separator+analysisprefix+"_ICA"+File.separator+"stability");
 		wficaStability.mkdir();
 		
 		String nums[] = icaDTO.getSNoOfComponents().split(",");
@@ -194,6 +274,11 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 		for(int kk=0;kk<nums.length;kk++)
 			numberOfComponents[kk] = Integer.parseInt(nums[kk]);
 
+		ICAMethodDialog.btnStopMethod.setEnabled(false);
+		ICAMethodDialog.btnOpenResults.setEnabled(false);
+		
+		FileUtils.deleteQuietly(new File(wfica.getAbsolutePath()+File.separator+analysisprefix+"_ica_S.xls"));
+		FileUtils.deleteQuietly(new File(wfica.getAbsolutePath()+File.separator+analysisprefix+"_ica_A.xls"));
 		
 		FileUtils.copyFile(df, new File(wfica.getAbsolutePath()+File.separator + df.getName()));
 			
@@ -203,10 +288,14 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 		//arguments[2] = "-prepare4ICA";
 		arguments[1] = "-prepare4ICAFast";
 		
+		publish("Prepare the dataset for ICA computations...");
 		ProcessTxtData.main(arguments);
+		publish("Finished with preparation.");
 		
-		String wfolder = wfica.getAbsolutePath();
-		String wfolderstability = wficaStability.getAbsolutePath();
+		ICAMethodDialog.btnStopMethod.setEnabled(true);
+		
+		wfolder = wfica.getAbsolutePath();
+		wfolderstability = wficaStability.getAbsolutePath();
 		String fn_numerical = df.getName().substring(0, df.getName().length()-4)+"_ica_numerical.txt"; 		
 		
 		if(icaDTO.getICAImplementation().equals("matlab")){	
@@ -226,10 +315,23 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 			String ICAMeasure = icaDTO.getPythonICAMeasure();
 			int ICAMaxNumIterations = icaDTO.getPythonICAMaxNumIterations();
 			int ICANumberOfRuns = 100;
-			String PythonVisualizationType = "umap";						
+			String PythonVisualizationType = "umap";		
 			PythonExcecutor.executePythonICANumerical(pythonCodeFolder,workingFolder,dataFile,numberOfComponents,ICAApproach,ICAMeasure,ICAMaxNumIterations,ICANumberOfRuns,PythonVisualizationType);
 		}
 
+    	if(!action.equals(ConstantCodes.CANCELED))
+    		finalizeICA();
+    	action= ConstantCodes.FINISHED;
+		/*    	}catch(Exception e) {
+		    		done();
+		    	}
+		    }
+		});*/  
+		//executionThread.start();
+				
+	}
+
+	private void finalizeICA() throws Exception{
 		publish("Formatting results of ICA computations...");
 		
 		wfica = new File(wfolder);
@@ -262,7 +364,28 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 			}
 		}
 		
-		action= ConstantCodes.FINISHED;
+		// Check if xls file is created
+		/*if (new File(wfica.getAbsolutePath()+File.separator+analysisprefix+"_ica_S.xls").exists()){
+			action= ConstantCodes.FINISHED;
+		}else{
+			action=ConstantCodes.ERROR;
+		}*/
+		
+	}
+	
+	
+	private void doICA() throws Exception
+	{		
+		startICA();
+    	/*while(!executionThread.isInterrupted()){
+    		if(this.isCancelled())
+    			executionThread.interrupt();
+    		try {
+                Thread.sleep(100);  // milliseconds
+             } catch (InterruptedException ex) {}
+    	}*/
+    	finalizeICA();
+		
 	}
 	
 	private void doPrecomputedComponentNumber()throws Exception{
@@ -345,7 +468,7 @@ public class RunICAWorker extends SwingWorker<Boolean, String>  {
 		
 		action= ConstantCodes.FINISHED;
 	}
-	
+		
 	private void doOpenResultsPage(){
 		action= ConstantCodes.FINISHED;
 	}

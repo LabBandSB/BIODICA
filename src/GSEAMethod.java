@@ -28,6 +28,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.ScrollPaneLayout;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
@@ -299,7 +300,7 @@ public class GSEAMethod extends JDialog implements ActionListener{
  		csTAconsole.weightx = 1.0;
  		csTAconsole.weighty = 2.0;
  		
- 		tAConsole = new JTextArea(20,80);
+ 		tAConsole = new JTextArea(20,40);
  		tAConsole.setLineWrap(true);
  		tAConsole.setEditable(false);
  		tAConsole.setWrapStyleWord(true);
@@ -310,8 +311,8 @@ public class GSEAMethod extends JDialog implements ActionListener{
  		sptAConsole = new JScrollPane(tAConsole);	
  		sptAConsole.setVerticalScrollBarPolicy(
                  JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
- 		sptAConsole.setMinimumSize(new Dimension(200,300));
- 		
+ 		sptAConsole.setMinimumSize(new Dimension(200,100));
+ 		 		
  	 	contentPane.add(sptAConsole, csTAconsole);
  	 	
  	 	

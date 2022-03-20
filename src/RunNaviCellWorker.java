@@ -170,6 +170,8 @@ public class RunNaviCellWorker extends SwingWorker<Boolean, String>  {
 		
 		NaviCellLoader.LoadNaviCellWithData(filteredSfile,navicellDTO.getNaviCellMapURL(),columnId,analysisprefix);
 		
+		
+		
 		action = ConstantCodes.FINISHED;
 	}
 

@@ -180,20 +180,18 @@ public class NaviCellVisualization extends JDialog implements ActionListener{
 		 	
 		 	cbxNaviCellMap = new JComboBox<String>();
 		 	cbxNaviCellMap.addItem("InfoSigMap: map of informative gene sets");
-		 	cbxNaviCellMap.addItem("ACSN Global map");
-		 	cbxNaviCellMap.addItem("ACSN Cell cycle map");
-		 	cbxNaviCellMap.addItem("ACSN DNA Repair map");
-		 	cbxNaviCellMap.addItem("ACSN EMT and Cell motility map");
-		 	cbxNaviCellMap.addItem("ACSN Cell survival map");
-		 	cbxNaviCellMap.addItem("ACSN Apoptosis map");
-		 	cbxNaviCellMap.addItem("ACSN Innate Immunity meta-map");
-		 	cbxNaviCellMap.addItem("ACSN Dendritic cell map");
-		 	cbxNaviCellMap.addItem("ACSN Macrophage map");
-		 	cbxNaviCellMap.addItem("ACSN Natural Killer Cell map");
-		 	cbxNaviCellMap.addItem("ACSN Cancer-associate fibroblast map");
-		 	cbxNaviCellMap.addItem("AlzPathway: Alzheimer disease map");
-		 	cbxNaviCellMap.addItem("E2F1 map");
-		 	cbxNaviCellMap.addItem("The gastrin and cholecystokinin receptors mediated signaling");
+		 	cbxNaviCellMap.addItem("ACSN Cancer cell map");
+		 	cbxNaviCellMap.addItem("ACSN Cell cycle and DNA Repair map");
+		 	cbxNaviCellMap.addItem("ACSN EMT Senescence");		 	
+		 	cbxNaviCellMap.addItem("ACSN Regulated Cell Death");
+		 	cbxNaviCellMap.addItem("ACSN Survival");
+		 	cbxNaviCellMap.addItem("ACSN Telomere Maintenance");
+		 	cbxNaviCellMap.addItem("ACSN Invasion Motility");
+		 	cbxNaviCellMap.addItem("ACSN Adaptive Immune Response");
+		 	cbxNaviCellMap.addItem("ACSN Angiogenesis");
+		 	cbxNaviCellMap.addItem("ACSN Cancer Associated Fibroblasts");
+		 	cbxNaviCellMap.addItem("ACSN Innate Immunity");
+		 	cbxNaviCellMap.addItem("Metabolic map RECON2");		 	
 		 	cbxNaviCellMap.setSelectedIndex(0);
 		 	contentPane.add(cbxNaviCellMap, csTfOften);
 		 	
@@ -219,7 +217,8 @@ public class NaviCellVisualization extends JDialog implements ActionListener{
 		 	csTfOften1.weighty = 1.0;
 		 	
 		 	tfNaviCellMap = new JTextField(50);
-		 	tfNaviCellMap.setText("https://navicell.curie.fr/navicell/newtest/maps/infosigmap/master/index.html");
+		 	//tfNaviCellMap.setText("https://navicell.curie.fr/navicell/newtest/maps/infosigmap/master/index.html");
+		 	tfNaviCellMap.setText("https://navicell.vincent-noel.fr/maps/1548847c-db0f-44ca-b0b5-04e625044501/master/index.html");
 		 	contentPane.add(tfNaviCellMap, csTfOften1);
 
 		 	cbxNaviCellMap.addActionListener(this);

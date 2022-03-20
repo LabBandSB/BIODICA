@@ -10,6 +10,9 @@ import vdaoengine.ProcessTxtData;
 
 public class PythonExcecutor {
 	
+	public static Process process;
+	public static boolean running = false;
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -70,12 +73,15 @@ public class PythonExcecutor {
 			
 			pb.redirectErrorStream(true);
 			pb.redirectOutput(Redirect.INHERIT);
-			Process process = pb.start();
+			running = true;
+			process = pb.start();
 			//doneFile = new File(workingFolder+"_done");
 			//while(!doneFile.exists()) Thread.sleep(2000);
 			//FileUtils.deleteQuietly(doneFile);
 			
 			int exitCode = process.waitFor();
+			running = false;
+
 			if (exitCode == 0) {
 			    System.out.println("Python code executed successfully... :)");
 			}
