@@ -33,6 +33,7 @@ import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import javax.swing.text.NumberFormatter;
 
+import logic.PythonExcecutor;
 import model.ConfigDTO;
 import model.ConstantCodes;
 import model.GseaDTO;
@@ -48,19 +49,21 @@ public class TOPPGeneAnalysis extends JDialog implements ActionListener{
 	private JFileChooser fileChooser;
 	private JTextField tfDataTable;
 	private JTextField tfSTable;
-	private JButton btnDataTable,btnSTable,btnRunMethod, btnClear;
+	public JButton btnDataTable,btnSTable,btnRunMethod, btnStopMethod, btnClear;
 	private JLabel lbGseaValue;
 	private JLabel lbThreshValue;
 	private JSpinner sTOPPGeneNumberOfGenesValue;
 	private JSpinner sThresholdPValue;
 	private ConfigDTO cfDTO;
 	private JScrollPane sptAConsole;
-	private JProgressBar pbProgress;
-	private JTextArea tAConsole;
+	public JProgressBar pbProgress;
+	public JTextArea tAConsole;
 	private RunTOPPGeneWorker runTOPPGeneAWorker;
 	private JCheckBox cDoAnalysis;
 	private JLabel lbDoAnalysis;
 	private File df;
+	
+	public WindowEventHandler windowHandler;
 	
 	//Default values
 	public Number DEFAULT_TOPPGENE_THRESHOLD  = 3;
@@ -81,7 +84,9 @@ public class TOPPGeneAnalysis extends JDialog implements ActionListener{
 		contentPane = new JPanel(new GridBagLayout());
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setAlignmentY(JComponent.CENTER_ALIGNMENT);
-		this.addWindowListener(new WindowEventHandler());
+		windowHandler = new WindowEventHandler();
+		this.addWindowListener(windowHandler);
+
 		
 		fileChooser = new JFileChooser();
 		fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
@@ -310,6 +315,11 @@ public class TOPPGeneAnalysis extends JDialog implements ActionListener{
 	 	btnRunMethod = new JButton("Run");
 	 	btnRunMethod.setIcon(new ImageIcon(getClass().getResource("Run.png")));
 	 	btnRunMethod.addActionListener(this);
+	 	
+	 	btnStopMethod = new JButton("Stop");
+	 	btnStopMethod.setIcon(new ImageIcon(getClass().getResource("Stop.png")));
+	 	btnStopMethod.addActionListener(this);
+	 	btnStopMethod.setEnabled(false);
 
 	 	boolean isRunBtnEnabled = isRunBtnEnabled();
 	 	btnRunMethod.setEnabled(isRunBtnEnabled);
@@ -318,7 +328,7 @@ public class TOPPGeneAnalysis extends JDialog implements ActionListener{
 
 	 	JPanel runStopPanel = new JPanel(new FlowLayout());
 	 	runStopPanel.add(btnRunMethod);
-	
+	 	runStopPanel.add(btnStopMethod);	
 	 	
 	 	btnsPanel.add(clearPanel, BorderLayout.EAST);
 	 	btnsPanel.add(runStopPanel, BorderLayout.WEST);
@@ -360,10 +370,19 @@ public class TOPPGeneAnalysis extends JDialog implements ActionListener{
 			}
 			else
 			{
-				runTOPPGeneAWorker = new RunTOPPGeneWorker(tAConsole, btnRunMethod, pbProgress, getTOPPGeneValues(),this);
+				runTOPPGeneAWorker = new RunTOPPGeneWorker(this, getTOPPGeneValues(),this);
 				runTOPPGeneAWorker.execute();
-				this.setEnabled(false);
 			}
+		}
+		else if(e.getSource() == btnStopMethod)
+		{
+			//JOptionPane.showMessageDialog(this, "Trying to cancel.");
+
+			runTOPPGeneAWorker.executionThread.interrupt();
+			
+		     runTOPPGeneAWorker.action = ConstantCodes.CANCELED;
+			
+		     runTOPPGeneAWorker.cancel(true);
 		}
 		
 	 	boolean isRunBtnEnabled = isRunBtnEnabled();

@@ -29,18 +29,21 @@ public class RunGSEAWorker extends SwingWorker<Boolean, String>  {
 	private JTextArea tAConsole;
 	private JButton btnRunMethod;
 	private JProgressBar pbProgress;
+	private GSEAMethod GSEAMethodDialog;
 	private GseaDTO gseaDTO;
 	private File df;
 	private String analysisprefix;
 	private GSEAMethod gSEAMethod;
 	public String action = ConstantCodes.ERROR;
 	private File wfgsear;
+	public Vector<Thread> GSEAThreads;
 	
-	public RunGSEAWorker(JTextArea tAConsole, JButton btnRunMethod,JProgressBar pbProgress, GseaDTO gseaDTO,GSEAMethod gSEAMethod)
+	public RunGSEAWorker(GSEAMethod GSEAMethodDialog, GseaDTO gseaDTO,GSEAMethod gSEAMethod)
 	{
-		this.tAConsole = tAConsole;
-		this.btnRunMethod = btnRunMethod;
-		this.pbProgress = pbProgress;
+		this.GSEAMethodDialog = GSEAMethodDialog;
+		this.tAConsole = GSEAMethodDialog.tAConsole;
+		this.btnRunMethod = GSEAMethodDialog.btnRunMethod;
+		this.pbProgress = GSEAMethodDialog.pbProgress;
 		this.gseaDTO = gseaDTO;
 		this.gSEAMethod = gSEAMethod;
 	}
@@ -52,8 +55,13 @@ public class RunGSEAWorker extends SwingWorker<Boolean, String>  {
 		Border progressBorder = BorderFactory.createTitledBorder("Running...");
 		pbProgress.setBorder(progressBorder);
 		if(init()){
+			
+			GSEAMethodDialog.btnRunMethod.setEnabled(false);
+			GSEAMethodDialog.removeWindowListener(GSEAMethodDialog.windowHandler);
+			
 			doGSEA();
 		}
+		GSEAMethodDialog.btnRunMethod.setEnabled(true);		
 		return true;
 	}
 
@@ -69,11 +77,18 @@ public class RunGSEAWorker extends SwingWorker<Boolean, String>  {
 	@Override
 	protected void done() {
 		btnRunMethod.setEnabled(true);
+		GSEAMethodDialog.btnStopMethod.setEnabled(true);
+		GSEAMethodDialog.addWindowListener(GSEAMethodDialog.windowHandler);
+		
 		pbProgress.setIndeterminate(false);
 		Border progressBorder = BorderFactory.createTitledBorder("");
 		pbProgress.setBorder(progressBorder);
 		gSEAMethod.setEnabled(true);
 		switch(action){
+		    case ConstantCodes.CANCELED:
+				publish("Cancelling process...");
+				JOptionPane.showMessageDialog (null, "Process has been cancelled.", "CANCEL", JOptionPane.INFORMATION_MESSAGE);
+				break;
 			case ConstantCodes.FINISHED:
 				JOptionPane.showMessageDialog (null, "Process has been successfully finished.", "SUCCESS", JOptionPane.INFORMATION_MESSAGE);
 			try {
@@ -139,6 +154,7 @@ public class RunGSEAWorker extends SwingWorker<Boolean, String>  {
 		MetaGeneAnnotation.produceRankFilesFromTable(sfile.getAbsolutePath(), wfgsea.getAbsolutePath(), analysisprefix);
 		wfgsear = new File(gseaDTO.getDefaultWorkFolderPath()+File.separator+analysisprefix+"_GSEA"+System.getProperty("file.separator")+"results");
 
+		GSEAMethodDialog.btnStopMethod.setEnabled(true);
 		
 		Date timestart = new Date();
 		
@@ -165,7 +181,7 @@ public class RunGSEAWorker extends SwingWorker<Boolean, String>  {
 
 		int totalThreads=0;
 		for(int batch=0;batch<numberOfBatches;batch++){
-		Vector<Thread> GSEAThreads = new Vector<Thread>();
+		GSEAThreads = new Vector<Thread>();
 		// run maxNumThreads threads at a time
 		for(int run=0;run<maxNumThreads;run++)if(totalThreads<rnks.size()){
 			File f = rnks.get(totalThreads);

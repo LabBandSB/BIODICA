@@ -48,14 +48,14 @@ public class GSEAMethod extends JDialog implements ActionListener{
 	private JFileChooser fileChooser;
 	private JTextField tfDataTable;
 	private JTextField tfSTable;
-	private JButton btnDataTable,btnSTable,btnRunMethod, btnClear;
+	public JButton btnDataTable,btnSTable,btnRunMethod, btnStopMethod,btnClear;
 	private JLabel lbGseaValue;
 	private JSpinner sGseaValue;
 	private JSpinner sTopMinNumberValue;
 	private ConfigDTO cfDTO;
 	private JScrollPane sptAConsole;
-	private JProgressBar pbProgress;
-	private JTextArea tAConsole;
+	public JProgressBar pbProgress;
+	public JTextArea tAConsole;
 	private RunGSEAWorker runGSEAWorker;
 	private JCheckBox cDoAnalysis;
 	private JLabel lbDoAnalysis;
@@ -67,6 +67,8 @@ public class GSEAMethod extends JDialog implements ActionListener{
  	private JTextField sFDRThresholdValue;
  	private JTextField sPValueThresholdValue;
  	private File df;
+ 	
+ 	public WindowEventHandler windowHandler;
  	
 	//Default values
 	public Number DEFAULT_GSEA_VALUE  = 10;
@@ -90,7 +92,8 @@ public class GSEAMethod extends JDialog implements ActionListener{
 		contentPane = new JPanel(new GridBagLayout());
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setAlignmentY(JComponent.CENTER_ALIGNMENT);
-		this.addWindowListener(new WindowEventHandler());
+		windowHandler = new WindowEventHandler();
+		this.addWindowListener(windowHandler);
 		
 		fileChooser = new JFileChooser();
 		fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
@@ -353,6 +356,12 @@ public class GSEAMethod extends JDialog implements ActionListener{
 	 	btnRunMethod = new JButton("Run");
 	 	btnRunMethod.setIcon(new ImageIcon(getClass().getResource("Run.png")));
 	 	btnRunMethod.addActionListener(this);
+	 	
+	 	btnStopMethod = new JButton("Stop");
+	 	btnStopMethod.setIcon(new ImageIcon(getClass().getResource("Stop.png")));
+	 	btnStopMethod.setEnabled(false);
+	 	btnStopMethod.addActionListener(this);
+	 	
 
 	 	boolean isRunBtnEnabled = isRunBtnEnabled();
 	 	btnRunMethod.setEnabled(isRunBtnEnabled);
@@ -361,6 +370,7 @@ public class GSEAMethod extends JDialog implements ActionListener{
 
 	 	JPanel runStopPanel = new JPanel(new FlowLayout());
 	 	runStopPanel.add(btnRunMethod);
+	 	runStopPanel.add(btnStopMethod);
 	
 	 	
 	 	btnsPanel.add(clearPanel, BorderLayout.EAST);
@@ -404,10 +414,21 @@ public class GSEAMethod extends JDialog implements ActionListener{
 			}
 			else
 			{
-				runGSEAWorker = new RunGSEAWorker(tAConsole, btnRunMethod, pbProgress, getGSEAValues(),this);
+				runGSEAWorker = new RunGSEAWorker(this, getGSEAValues(),this);
 				runGSEAWorker.execute();
-				this.setEnabled(false);
+				//this.setEnabled(false);
 			}
+		}
+		else if(e.getSource() == btnStopMethod)
+		{
+			
+			for(int i=0;i<runGSEAWorker.GSEAThreads.size();i++){
+				if(runGSEAWorker.GSEAThreads.get(i).isAlive())
+					runGSEAWorker.GSEAThreads.get(i).interrupt();
+			}
+			
+			     runGSEAWorker.action = ConstantCodes.CANCELED;
+			     runGSEAWorker.cancel(true);
 		}
 	 	boolean isRunBtnEnabled = isRunBtnEnabled();
 	 	btnRunMethod.setEnabled(isRunBtnEnabled);

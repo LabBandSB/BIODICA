@@ -34,12 +34,17 @@ public class RunTOPPGeneWorker extends SwingWorker<Boolean, String>  {
 	private TOPPGeneAnalysis TOPPGeneMethod;
 	public String action = ConstantCodes.ERROR;
 	private File wfgsear;
+	public Thread executionThread;
+	public boolean already_canceled = false;
 	
-	public RunTOPPGeneWorker(JTextArea tAConsole, JButton btnRunMethod,JProgressBar pbProgress, TOPPGeneDTO toppgeneDTO,TOPPGeneAnalysis toppgeneMethod)
+	private TOPPGeneAnalysis TOPPGeneAnalysisDialog;
+	
+	public RunTOPPGeneWorker(TOPPGeneAnalysis TOPPGeneAnalysisDialog, TOPPGeneDTO toppgeneDTO,TOPPGeneAnalysis toppgeneMethod)
 	{
-		this.tAConsole = tAConsole;
-		this.btnRunMethod = btnRunMethod;
-		this.pbProgress = pbProgress;
+		this.TOPPGeneAnalysisDialog = TOPPGeneAnalysisDialog;
+		this.tAConsole = TOPPGeneAnalysisDialog.tAConsole;
+		this.btnRunMethod = TOPPGeneAnalysisDialog.btnRunMethod;
+		this.pbProgress = TOPPGeneAnalysisDialog.pbProgress;
 		this.toppgeneDTO = toppgeneDTO;
 		this.TOPPGeneMethod = toppgeneMethod;
 	}
@@ -50,9 +55,29 @@ public class RunTOPPGeneWorker extends SwingWorker<Boolean, String>  {
 		pbProgress.setIndeterminate(true);
 		Border progressBorder = BorderFactory.createTitledBorder("Running...");
 		pbProgress.setBorder(progressBorder);
+		
 		if(init()){
-			doTOPPGene();
+			
+			TOPPGeneAnalysisDialog.btnRunMethod.setEnabled(false);
+			TOPPGeneAnalysisDialog.removeWindowListener(TOPPGeneAnalysisDialog.windowHandler);
+			executionThread = new Thread(new Runnable() {
+			    //private Process process;
+			    @Override
+			    public void run() {
+			    	try { 			
+			    		doTOPPGene();
+			    	}catch(Exception e) {
+			    		done();
+			    	}
+			    }
+			});
+		
+			executionThread.start();
+			while((!executionThread.isInterrupted())&(executionThread.isAlive()));
+			
 		}
+			
+		TOPPGeneAnalysisDialog.btnRunMethod.setEnabled(true);		
 		return true;
 	}
 
@@ -71,9 +96,20 @@ public class RunTOPPGeneWorker extends SwingWorker<Boolean, String>  {
 		pbProgress.setIndeterminate(false);
 		Border progressBorder = BorderFactory.createTitledBorder("");
 		pbProgress.setBorder(progressBorder);
-		TOPPGeneMethod.setEnabled(true);
+		
+		TOPPGeneAnalysisDialog.btnRunMethod.setEnabled(true);
+		
 		switch(action){
+			case ConstantCodes.CANCELED: 
+				if(!already_canceled) {
+					TOPPGeneAnalysisDialog.addWindowListener(TOPPGeneAnalysisDialog.windowHandler);
+					publish("Cancelling process...");
+					JOptionPane.showMessageDialog (null, "Process has been cancelled.", "CANCEL", JOptionPane.INFORMATION_MESSAGE);
+					already_canceled = true;
+				}
+			break;
 			case ConstantCodes.FINISHED:
+				TOPPGeneAnalysisDialog.addWindowListener(TOPPGeneAnalysisDialog.windowHandler);				
 				JOptionPane.showMessageDialog (null, "Process has been successfully finished.", "SUCCESS", JOptionPane.INFORMATION_MESSAGE);
 			try {
 				Desktop.getDesktop().browse(new File(wfgsear.getAbsolutePath() + File.separator + "toppgeneReport.html").toURI());
@@ -134,6 +170,8 @@ public class RunTOPPGeneWorker extends SwingWorker<Boolean, String>  {
 		Date timestart = new Date();
 		
 		wfgsear = new File(toppgeneDTO.getDefaultWorkFolderPath()+File.separator+analysisprefix+"_TOPPGENE"+System.getProperty("file.separator"));
+		
+		TOPPGeneAnalysisDialog.btnStopMethod.setEnabled(true);
 		
 		String name = analysisprefix;
 		
