@@ -39,14 +39,16 @@ public class OFTENMethod extends JDialog implements ActionListener{
 	private JPanel contentPane;
 	private JFileChooser fileChooser;
 	private JTextField tfDataTable,tfOften,tfOftenValues;
-	private JButton btnDataTable,btnSTable,btnOften,btnRunMethod, btnClear;;
+	public JButton btnDataTable,btnSTable,btnOften,btnRunMethod,btnStopMethod, btnClear;;
 	private JTextField tfSTable;
 	private ConfigDTO cfDTO;
 	private JScrollPane sptAConsole;
-	private JProgressBar pbProgress;
-	private JTextArea tAConsole;
+	public JProgressBar pbProgress;
+	public JTextArea tAConsole;
 	private RunOFTENWorker runOFTENWorker;
 	private File df;
+	
+	public WindowEventHandler windowHandler;	
 	
 	
 	//Default values
@@ -66,7 +68,9 @@ public class OFTENMethod extends JDialog implements ActionListener{
 		contentPane = new JPanel(new GridBagLayout());
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setAlignmentY(JComponent.CENTER_ALIGNMENT);
-		this.addWindowListener(new WindowEventHandler());
+		windowHandler = new WindowEventHandler();
+		this.addWindowListener(windowHandler);
+
 		
 		fileChooser = new JFileChooser();
 		fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
@@ -257,8 +261,7 @@ public class OFTENMethod extends JDialog implements ActionListener{
                  JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
  		sptAConsole.setMinimumSize(new Dimension(200,300));
  		
- 	 	contentPane.add(sptAConsole, csTAconsole);
- 	 	
+ 	 	contentPane.add(sptAConsole, csTAconsole); 	 	
  	 	
  	 	GridBagConstraints csProgressBar = new GridBagConstraints();
  		csProgressBar.gridheight = 0;
@@ -299,6 +302,12 @@ public class OFTENMethod extends JDialog implements ActionListener{
 	 	btnRunMethod = new JButton("Run");
 	 	btnRunMethod.setIcon(new ImageIcon(getClass().getResource("Run.png")));
 	 	btnRunMethod.addActionListener(this);
+	 	
+	 	btnStopMethod = new JButton("Stop");
+	 	btnStopMethod.setIcon(new ImageIcon(getClass().getResource("Stop.png")));
+	 	btnStopMethod.addActionListener(this);
+	 	btnStopMethod.setEnabled(false);
+	 	
 
 	 	boolean isRunBtnEnabled = isRunBtnEnabled();
 	 	btnRunMethod.setEnabled(isRunBtnEnabled);
@@ -307,6 +316,7 @@ public class OFTENMethod extends JDialog implements ActionListener{
 
 	 	JPanel runStopPanel = new JPanel(new FlowLayout());
 	 	runStopPanel.add(btnRunMethod);
+	 	runStopPanel.add(btnStopMethod);	 	
 	
 	 	
 	 	btnsPanel.add(clearPanel, BorderLayout.EAST);
@@ -346,14 +356,24 @@ public class OFTENMethod extends JDialog implements ActionListener{
 			if(emptyFieldExists())
 			{
 				JOptionPane.showMessageDialog(this, "Please, fill out all required fields", "Empty field", JOptionPane.ERROR_MESSAGE);
-			}
+			} 
 			else
 			{
-				runOFTENWorker = new RunOFTENWorker(tAConsole, btnRunMethod, pbProgress, getOftenValues(), this);
+				runOFTENWorker = new RunOFTENWorker(this, getOftenValues(), this);
 				runOFTENWorker.execute();
-				this.setEnabled(false);
+				//this.setEnabled(false);
 			}
 		}
+		else if(e.getSource() == btnStopMethod)
+		{
+			//JOptionPane.showMessageDialog(this, "Trying to cancel.");
+
+			runOFTENWorker.executionThread.interrupt();
+			runOFTENWorker.action = ConstantCodes.CANCELED;
+			runOFTENWorker.cancel(true);
+		}
+		
+		
 	 	boolean isRunBtnEnabled = isRunBtnEnabled();
 	 	btnRunMethod.setEnabled(isRunBtnEnabled);
 		

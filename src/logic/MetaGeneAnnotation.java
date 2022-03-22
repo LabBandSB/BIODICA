@@ -128,11 +128,11 @@ public class MetaGeneAnnotation{
 			argsv.add("-gui"); argsv.add("false");
 			String args[] = new String[argsv.size()];
 			for(int i=0;i<argsv.size();i++) { args[i]=argsv.get(i); }
-			try{
+			//try{
 			xtools.gsea.GseaPreranked.main(args);
-			}catch(Exception e){
+			//}catch(Exception e){
 				
-			}
+			//}
 			//System.out.println("Do GSEA... "+rnkFile);
 		//}
 	}

@@ -34,14 +34,18 @@ public class RunOFTENWorker extends SwingWorker<Boolean, String>  {
 	private File wfOFTEN;
 	private String oftenSummary;
 	private String oftenReport;
+	public Thread executionThread;
+	public boolean already_canceled = false;	
+	
+	private OFTENMethod OFTENMethodDialog;
 	
 	public String action = ConstantCodes.ERROR;
 	
-	
-	public RunOFTENWorker(JTextArea tAConsole, JButton btnRunMethod,JProgressBar pbProgress, OftenDTO oftenDTO, OFTENMethod oftenMethod){
-		this.tAConsole = tAConsole;
-		this.btnRunMethod = btnRunMethod;
-		this.pbProgress = pbProgress;
+	public RunOFTENWorker(OFTENMethod OFTENMethodDialog, OftenDTO oftenDTO, OFTENMethod oftenMethod){
+		this.OFTENMethodDialog = OFTENMethodDialog;
+		this.tAConsole = OFTENMethodDialog.tAConsole;
+		this.btnRunMethod = OFTENMethodDialog.btnRunMethod;
+		this.pbProgress = OFTENMethodDialog.pbProgress;
 		this.oftenDTO = oftenDTO;
 		this.oftenMethod = oftenMethod;
 	}
@@ -54,9 +58,28 @@ public class RunOFTENWorker extends SwingWorker<Boolean, String>  {
 		pbProgress.setBorder(progressBorder);
 		
 		if(init()){
-			doOFTEN();
-		}
+			
+			OFTENAnalysis.stop_execution = false;
+			OFTENMethodDialog.btnRunMethod.setEnabled(false);
+			OFTENMethodDialog.removeWindowListener(OFTENMethodDialog.windowHandler);
+			executionThread = new Thread(new Runnable() {
+			    //private Process process;
+			    @Override
+			    public void run() {
+			    	try { 			
+			    		doOFTEN();
+			    	}catch(Exception e) {
+			    		done();
+			    	}
+			    }
+			});
 		
+			executionThread.start();
+			while((!executionThread.isInterrupted())&(executionThread.isAlive()));
+						
+		}
+        
+		OFTENMethodDialog.btnRunMethod.setEnabled(true);	
 		return true;
 	}
 	
@@ -77,7 +100,19 @@ public class RunOFTENWorker extends SwingWorker<Boolean, String>  {
 		Border progressBorder = BorderFactory.createTitledBorder("");
 		pbProgress.setBorder(progressBorder);
 		oftenMethod.setEnabled(true);
+		
+		OFTENMethodDialog.btnRunMethod.setEnabled(true);
+		
 		switch(action){
+			case ConstantCodes.CANCELED: 
+				if(!already_canceled) {
+					already_canceled = true;
+					OFTENAnalysis.stop_execution = true;
+					OFTENMethodDialog.addWindowListener(OFTENMethodDialog.windowHandler);
+					publish("Cancelling process...");	
+					JOptionPane.showMessageDialog (null, "Process has been cancelled.", "CANCEL", JOptionPane.INFORMATION_MESSAGE);
+				}
+			break;
 			case ConstantCodes.FINISHED:
 				JOptionPane.showMessageDialog (null, "Process has been successfully finished.", "SUCCESS", JOptionPane.INFORMATION_MESSAGE);
 				
@@ -169,6 +204,8 @@ public class RunOFTENWorker extends SwingWorker<Boolean, String>  {
 		else
 			sfile = new File(wfica.getAbsolutePath()+System.getProperty("file.separator")+analysisprefix+"_ica_S.xls");
 		oftenDTO.setSTablePath(sfile.getAbsolutePath());
+		
+		OFTENMethodDialog.btnStopMethod.setEnabled(true);
 		
 		FileUtils.cleanDirectory(wfOFTEN);
 		String smatrixfile = sfile.getAbsolutePath();

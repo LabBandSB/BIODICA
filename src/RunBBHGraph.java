@@ -8,6 +8,7 @@ import javax.swing.JTextArea;
 import javax.swing.SwingWorker;
 import javax.swing.border.Border;
 import logic.MakeCorrelationGraph;
+import logic.OFTENAnalysis;
 import model.BBHGraphDTO;
 import model.ConstantCodes;
 import model.OftenDTO;
@@ -25,14 +26,17 @@ public class RunBBHGraph extends SwingWorker<Boolean, String> {
 	private String  folderWithPrecomputedICAResults;
 	private boolean splitPositiveAndNegativeTailsForMetaanalysis = false;
 	
+	public Thread executionThread;
+	public boolean already_canceled = false;	
+	private BBHGraph BBHGraphDialog;
+	
 	public String action = ConstantCodes.ERROR;
 	
-	
-	
-	public RunBBHGraph(JTextArea tAConsole, JButton btnRunMethod,JProgressBar pbProgress, BBHGraphDTO bBHGraphDTO,BBHGraph bBHGraph){
-		this.tAConsole = tAConsole;
-		this.btnRunMethod = btnRunMethod;
-		this.pbProgress = pbProgress;
+	public RunBBHGraph(BBHGraph BBHGraphDialog, BBHGraphDTO bBHGraphDTO,BBHGraph bBHGraph){
+		this.BBHGraphDialog = BBHGraphDialog;
+		this.tAConsole = BBHGraphDialog.tAConsole;
+		this.btnRunMethod = BBHGraphDialog.btnRunMethod;
+		this.pbProgress = BBHGraphDialog.pbProgress;
 		this.bBHGraphDTO = bBHGraphDTO;
 		this.bBHGraph = bBHGraph;
 	}
@@ -42,9 +46,30 @@ public class RunBBHGraph extends SwingWorker<Boolean, String> {
 		pbProgress.setIndeterminate(true);
 		Border progressBorder = BorderFactory.createTitledBorder("Running...");
 		pbProgress.setBorder(progressBorder);
+		
 		if(init()){
-			doBBHGraph();
+			
+			MakeCorrelationGraph.stop_execution = false;
+			BBHGraphDialog.btnRunMethod.setEnabled(false);
+			BBHGraphDialog.removeWindowListener(BBHGraphDialog.windowHandler);
+			executionThread = new Thread(new Runnable() {
+			    //private Process process;
+			    @Override
+			    public void run() {
+			    	try { 			
+			    		doBBHGraph();
+			    	}catch(Exception e) {
+			    		done();
+			    	}
+			    }
+			});
+		
+			executionThread.start();
+			while((!executionThread.isInterrupted())&(executionThread.isAlive()));
+					
 		}
+        
+		BBHGraphDialog.btnRunMethod.setEnabled(true);	
 		return true;
 	}
 
@@ -65,6 +90,15 @@ public class RunBBHGraph extends SwingWorker<Boolean, String> {
 		pbProgress.setBorder(progressBorder);
 		bBHGraph.setEnabled(true);
 		switch(action){
+			case ConstantCodes.CANCELED: 
+				if(!already_canceled) {
+					BBHGraphDialog.addWindowListener(BBHGraphDialog.windowHandler);
+					publish("Cancelling process...");	
+					JOptionPane.showMessageDialog (null, "Process has been cancelled.", "CANCEL", JOptionPane.INFORMATION_MESSAGE);
+					already_canceled = true;
+					MakeCorrelationGraph.stop_execution = true;
+				}
+			break;
 			case ConstantCodes.FINISHED:
 				JOptionPane.showMessageDialog (null, "Process has been successfully finished.", "SUCCESS", JOptionPane.INFORMATION_MESSAGE);
 				String file = folderWithPrecomputedICAResults+System.getProperty("file.separator")+"correlation_graph_norecipedges.xgmml";
@@ -99,6 +133,8 @@ public class RunBBHGraph extends SwingWorker<Boolean, String> {
 		publish("==================================================");
 		publish("======  Compute Reciprocally Best Hit graph  =====");
 		publish("==================================================");
+		
+		BBHGraphDialog.btnStopMethod.setEnabled(true);
 		
 		if(splitPositiveAndNegativeTailsForMetaanalysis)
 			MakeCorrelationGraph.SplitAllFilesIntoPositiveAndNegativeTails(folderWithPrecomputedICAResults+System.getProperty("file.separator"));

@@ -29,6 +29,8 @@ public class OFTENAnalysis {
 	int optimalComponentSize = -1;
 	int sizeOfComponentToSelect = -1;
 	
+	public static boolean stop_execution = false;
+	
 	public static void main(String[] args) {
 		try{
 			
@@ -246,6 +248,11 @@ public class OFTENAnalysis {
 		Vector<Integer> genes_minus = new Vector<Integer>();
 		Vector<Integer> genes_abs = new Vector<Integer>();
 		for(int i=1;i<tab.colCount;i++){ 
+			//System.out.println("\n\n\n\n\n");
+			//System.out.println("Thread.interrupted="+Thread.interrupted());
+			//System.out.println("\n\n\n\n\n");
+			//if(Thread.interrupted()) break;
+			if(OFTENAnalysis.stop_execution) break;
 			String field = tab.fieldNames[i];
 			System.out.println("============================");
 			System.out.println("=====  FIELD "+field+"   ==========");

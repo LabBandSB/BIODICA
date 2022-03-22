@@ -22,6 +22,8 @@ import logic.Node;
 import logic.XGMML;
 
 public class MakeCorrelationGraph {
+	
+	public static boolean stop_execution = false; 
 
 	public static void main(String[] args) {
 		try{
@@ -114,7 +116,10 @@ public class MakeCorrelationGraph {
 			System.out.println("Table i :"+fn1);
 			for(int k=1;k<vt1.colCount;k++) vt1.fieldTypes[k] = vt1.NUMERICAL;
 			for(int j=0;j<tables.size();j++){
+			if(stop_execution) break;
 			if(i!=j){
+				
+				if(stop_execution) break;
 				
 				String fn2 = new String(fileNames.get(j));
 				String fn2_short = fn2.substring(0, fn2.length()-6);

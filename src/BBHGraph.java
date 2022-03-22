@@ -26,6 +26,7 @@ import javax.swing.JTextField;
 import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import model.BBHGraphDTO;
+import model.ConstantCodes;
 import util.WindowEventHandler;
 
 
@@ -35,11 +36,13 @@ public class BBHGraph extends JDialog implements ActionListener{
 	private JPanel contentPane;
 	private JFileChooser fileChooser;
 	private JTextField tfFinalGraph;
-	private JButton btnFinalGraph,btnRunMethod, btnClear;
+	public JButton btnFinalGraph,btnRunMethod, btnStopMethod, btnClear;
 	private JScrollPane sptAConsole;
-	private JProgressBar pbProgress;
-	private JTextArea tAConsole;
+	public JProgressBar pbProgress;
+	public JTextArea tAConsole;
 	private RunBBHGraph runBBHGraph;
+	
+	public WindowEventHandler windowHandler;		
 	
 	//Default values
 	public String DEFAULT_FINAL_GRAPH_PATH = "";
@@ -54,7 +57,8 @@ public class BBHGraph extends JDialog implements ActionListener{
 		contentPane = new JPanel(new GridBagLayout());
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setAlignmentY(JComponent.CENTER_ALIGNMENT);
-		this.addWindowListener(new WindowEventHandler());
+		windowHandler = new WindowEventHandler();
+		this.addWindowListener(windowHandler);
 		
 		fileChooser = new JFileChooser();
 		fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
@@ -176,11 +180,15 @@ public class BBHGraph extends JDialog implements ActionListener{
 	 	btnRunMethod = new JButton("Run");
 	 	btnRunMethod.setIcon(new ImageIcon(getClass().getResource("Run.png")));
 	 	btnRunMethod.addActionListener(this);
-
+	 	
+	 	btnStopMethod = new JButton("Stop");
+	 	btnStopMethod.setIcon(new ImageIcon(getClass().getResource("Stop.png")));
+	 	btnStopMethod.addActionListener(this);
+	 	btnStopMethod.setEnabled(false);
 
 	 	JPanel runStopPanel = new JPanel(new FlowLayout());
 	 	runStopPanel.add(btnRunMethod);
-	
+	 	runStopPanel.add(btnStopMethod);	 	
 	 	
 	 	btnsPanel.add(clearPanel, BorderLayout.EAST);
 	 	btnsPanel.add(runStopPanel, BorderLayout.WEST);
@@ -211,11 +219,20 @@ public class BBHGraph extends JDialog implements ActionListener{
 			}
 			else
 			{
-				runBBHGraph = new RunBBHGraph(tAConsole, btnRunMethod, pbProgress, getBBHGraphValues(), this);
+				runBBHGraph = new RunBBHGraph(this, getBBHGraphValues(), this);
 				runBBHGraph.execute();
-				this.setEnabled(false);	
+				//this.setEnabled(false);	
 			}
 		}
+		else if(e.getSource() == btnStopMethod)
+		{
+			//JOptionPane.showMessageDialog(this, "Trying to cancel.");
+
+			runBBHGraph.executionThread.interrupt();
+			runBBHGraph.action = ConstantCodes.CANCELED;
+			runBBHGraph.cancel(true);
+		}
+		
 	}
 	
 	private boolean emptyFieldExists()

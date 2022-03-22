@@ -29,6 +29,8 @@ public class UseTOPPgeneSuiteForEnrichment {
 	
 	public static int thresholdNumberOfGenesInEnrichment = 8;
 	public static float thresholdQValue = 0.05f;
+	
+	public static boolean stop_execution = false;
 
 	
 	public static void main(String[] args) {
@@ -405,6 +407,7 @@ public class UseTOPPgeneSuiteForEnrichment {
 		fw.write("<td width=10%>NEGATIVE SIDE</td>\n");fw.write("<td width=30%>ANNOTATION</td></tr>\n");
 		
 		for(int i=0;i<vt.colCount;i++)if(vt.fieldTypes[i]==vt.NUMERICAL){
+			if(stop_execution) break;
 			fw.write("<tr>\n");			
 			String colName = vt.fieldNames[i];
 			//int kk = colName.indexOf("(");

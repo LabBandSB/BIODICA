@@ -19,6 +19,7 @@ import org.apache.commons.io.FileUtils;
 
 import logic.BIODICASecurityManager;
 import logic.MetaGeneAnnotation;
+import logic.OFTENAnalysis;
 import model.ConstantCodes;
 import model.TOPPGeneDTO;
 
@@ -41,6 +42,7 @@ public class RunTOPPGeneWorker extends SwingWorker<Boolean, String>  {
 	
 	public RunTOPPGeneWorker(TOPPGeneAnalysis TOPPGeneAnalysisDialog, TOPPGeneDTO toppgeneDTO,TOPPGeneAnalysis toppgeneMethod)
 	{
+	
 		this.TOPPGeneAnalysisDialog = TOPPGeneAnalysisDialog;
 		this.tAConsole = TOPPGeneAnalysisDialog.tAConsole;
 		this.btnRunMethod = TOPPGeneAnalysisDialog.btnRunMethod;
@@ -58,6 +60,7 @@ public class RunTOPPGeneWorker extends SwingWorker<Boolean, String>  {
 		
 		if(init()){
 			
+			logic.UseTOPPgeneSuiteForEnrichment.stop_execution = false;
 			TOPPGeneAnalysisDialog.btnRunMethod.setEnabled(false);
 			TOPPGeneAnalysisDialog.removeWindowListener(TOPPGeneAnalysisDialog.windowHandler);
 			executionThread = new Thread(new Runnable() {
@@ -98,14 +101,15 @@ public class RunTOPPGeneWorker extends SwingWorker<Boolean, String>  {
 		pbProgress.setBorder(progressBorder);
 		
 		TOPPGeneAnalysisDialog.btnRunMethod.setEnabled(true);
-		
+				
 		switch(action){
 			case ConstantCodes.CANCELED: 
 				if(!already_canceled) {
+					already_canceled = true;
+					logic.UseTOPPgeneSuiteForEnrichment.stop_execution = true;
 					TOPPGeneAnalysisDialog.addWindowListener(TOPPGeneAnalysisDialog.windowHandler);
 					publish("Cancelling process...");
 					JOptionPane.showMessageDialog (null, "Process has been cancelled.", "CANCEL", JOptionPane.INFORMATION_MESSAGE);
-					already_canceled = true;
 				}
 			break;
 			case ConstantCodes.FINISHED:
