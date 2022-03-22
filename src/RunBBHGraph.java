@@ -94,7 +94,7 @@ public class RunBBHGraph extends SwingWorker<Boolean, String> {
 				if(!already_canceled) {
 					BBHGraphDialog.addWindowListener(BBHGraphDialog.windowHandler);
 					publish("Cancelling process...");	
-					JOptionPane.showMessageDialog (null, "Process has been cancelled.", "CANCEL", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog (null, "Process will be cancelled.\nClicking on Run will continue from where it was stopped.", "CANCEL", JOptionPane.INFORMATION_MESSAGE);
 					already_canceled = true;
 					MakeCorrelationGraph.stop_execution = true;
 				}
