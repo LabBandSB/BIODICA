@@ -1,12 +1,14 @@
 # BIODICA Navigator: GUI for Independent Component Analysis for BIg Omics Data
 
-BIODICA Navigator is a user-friendly environment for computation of independent components for omics data, 
+[BIODICA Navigator](https://sysbio-curie.github.io/biodica-environment/) is a user-friendly environment for computation of independent components for omics data, 
 using stability analysis and computing the optimal number of the components from their stabilities,
 and performing analyses for interpreting the results of ICA application.
 
 BIODICA can work as Graphical User Interface (GUI) or in the command line mode.
 
 BIODICA can use two computational cores for computing ICA: one (default) using Python and one using MATLAB.
+
+Here is the web-site of BIODICA with tutorials and GUI : https://sysbio-curie.github.io/biodica-environment/
 
 ## Installation
 
